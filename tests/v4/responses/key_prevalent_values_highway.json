@@ -1,0 +1,72 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/key/prevalent_values?key=highway",
+  "data_until": "2023-09-13T00:59:46Z",
+  "total": 13,
+  "data": [
+    {
+      "value": "residential",
+      "count": 65032833,
+      "fraction": 0.265
+    },
+    {
+      "value": "service",
+      "count": 53369337,
+      "fraction": 0.2175
+    },
+    {
+      "value": "track",
+      "count": 25365571,
+      "fraction": 0.1034
+    },
+    {
+      "value": "footway",
+      "count": 20860856,
+      "fraction": 0.085
+    },
+    {
+      "value": "unclassified",
+      "count": 16813025,
+      "fraction": 0.0685
+    },
+    {
+      "value": "path",
+      "count": 13454134,
+      "fraction": 0.0548
+    },
+    {
+      "value": "crossing",
+      "count": 8184958,
+      "fraction": 0.0334
+    },
+    {
+      "value": "tertiary",
+      "count": 7710945,
+      "fraction": 0.0314
+    },
+    {
+      "value": "secondary",
+      "count": 4956343,
+      "fraction": 0.0202
+    },
+    {
+      "value": "street_lamp",
+      "count": 3720694,
+      "fraction": 0.0152
+    },
+    {
+      "value": "primary",
+      "count": 3429917,
+      "fraction": 0.014
+    },
+    {
+      "value": "bus_stop",
+      "count": 3390299,
+      "fraction": 0.0138
+    },
+    {
+      "value": null,
+      "count": 19135682,
+      "fraction": 0.078
+    }
+  ]
+}

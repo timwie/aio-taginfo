@@ -1,0 +1,509 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/key/similar?key=highway&page=1&rp=100&sortname=other_key&sortorder=asc",
+  "data_until": "2023-09-14T00:59:02Z",
+  "page": 1,
+  "rp": 100,
+  "total": 891,
+  "data": [
+    {
+      "other_key": "FIXME:highway",
+      "count_all": 64,
+      "similarity": 0
+    },
+    {
+      "other_key": "HighwayGK:service",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "NavigateLA:highway",
+      "count_all": 22,
+      "similarity": 0
+    },
+    {
+      "other_key": "abandoend:highway",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "abandone:highway",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "abandoned:area:highway",
+      "count_all": 3,
+      "similarity": 0
+    },
+    {
+      "other_key": "abandoned:highway",
+      "count_all": 68622,
+      "similarity": 0
+    },
+    {
+      "other_key": "abandoned:highway:-2015",
+      "count_all": 3,
+      "similarity": 0
+    },
+    {
+      "other_key": "abandoned:highway:2009-2015",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "abandoned:highway:service",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "abaondoned:highway",
+      "count_all": 2,
+      "similarity": 0
+    },
+    {
+      "other_key": "animal:highway",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "area:highway",
+      "count_all": 240894,
+      "similarity": 0
+    },
+    {
+      "other_key": "area:highway:2022",
+      "count_all": 5,
+      "similarity": 0
+    },
+    {
+      "other_key": "area:highway:colour",
+      "count_all": 8,
+      "similarity": 0
+    },
+    {
+      "other_key": "area:highway:crossing",
+      "count_all": 274,
+      "similarity": 0
+    },
+    {
+      "other_key": "area:highway:permissive",
+      "count_all": 3,
+      "similarity": 0
+    },
+    {
+      "other_key": "area:highway:prohibited",
+      "count_all": 130,
+      "similarity": 0
+    },
+    {
+      "other_key": "aspiration:highway",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "blocked:highway",
+      "count_all": 5,
+      "similarity": 0
+    },
+    {
+      "other_key": "broken:highway",
+      "count_all": 3,
+      "similarity": 0
+    },
+    {
+      "other_key": "check:highway",
+      "count_all": 4,
+      "similarity": 0
+    },
+    {
+      "other_key": "check_date:highway",
+      "count_all": 7,
+      "similarity": 0
+    },
+    {
+      "other_key": "closed:highway",
+      "count_all": 72,
+      "similarity": 0
+    },
+    {
+      "other_key": "collapsed:highway",
+      "count_all": 3,
+      "similarity": 0
+    },
+    {
+      "other_key": "connector:highway",
+      "count_all": 9,
+      "similarity": 0
+    },
+    {
+      "other_key": "construction:area:highway",
+      "count_all": 83,
+      "similarity": 0
+    },
+    {
+      "other_key": "construction:demolished:highway",
+      "count_all": 8,
+      "similarity": 0
+    },
+    {
+      "other_key": "construction:highway",
+      "count_all": 2853,
+      "similarity": 0
+    },
+    {
+      "other_key": "cycle_highway",
+      "count_all": 826,
+      "similarity": 0
+    },
+    {
+      "other_key": "damaged:highway",
+      "count_all": 5,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=*&motorroad=yes;bicycle",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=*&motorroad=yes;foot",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=*&motorroad=yes;goods",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=*&motorroad=yes;hgv",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=*&motorroad=yes;horse",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=*&motorroad=yes;mofa",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=*&motorroad=yes;moped",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=*&motorroad=yes;motorcar",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=*&motorroad=yes;motorcycle",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=*&motorroad=yes;psv",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=bridleway;bicycle",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=bridleway;foot",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=bridleway;goods",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=bridleway;hgv",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=bridleway;horse",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=bridleway;mofa",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=bridleway;moped",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=bridleway;motorcar",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=bridleway;motorcycle",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=bridleway;psv",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=cycleway&zone:traffic=rural;mofa",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=cycleway&zone:traffic=urban;mofa",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=cycleway;access:foot",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=cycleway;access:horse",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=cycleway;access:mofa:conditional",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=cycleway;access:moped:conditional",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=cycleway;bicycle",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=cycleway;foot",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=cycleway;goods",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=cycleway;hgv",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=cycleway;horse",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=cycleway;moped",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=cycleway;motorcar",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=cycleway;motorcycle",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=cycleway;psv",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=footway;access:bicycle",
+      "count_all": 8,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=footway;access:horse",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=footway|highway=pedestrian;bicycle",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=footway|highway=pedestrian;foot",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=footway|highway=pedestrian;goods",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=footway|highway=pedestrian;hgv",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=footway|highway=pedestrian;horse",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=footway|highway=pedestrian;mofa",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=footway|highway=pedestrian;moped",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=footway|highway=pedestrian;motorcar",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=footway|highway=pedestrian;motorcycle",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=footway|highway=pedestrian;psv",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=living_street;maxspeed",
+      "count_all": 6,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorroad;maxspeed:hgv",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorroad;maxspeed:tourist_bus",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;access:agricultural",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;access:atv",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;access:bicycle",
+      "count_all": 5,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;access:carriage",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;access:foot",
+      "count_all": 5,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;access:horse",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;access:mofa",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;access:moped",
+      "count_all": 5,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;access:speed_pedelec",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;bicycle",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;foot",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;goods",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;hgv",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;horse",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;lanes",
+      "count_all": 4,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;maxspeed",
+      "count_all": 5,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;maxspeed:advisory",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;maxspeed:hgv",
+      "count_all": 1,
+      "similarity": 0
+    },
+    {
+      "other_key": "def:highway=motorway;maxspeed:rain",
+      "count_all": 3,
+      "similarity": 0
+    }
+  ]
+}

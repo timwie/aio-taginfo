@@ -1,0 +1,382 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/key/overview?key=amenity",
+  "data_until": "2023-09-12T00:59:12Z",
+  "total": 1,
+  "data": {
+    "key": "amenity",
+    "counts": [
+      {
+        "type": "all",
+        "count": 24725486,
+        "count_fraction": 0.0026,
+        "values": 9153
+      },
+      {
+        "type": "nodes",
+        "count": 13431520,
+        "count_fraction": 0.0609,
+        "values": 6355
+      },
+      {
+        "type": "ways",
+        "count": 11146727,
+        "count_fraction": 0.0115,
+        "values": 4233
+      },
+      {
+        "type": "relations",
+        "count": 147239,
+        "count_fraction": 0.0131,
+        "values": 410
+      }
+    ],
+    "projects": 86,
+    "users": 487294,
+    "prevalent_values": [
+      {
+        "value": "parking",
+        "count": 5033323,
+        "fraction": 0.20356821297668326
+      },
+      {
+        "value": "bench",
+        "count": 2240755,
+        "fraction": 0.09062531672784915
+      },
+      {
+        "value": "parking_space",
+        "count": 2144216,
+        "fraction": 0.08672088386857188
+      },
+      {
+        "value": "place_of_worship",
+        "count": 1413778,
+        "fraction": 0.05717897718977091
+      },
+      {
+        "value": "restaurant",
+        "count": 1329629,
+        "fraction": 0.05377564671529611
+      },
+      {
+        "value": "school",
+        "count": 1274484,
+        "fraction": 0.051545356883986024
+      },
+      {
+        "value": "waste_basket",
+        "count": 734732,
+        "fraction": 0.029715573639280537
+      },
+      {
+        "value": "bicycle_parking",
+        "count": 593999,
+        "fraction": 0.02402375427524458
+      },
+      {
+        "value": "fast_food",
+        "count": 523378,
+        "fraction": 0.02116755157006823
+      },
+      {
+        "value": "cafe",
+        "count": 521693,
+        "fraction": 0.021099403263499048
+      },
+      {
+        "value": "fuel",
+        "count": 510384,
+        "fraction": 0.020642020949557877
+      },
+      {
+        "value": "shelter",
+        "count": 481173,
+        "fraction": 0.01946060837793037
+      },
+      {
+        "value": "toilets",
+        "count": 405140,
+        "fraction": 0.016385522209755553
+      },
+      {
+        "value": "recycling",
+        "count": 404046,
+        "fraction": 0.016341276365609152
+      },
+      {
+        "value": "bank",
+        "count": 387470,
+        "fraction": 0.015670874983003368
+      },
+      {
+        "value": "pharmacy",
+        "count": 378340,
+        "fraction": 0.01530162036046531
+      },
+      {
+        "value": "post_box",
+        "count": 366578,
+        "fraction": 0.014825916869743227
+      },
+      {
+        "value": "kindergarten",
+        "count": 291954,
+        "fraction": 0.011807816436853861
+      },
+      {
+        "value": "drinking_water",
+        "count": 289548,
+        "fraction": 0.011710507935010862
+      }
+    ],
+    "wiki_pages": [
+      {
+        "lang": "ca",
+        "english": "Catalan",
+        "native": "Català",
+        "dir": "ltr"
+      },
+      {
+        "lang": "cs",
+        "english": "Czech",
+        "native": "Čeština",
+        "dir": "ltr"
+      },
+      {
+        "lang": "da",
+        "english": "Danish",
+        "native": "Dansk",
+        "dir": "ltr"
+      },
+      {
+        "lang": "de",
+        "english": "German",
+        "native": "Deutsch",
+        "dir": "ltr"
+      },
+      {
+        "lang": "el",
+        "english": "Greek",
+        "native": "Ελληνικά",
+        "dir": "auto"
+      },
+      {
+        "lang": "en",
+        "english": "English",
+        "native": "English",
+        "dir": "ltr"
+      },
+      {
+        "lang": "es",
+        "english": "Spanish",
+        "native": "Español",
+        "dir": "ltr"
+      },
+      {
+        "lang": "et",
+        "english": "Estonian",
+        "native": "Eesti",
+        "dir": "auto"
+      },
+      {
+        "lang": "fi",
+        "english": "Finish",
+        "native": "Suomi",
+        "dir": "ltr"
+      },
+      {
+        "lang": "fr",
+        "english": "French",
+        "native": "Français",
+        "dir": "ltr"
+      },
+      {
+        "lang": "hr",
+        "english": "Croatian",
+        "native": "Hrvatski",
+        "dir": "ltr"
+      },
+      {
+        "lang": "hu",
+        "english": "Hungarian",
+        "native": "Magyar",
+        "dir": "ltr"
+      },
+      {
+        "lang": "it",
+        "english": "Italian",
+        "native": "Italiano",
+        "dir": "ltr"
+      },
+      {
+        "lang": "ja",
+        "english": "Japanese",
+        "native": "日本語",
+        "dir": "ltr"
+      },
+      {
+        "lang": "ko",
+        "english": "Korean",
+        "native": "한국어",
+        "dir": "ltr"
+      },
+      {
+        "lang": "nl",
+        "english": "Dutch",
+        "native": "Nederlands",
+        "dir": "ltr"
+      },
+      {
+        "lang": "no",
+        "english": "Norwegian",
+        "native": "Norsk",
+        "dir": "ltr"
+      },
+      {
+        "lang": "pl",
+        "english": "Polish",
+        "native": "Polski",
+        "dir": "ltr"
+      },
+      {
+        "lang": "pt",
+        "english": "Portuguese",
+        "native": "Português",
+        "dir": "ltr"
+      },
+      {
+        "lang": "pt-br",
+        "english": "Brazilian Portuguese",
+        "native": "Português do Brasil",
+        "dir": "ltr"
+      },
+      {
+        "lang": "ro",
+        "english": "Romanian",
+        "native": "Română",
+        "dir": "auto"
+      },
+      {
+        "lang": "ru",
+        "english": "Russian",
+        "native": "Русский",
+        "dir": "ltr"
+      },
+      {
+        "lang": "tr",
+        "english": "Turkish",
+        "native": "Türkçe",
+        "dir": "ltr"
+      },
+      {
+        "lang": "uk",
+        "english": "Ukrainian",
+        "native": "Українська",
+        "dir": "ltr"
+      },
+      {
+        "lang": "zh-hans",
+        "english": "Simplified Chinese",
+        "native": "简体中文",
+        "dir": "auto"
+      },
+      {
+        "lang": "zh-hant",
+        "english": "Traditional Chinese",
+        "native": "繁體中文",
+        "dir": "auto"
+      }
+    ],
+    "has_map": true,
+    "description": {
+      "ca": {
+        "text": "Per a descriure característiques d'equimaments útils i importants per als visitants o residents.",
+        "dir": "ltr"
+      },
+      "cs": {
+        "text": "Pro zakreslení zařízení užitečných pro obyvatele a návštěvníky.",
+        "dir": "ltr"
+      },
+      "de": {
+        "text": "Zur Markierung nützlicher und wichtiger Einrichtungen für Besucher und Anwohner.",
+        "dir": "ltr"
+      },
+      "el": {
+        "text": "Για την περιγραφή χρήσιμων και σημαντικών υποδομών για επισκέπτες και κατοίκους.",
+        "dir": "auto"
+      },
+      "en": {
+        "text": "For describing useful and important facilities for visitors and residents.",
+        "dir": "ltr"
+      },
+      "es": {
+        "text": "Para describir servicios útiles e importantes para los visitantes y residentes.",
+        "dir": "ltr"
+      },
+      "fi": {
+        "text": "Matkailijoille ja asukkaille oleelliset 'hyödykkeet'.",
+        "dir": "ltr"
+      },
+      "fr": {
+        "text": "Pour marquer les équipements utiles et importants.",
+        "dir": "ltr"
+      },
+      "hr": {
+        "text": "Za označavanje važnih usluga za posjetitelje i stanovnike",
+        "dir": "ltr"
+      },
+      "hu": {
+        "text": "Fontos helyeket vagy szolgáltatásokat jelöl a lakók és látogatók számára.",
+        "dir": "ltr"
+      },
+      "it": {
+        "text": "Per descrivere servizi utili ed importanti per visitatori e residenti: bagni, telefoni, banche, farmacie, scuole...",
+        "dir": "ltr"
+      },
+      "ja": {
+        "text": "来訪者や住民にとって便利で重要な施設を記述します。",
+        "dir": "ltr"
+      },
+      "ko": {
+        "text": "주민들과 방문객들에게 유용하고 중요한 시설들을 알려주는 문서입니다.",
+        "dir": "ltr"
+      },
+      "nl": {
+        "text": "Bruikbare en belangrijke faciliteiten voor bezoekers en inwoners.",
+        "dir": "ltr"
+      },
+      "no": {
+        "text": "For å beskrive nyttige fasiliteter for besøkende og beboere",
+        "dir": "ltr"
+      },
+      "pl": {
+        "text": "Służy do oznaczania użytecznych i ważnych obiektów dla odwiedzających i mieszkańców.",
+        "dir": "ltr"
+      },
+      "pt": {
+        "text": "Para descrever úteis e importantes instalações para visitantes e residentes.",
+        "dir": "ltr"
+      },
+      "ro": {
+        "text": "Pentru descrierea facilități utile și importante pentru vizitatori și rezidenților.",
+        "dir": "auto"
+      },
+      "ru": {
+        "text": "Объект инфраструктуры и благоустройства, общественные заведения.",
+        "dir": "ltr"
+      },
+      "uk": {
+        "text": "Об’єкти суспільного значення, які забезпечують нормальне життя в населених пунктах.",
+        "dir": "ltr"
+      },
+      "zh-hans": {
+        "text": "标识供居民或游客使用的设施。",
+        "dir": "auto"
+      },
+      "zh-hant": {
+        "text": "用來描述給住民和訪客使用的重要設施。",
+        "dir": "auto"
+      }
+    }
+  }
+}
