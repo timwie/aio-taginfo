@@ -17,7 +17,9 @@ class _Params:
 
 async def call(key: str, session: Optional[ClientSession] = None) -> PngResponse:
     """
-    Get map with distribution of this key in the database (nodes only) (reference_).
+    Get map with distribution of this key in the database (nodes only).
+
+    https://taginfo.openstreetmap.org/taginfo/apidoc#api_4_key_distribution_nodes
 
     Args:
         key: tag key
@@ -25,9 +27,6 @@ async def call(key: str, session: Optional[ClientSession] = None) -> PngResponse
 
     Raises:
         TagInfoError
-
-    .. _reference:
-        https://taginfo.openstreetmap.org/taginfo/apidoc#api_4_key_distribution_nodes
     """
     params = api_params(_Params, key=key)
     return await api_get_png(

@@ -25,7 +25,9 @@ async def call(
     session: Optional[ClientSession] = None,
 ) -> Response[list[PrevalentValue]]:
     """
-    Get most prevalent values used with a given key (reference_).
+    Get most prevalent values used with a given key.
+
+    https://taginfo.openstreetmap.org/taginfo/apidoc#api_4_key_prevalent_values
 
     Args:
         key: tag key
@@ -36,9 +38,6 @@ async def call(
 
     Raises:
         TagInfoError
-
-    .. _reference:
-        https://taginfo.openstreetmap.org/taginfo/apidoc#api_4_key_prevalent_values
     """
     params = api_params(_Params, key=key, min_fraction=min_fraction, filter=filter)
     return await api_get_json(

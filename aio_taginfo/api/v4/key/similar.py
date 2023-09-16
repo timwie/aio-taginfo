@@ -62,7 +62,9 @@ async def call(  # noqa: PLR0913
     session: Optional[ClientSession] = None,
 ) -> Response[list["SimilarKey"]]:
     """
-    Find keys that are similar to a given key (reference_).
+    Find keys that are similar to a given key.
+
+    https://taginfo.openstreetmap.org/taginfo/apidoc#api_4_key_similar
 
     Args:
         key: tag key
@@ -75,9 +77,6 @@ async def call(  # noqa: PLR0913
 
     Raises:
         TagInfoError
-
-    .. _reference:
-        https://taginfo.openstreetmap.org/taginfo/apidoc#api_4_key_similar
     """
     params = api_params(
         _Params, key=key, query=query, sortname=sortname, sortorder=sortorder, page=page, rp=rp

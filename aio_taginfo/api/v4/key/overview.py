@@ -30,7 +30,9 @@ async def call(
     session: Optional[ClientSession] = None,
 ) -> Response["KeyOverview"]:
     """
-    Show various data for given key (reference_).
+    Show various data for given key.
+
+    https://taginfo.openstreetmap.org/taginfo/apidoc#api_4_key_overview
 
     Args:
         key: tag key
@@ -38,9 +40,6 @@ async def call(
 
     Raises:
         TagInfoError
-
-    .. _reference:
-        https://taginfo.openstreetmap.org/taginfo/apidoc#api_4_key_overview
     """
     return await api_get_json(
         path="key/overview",

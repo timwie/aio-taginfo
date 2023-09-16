@@ -11,16 +11,15 @@ from pydantic.dataclasses import dataclass
 
 async def call(session: Optional[ClientSession] = None) -> "SiteConfigGeodistribution":
     """
-    Get information about the background map for distribution charts (reference_).
+    Get information about the background map for distribution charts.
+
+    https://taginfo.openstreetmap.org/taginfo/apidoc#api_4_site_config_geodistribution
 
     Args:
         session: request client session
 
     Raises:
         TagInfoError
-
-    .. _reference:
-        https://taginfo.openstreetmap.org/taginfo/apidoc#api_4_site_config_geodistribution
     """
     return await api_get_json(
         path="/api/4/site/config/geodistribution",
