@@ -1,4 +1,12 @@
-# aio-taginfo
+<h1 align="center">
+aio-taginfo
+
+[![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/timwie/aio-taginfo/test_and_publish.yml)](https://github.com/timwie/aio-taginfo/actions/workflows/test_and_publish.yml)
+[![codecov](https://codecov.io/gh/timwie/aio-taginfo/branch/main/graph/badge.svg?token=YX1218U740)](https://codecov.io/gh/timwie/aio-taginfo)
+[![PyPI - Version](https://img.shields.io/pypi/v/aio-taginfo)](https://pypi.org/project/aio-taginfo/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/aio-taginfo)
+</h1>
+
 A typed async client for the [taginfo] API, a system for finding and aggregating
 information about [OpenStreetMap] tags, and making it browsable and searchable.
 
@@ -70,6 +78,17 @@ the same license as the OpenStreetMap data.
 [OpenStreetMap Foundation]: https://osmfoundation.org/
 [legal code]: https://opendatacommons.org/licenses/odbl/1.0/
 
+Here is an example of an API request using this library:
+
+```python
+# either use a temporary session…
+response: Response[KeyOverview] = await aio_taginfo.key_overview(key="amenity")
+
+# …or provide your own
+async with aiohttp.ClientSession() as session:
+    response: Response[KeyOverview] = await aio_taginfo.key_overview(key="amenity", session=session)
+```
+
 <br>
 
 ## Endpoints
@@ -123,3 +142,7 @@ This library is early in development and most endpoints are still missing.
 |     | `/api/4/unicode/characters`          | multiple  |
 |     | `/api/4/wiki/languages`              | multiple  |
 
+<br>
+
+## License
+Distributed under the MIT License. See `LICENSE` for more information.
