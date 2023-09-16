@@ -1,10 +1,12 @@
+"""`/api/v4/key/overview` endpoint."""
+
 from typing import Optional
 
 from aio_taginfo.api.v4 import ObjectType, PrintingDirection, Response
 from aio_taginfo.api.v4._internal import api_get_json, api_params
 from aio_taginfo.api.v4.key import PrevalentValue
 
-import aiohttp
+from aiohttp import ClientSession
 from pydantic import Field, constr
 from pydantic.dataclasses import dataclass
 
@@ -25,7 +27,7 @@ class _Params:
 
 async def call(
     key: str,
-    session: Optional[aiohttp.ClientSession] = None,
+    session: Optional[ClientSession] = None,
 ) -> Response["KeyOverview"]:
     """
     Show various data for given key (reference_).

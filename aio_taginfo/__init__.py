@@ -14,7 +14,7 @@ All the calls are re-exported here at the top level for convenience.
 import importlib.metadata
 
 
-__version__ = importlib.metadata.version("aio-taginfo")
+__version__: str = importlib.metadata.version("aio-taginfo")
 
 __docformat__ = "google"
 

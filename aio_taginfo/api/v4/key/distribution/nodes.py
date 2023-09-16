@@ -1,9 +1,11 @@
+"""`/api/v4/key/distribution/nodes` endpoint."""
+
 from typing import Optional
 
 from aio_taginfo.api.v4 import PngResponse
 from aio_taginfo.api.v4._internal import api_get_png, api_params
 
-import aiohttp
+from aiohttp import ClientSession
 from pydantic import Field, constr
 from pydantic.dataclasses import dataclass
 
@@ -13,7 +15,7 @@ class _Params:
     key: constr(min_length=1, strip_whitespace=True, strict=True) = Field(repr=True, frozen=True)
 
 
-async def call(key: str, session: Optional[aiohttp.ClientSession] = None) -> PngResponse:
+async def call(key: str, session: Optional[ClientSession] = None) -> PngResponse:
     """
     Get map with distribution of this key in the database (nodes only) (reference_).
 

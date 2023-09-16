@@ -1,10 +1,12 @@
+"""`/api/v4/key/similar` endpoint."""
+
 from enum import Enum
 from typing import Optional
 
 from aio_taginfo.api.v4 import Response, SortOrder
 from aio_taginfo.api.v4._internal import api_get_json, api_params
 
-import aiohttp
+from aiohttp import ClientSession
 from pydantic import Field, constr
 from pydantic.dataclasses import dataclass
 
@@ -50,14 +52,14 @@ class _Params:
     rp: int = Field(ge=0, repr=True, frozen=True)
 
 
-async def call(
+async def call(  # noqa: PLR0913
     key: str,
     query: Optional[str] = None,
     sortname: SimilarKeySorting = SimilarKeySorting.OTHER_KEY,
     sortorder: SortOrder = SortOrder.ASC,
     page: int = 1,
     rp: int = 0,
-    session: Optional[aiohttp.ClientSession] = None,
+    session: Optional[ClientSession] = None,
 ) -> Response[list["SimilarKey"]]:
     """
     Find keys that are similar to a given key (reference_).

@@ -7,7 +7,7 @@ import pydantic
 
 
 class TagInfoError(Exception):
-    """Base class for taginfo API errors"""
+    """Base class for taginfo API errors."""
 
 
 @dataclass

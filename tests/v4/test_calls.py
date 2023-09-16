@@ -11,8 +11,8 @@ from aio_taginfo.api.v4 import SortOrder
 from aio_taginfo.api.v4.key.similar import SimilarKeySorting
 from aio_taginfo.error import TagInfoCallError, TagInfoValidationError, TagInfoValueError
 
-import aiohttp
 import pytest
+from aiohttp import ClientSession
 from aioresponses import aioresponses
 
 
@@ -63,7 +63,7 @@ async def test_key_overview():
 
     url = "https://taginfo.openstreetmap.org/api/4/key/overview?key=amenity"
 
-    async with aiohttp.ClientSession() as session:
+    async with ClientSession() as session:
         with aioresponses() as m:
             m.get(
                 url=url,
@@ -101,7 +101,7 @@ async def test_site_config_geodistribution():
 
     url = "https://taginfo.openstreetmap.org/api/4/site/config/geodistribution"
 
-    async with aiohttp.ClientSession() as session:
+    async with ClientSession() as session:
         with aioresponses() as m:
             m.get(
                 url=url,

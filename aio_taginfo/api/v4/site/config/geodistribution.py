@@ -1,13 +1,15 @@
+"""`/api/v4/site/geodistribution` endpoint."""
+
 from typing import Optional
 
 from aio_taginfo.api.v4._internal import api_get_json
 
-import aiohttp
+from aiohttp import ClientSession
 from pydantic import Field
 from pydantic.dataclasses import dataclass
 
 
-async def call(session: Optional[aiohttp.ClientSession] = None) -> "SiteConfigGeodistribution":
+async def call(session: Optional[ClientSession] = None) -> "SiteConfigGeodistribution":
     """
     Get information about the background map for distribution charts (reference_).
 

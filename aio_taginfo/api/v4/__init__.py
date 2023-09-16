@@ -1,3 +1,5 @@
+"""`/api/v4/` endpoints."""
+
 from datetime import datetime
 from enum import Enum
 from typing import Generic, Optional, TypeVar
@@ -55,8 +57,10 @@ class PngResponse:
 
     @model_validator(mode="after")
     def post_root(self) -> "PngResponse":
+        """Basic PNG validation by checking for magic bytes."""
         if not self.data.startswith(_PNG_MAGIC):
-            raise AssertionError("did not find PNG magic bytes")
+            msg = "did not find PNG magic bytes"
+            raise AssertionError(msg)
         return self
 
 

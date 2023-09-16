@@ -1,3 +1,5 @@
+"""`/api/v4/key/` endpoints."""
+
 from typing import Optional
 
 from pydantic import Field

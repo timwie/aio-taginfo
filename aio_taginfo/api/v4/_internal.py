@@ -1,8 +1,9 @@
 import urllib.parse
+from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
 from dataclasses import asdict, is_dataclass
 from enum import Enum
-from typing import AsyncContextManager, Optional, Type, TypeVar
+from typing import Optional, TypeVar
 
 from aio_taginfo import __version__
 from aio_taginfo.api.v4 import PngResponse
@@ -10,7 +11,7 @@ from aio_taginfo.error import TagInfoCallError, TagInfoValidationError, TagInfoV
 
 import aiohttp
 import pydantic
-from aiohttp import ClientResponse
+from aiohttp import ClientResponse, ClientSession
 from aiohttp.typedefs import LooseHeaders
 from pydantic import TypeAdapter
 
@@ -21,7 +22,7 @@ _DEFAULT_USER_AGENT = f"aio-taginfo/{__version__} (https://github.com/timwie/aio
 T = TypeVar("T")
 
 
-def api_params(datacls: Type[T], **kwargs) -> dict:
+def api_params(datacls: type[T], **kwargs) -> dict:
     """
     Use a dataclass to validate parameters, and return them as a dict.
 
@@ -47,7 +48,7 @@ def _params_to_dict(obj: T) -> dict:
 
     ok = (str, int, float, bool)
 
-    def map_value(v):
+    def map_value(v):  # noqa: ANN001, ANN202
         if isinstance(v, Enum):
             assert isinstance(v.value, ok)
             return v.value
@@ -60,8 +61,8 @@ def _params_to_dict(obj: T) -> dict:
 
 async def api_get_json(
     path: str,
-    cls: Type[T],
-    session: Optional[aiohttp.ClientSession] = None,
+    cls: type[T],
+    session: Optional[ClientSession] = None,
     params: Optional[dict] = None,
 ) -> T:
     """
@@ -81,11 +82,14 @@ async def api_get_json(
     """
     type_adapter = TypeAdapter(cls)
 
+    response: ClientResponse
+
     async with _get(
         path=path,
         session=session,
         params=params,
         content_type="application/json",
+        headers=None,
     ) as response:
         payload = await response.read()
         return type_adapter.validate_json(payload, strict=True)
@@ -93,7 +97,7 @@ async def api_get_json(
 
 async def api_get_png(
     path: str,
-    session: Optional[aiohttp.ClientSession] = None,
+    session: Optional[ClientSession] = None,
     params: Optional[dict] = None,
 ) -> "PngResponse":
     """
@@ -107,11 +111,14 @@ async def api_get_png(
     Raises:
         TagInfoError
     """
+    response: ClientResponse
+
     async with _get(
         path=path,
         params=params,
         session=session,
         content_type="image/png",
+        headers=None,
     ) as response:
         payload = await response.read()
         return PngResponse(data=payload)
@@ -121,17 +128,15 @@ async def api_get_png(
 async def _get(
     path: str,
     content_type: str,
-    session: Optional[aiohttp.ClientSession] = None,
+    session: Optional[ClientSession] = None,
     params: Optional[dict] = None,
     headers: Optional[LooseHeaders] = None,
-) -> AsyncContextManager[ClientResponse]:
+) -> AsyncIterator[ClientResponse]:
     url = urllib.parse.urljoin(_URL_BASE, path)
     assert url.startswith(_URL_BASE), "given 'path' cannot start with a '/'"
 
     ephemeral_session = not session
-    if ephemeral_session:
-        session = aiohttp.ClientSession()
-
+    session = session or ClientSession()
     params = params or {}
     headers = headers or {}
 

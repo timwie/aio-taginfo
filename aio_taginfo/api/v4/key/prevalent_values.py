@@ -1,10 +1,12 @@
+"""`/api/v4/key/prevalent_values` endpoint."""
+
 from typing import Optional
 
 from aio_taginfo.api.v4 import ObjectType, Response
 from aio_taginfo.api.v4._internal import api_get_json, api_params
 from aio_taginfo.api.v4.key import PrevalentValue
 
-import aiohttp
+from aiohttp import ClientSession
 from pydantic import Field, constr
 from pydantic.dataclasses import dataclass
 
@@ -20,7 +22,7 @@ async def call(
     key: str,
     min_fraction: float = 0.01,
     filter: ObjectType = ObjectType.ALL,
-    session: Optional[aiohttp.ClientSession] = None,
+    session: Optional[ClientSession] = None,
 ) -> Response[list[PrevalentValue]]:
     """
     Get most prevalent values used with a given key (reference_).
