@@ -21,10 +21,6 @@ jobs:
 
       - name: Install Poetry
         uses: snok/install-poetry@v1
-        with:
-          virtualenvs-create: true
-          virtualenvs-in-project: true
-          installer-parallel: true
 
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v4
@@ -39,24 +35,14 @@ jobs:
           path: .venv
           key: venv-${{ runner.os }}-${{ matrix.python-version }}-${{ hashFiles('**/poetry.lock') }}
 
-      - name: Install dependencies
-        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
-        run: |
-          source .venv/bin/activate
-          poetry install --all-extras --no-interaction --no-root
-
-      - name: Install library
+      - name: Install dependencies & library
         run: poetry install --all-extras --no-interaction
 
       - name: Test with pytest
-        run: |
-          source .venv/bin/activate
-          pytest -vv
+        run: poetry run pytest -vv
 
       - name: Generate docs with pdoc
-        run: |
-          source .venv/bin/activate
-          pdoc -o ./doc aio_taginfo/
+        run: poetry run pdoc -o ./doc aio_taginfo/
 
   coverage:
     name: Upload test coverage to Codecov (3.9)
@@ -67,42 +53,22 @@ jobs:
 
       - name: Install Poetry
         uses: snok/install-poetry@v1
-        with:
-          virtualenvs-create: true
-          virtualenvs-in-project: true
-          installer-parallel: true
 
       - name: Set up Python 3.9
         uses: actions/setup-python@v4
         with:
           python-version: 3.9
           cache: 'poetry'
+          cache-dependency-path: poetry.lock
 
-      - name: Load cached venv
-        id: cached-poetry-dependencies
-        uses: actions/cache@v3
-        with:
-          path: .venv
-          key: venv-${{ runner.os }}-3.9-${{ hashFiles('**/poetry.lock') }}
-
-      - name: Install dependencies
-        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
-        run: |
-          source .venv/bin/activate
-          poetry install --all-extras --no-interaction --no-root
-
-      - name: Install library
+      - name: Install dependencies & library
         run: poetry install --all-extras --no-interaction
 
       - name: Test with pytest
-        run: |
-          source .venv/bin/activate
-          pytest -vv --cov=aio_taginfo/ --cov-report=xml
+        run: poetry run pytest -vv --cov=aio_taginfo/ --cov-report=xml
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v3
-        env:
-          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
 
   lint:
     name: Lint package (3.9)
@@ -113,50 +79,29 @@ jobs:
 
       - name: Install Poetry
         uses: snok/install-poetry@v1
-        with:
-          virtualenvs-create: true
-          virtualenvs-in-project: true
-          installer-parallel: true
 
       - name: Set up Python 3.9
         uses: actions/setup-python@v4
         with:
           python-version: 3.9
           cache: 'poetry'
+          cache-dependency-path: poetry.lock
 
-      - name: Load cached venv
-        id: cached-poetry-dependencies
-        uses: actions/cache@v3
-        with:
-          path: .venv
-          key: venv-${{ runner.os }}-3.9-${{ hashFiles('**/poetry.lock') }}
 
       - name: Check if pyproject.toml consistent with poetry.lock
         run: poetry check --lock --no-interaction
 
-      - name: Install dependencies
-        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
-        run: |
-          source .venv/bin/activate
-          poetry install --all-extras --no-interaction --no-root
-
-      - name: Install library
+      - name: Install dependencies & library
         run: poetry install --all-extras --no-interaction
 
       - name: Check formatting with black
-        run: |
-          source .venv/bin/activate
-          black --check aio_taginfo/
+        run: poetry run black --check aio_taginfo/
 
       - name: Lint with Ruff
-        run: |
-          source .venv/bin/activate
-          ruff check aio_taginfo/
+        run: poetry run ruff check aio_taginfo/
 
       - name: Check types with mypy
-        run: |
-          source .venv/bin/activate
-          mypy aio_taginfo/
+        run: poetry run mypy aio_taginfo/
         continue-on-error: true
 
   publish-package:
@@ -196,33 +141,17 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: 3.9
-          cache: 'pip'
+          cache: 'poetry'
+          cache-dependency-path: poetry.lock
 
       - name: Install Poetry
         uses: snok/install-poetry@v1
-        with:
-          virtualenvs-create: true
-          virtualenvs-in-project: true
-          installer-parallel: true
 
-      - name: Load cached venv
-        id: cached-poetry-dependencies
-        uses: actions/cache@v3
-        with:
-          path: .venv
-          key: venv-${{ runner.os }}-3.9-${{ hashFiles('**/poetry.lock') }}
-
-      - name: Install dependencies
-        if: steps.cached-poetry-dependencies.outputs.cache-hit != 'true'
-        run: poetry install --all-extras --no-interaction --no-root
-
-      - name: Install library
+      - name: Install dependencies & library
         run: poetry install --all-extras --no-interaction
 
       - name: Generate docs with pdoc
-        run: |
-          source .venv/bin/activate
-          pdoc -o ./doc aio_taginfo/
+        run: poetry run pdoc -o ./doc aio_taginfo/
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
