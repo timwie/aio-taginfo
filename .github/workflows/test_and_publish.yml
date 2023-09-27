@@ -27,13 +27,7 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
           cache: 'poetry'
-
-      - name: Load cached venv
-        id: cached-poetry-dependencies
-        uses: actions/cache@v3
-        with:
-          path: .venv
-          key: venv-${{ runner.os }}-${{ matrix.python-version }}-${{ hashFiles('**/poetry.lock') }}
+          cache-dependency-path: poetry.lock
 
       - name: Install dependencies & library
         run: poetry install --all-extras --no-interaction
@@ -86,7 +80,6 @@ jobs:
           python-version: 3.9
           cache: 'poetry'
           cache-dependency-path: poetry.lock
-
 
       - name: Check if pyproject.toml consistent with poetry.lock
         run: poetry check --lock --no-interaction
