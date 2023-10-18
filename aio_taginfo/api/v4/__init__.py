@@ -2,7 +2,7 @@
 
 from datetime import datetime
 from enum import Enum
-from typing import Generic, Optional, TypeVar
+from typing import Generic, TypeVar
 
 from pydantic import Field, HttpUrl, model_validator
 from pydantic.dataclasses import dataclass
@@ -40,8 +40,8 @@ class Response(Generic[T]):
     data_until: datetime = Field(repr=False, frozen=True)
     url: HttpUrl = Field(repr=False, frozen=True)
     total: int = Field(ge=0, repr=True, frozen=True)
-    page: Optional[int] = Field(default=None, gt=0, repr=True, frozen=True)
-    rp: Optional[int] = Field(default=None, gt=0, repr=True, frozen=True)
+    page: int | None = Field(default=None, gt=0, repr=True, frozen=True)
+    rp: int | None = Field(default=None, gt=0, repr=True, frozen=True)
 
 
 @dataclass

@@ -3,7 +3,7 @@ from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
 from dataclasses import asdict, is_dataclass
 from enum import Enum
-from typing import Optional, TypeVar
+from typing import Any, TypeVar
 
 from aio_taginfo import __version__
 from aio_taginfo.api.v4 import PngResponse
@@ -19,7 +19,7 @@ from pydantic import TypeAdapter
 _URL_BASE = "https://taginfo.openstreetmap.org/api/4/"
 _DEFAULT_USER_AGENT = f"aio-taginfo/{__version__} (https://github.com/timwie/aio-taginfo)"
 
-T = TypeVar("T")
+T = TypeVar("T", bound=Any)
 
 
 def api_params(datacls: type[T], **kwargs) -> dict:
@@ -62,8 +62,8 @@ def _params_to_dict(obj: T) -> dict:
 async def api_get_json(
     path: str,
     cls: type[T],
-    session: Optional[ClientSession] = None,
-    params: Optional[dict] = None,
+    session: ClientSession | None = None,
+    params: dict | None = None,
 ) -> T:
     """
     Make a GET request to the taginfo API v4, and map to the given type.
@@ -97,8 +97,8 @@ async def api_get_json(
 
 async def api_get_png(
     path: str,
-    session: Optional[ClientSession] = None,
-    params: Optional[dict] = None,
+    session: ClientSession | None = None,
+    params: dict | None = None,
 ) -> "PngResponse":
     """
     Request a PNG image from the taginfo API v4.
@@ -128,9 +128,9 @@ async def api_get_png(
 async def _get(
     path: str,
     content_type: str,
-    session: Optional[ClientSession] = None,
-    params: Optional[dict] = None,
-    headers: Optional[LooseHeaders] = None,
+    session: ClientSession | None = None,
+    params: dict | None = None,
+    headers: LooseHeaders | None = None,
 ) -> AsyncIterator[ClientResponse]:
     url = urllib.parse.urljoin(_URL_BASE, path)
     assert url.startswith(_URL_BASE), "given 'path' cannot start with a '/'"

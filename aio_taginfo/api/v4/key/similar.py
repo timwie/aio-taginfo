@@ -1,7 +1,6 @@
 """`/api/v4/key/similar` endpoint."""
 
 from enum import Enum
-from typing import Optional
 
 from aio_taginfo.api.v4 import Response, SortOrder
 from aio_taginfo.api.v4._internal import api_get_json, api_params
@@ -45,7 +44,7 @@ class SimilarKeySorting(str, Enum):
 @dataclass
 class _Params:
     key: constr(min_length=1, strip_whitespace=True) = Field(repr=True, frozen=True)
-    query: Optional[constr(min_length=1, strip_whitespace=True)] = Field(repr=True, frozen=True)
+    query: constr(min_length=1, strip_whitespace=True) | None = Field(repr=True, frozen=True)
     sortname: SimilarKeySorting = Field(repr=True, frozen=True)
     sortorder: SortOrder = Field(repr=True, frozen=True)
     page: int = Field(gt=0, repr=True, frozen=True)
@@ -54,12 +53,12 @@ class _Params:
 
 async def call(  # noqa: PLR0913
     key: str,
-    query: Optional[str] = None,
+    query: str | None = None,
     sortname: SimilarKeySorting = SimilarKeySorting.OTHER_KEY,
     sortorder: SortOrder = SortOrder.ASC,
     page: int = 1,
     rp: int = 0,
-    session: Optional[ClientSession] = None,
+    session: ClientSession | None = None,
 ) -> Response[list["SimilarKey"]]:
     """
     Find keys that are similar to a given key.

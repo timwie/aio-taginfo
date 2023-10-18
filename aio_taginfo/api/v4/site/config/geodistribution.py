@@ -1,7 +1,5 @@
 """`/api/v4/site/geodistribution` endpoint."""
 
-from typing import Optional
-
 from aio_taginfo.api.v4._internal import api_get_json
 
 from aiohttp import ClientSession
@@ -9,7 +7,7 @@ from pydantic import Field
 from pydantic.dataclasses import dataclass
 
 
-async def call(session: Optional[ClientSession] = None) -> "SiteConfigGeodistribution":
+async def call(session: ClientSession | None = None) -> "SiteConfigGeodistribution":
     """
     Get information about the background map for distribution charts.
 

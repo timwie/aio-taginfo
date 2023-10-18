@@ -1,7 +1,5 @@
 """`/api/v4/key/` endpoints."""
 
-from typing import Optional
-
 from pydantic import Field
 from pydantic.dataclasses import dataclass
 
@@ -17,7 +15,7 @@ class PrevalentValue:
         fraction: Fraction of number of objects with this tag value compared to all objects
     """
 
-    value: Optional[str] = Field(min_length=1, repr=True, frozen=True)
+    value: str | None = Field(min_length=1, repr=True, frozen=True)
     count: int = Field(ge=0, repr=True, frozen=True)
     fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=True, frozen=True)
 

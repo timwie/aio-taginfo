@@ -1,7 +1,5 @@
 """`/api/v4/key/overview` endpoint."""
 
-from typing import Optional
-
 from aio_taginfo.api.v4 import ObjectType, PrintingDirection, Response
 from aio_taginfo.api.v4._internal import api_get_json, api_params
 from aio_taginfo.api.v4.key import PrevalentValue
@@ -27,7 +25,7 @@ class _Params:
 
 async def call(
     key: str,
-    session: Optional[ClientSession] = None,
+    session: ClientSession | None = None,
 ) -> Response["KeyOverview"]:
     """
     Show various data for given key.
@@ -116,12 +114,12 @@ class KeyOverview:
     """
 
     key: str = Field(min_length=1, repr=True, frozen=True)
-    users: int = Field(default=0, ge=0, repr=True, frozen=True)
     prevalent_values: list[PrevalentValue] = Field(repr=False, frozen=True)
     counts: list[KeyObjectCount] = Field(repr=False, frozen=True)
     description: dict[str, KeyDescription] = Field(repr=False, frozen=True)
     wiki_pages: list[KeyWikiPage] = Field(repr=False, frozen=True)
     has_map: bool = Field(repr=False, frozen=True)
+    users: int = Field(default=0, ge=0, repr=True, frozen=True)
     projects: int = Field(default=0, ge=0, repr=False, frozen=True)
 
 
