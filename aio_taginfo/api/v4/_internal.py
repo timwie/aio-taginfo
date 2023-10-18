@@ -42,7 +42,7 @@ def api_params(datacls: type[T], **kwargs) -> dict:
         raise TagInfoValueError(cause=err) from err
 
 
-def _params_to_dict(obj: T) -> dict:
+def _params_to_dict(obj: Any) -> dict:
     assert is_dataclass(type(obj))
 
     ok = (str, int, float, bool)

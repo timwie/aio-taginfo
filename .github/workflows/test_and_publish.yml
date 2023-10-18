@@ -96,6 +96,9 @@ jobs:
       - name: Check types with mypy
         run: poetry run mypy aio_taginfo/
 
+      - name: Check types with pyright
+        run: poetry run pyright aio_taginfo/
+
   publish-package:
     name: Publish new release on PyPI
     runs-on: ubuntu-latest

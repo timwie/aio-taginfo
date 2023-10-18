@@ -28,6 +28,7 @@ def lint(c: Context):
     """Run linter and type checker"""
     c.run("ruff check aio_taginfo/", echo=True, warn=True, pty=True)
     c.run("mypy aio_taginfo/", echo=True, warn=True, pty=True)
+    c.run("pyright aio_taginfo/", echo=True, warn=True, pty=True)
 
 @task
 def test(c: Context):
