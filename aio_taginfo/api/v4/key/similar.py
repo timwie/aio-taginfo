@@ -1,12 +1,13 @@
 """`/api/v4/key/similar` endpoint."""
 
 from enum import Enum
+from typing import Annotated
 
 from aio_taginfo.api.v4 import Response, SortOrder
 from aio_taginfo.api.v4._internal import api_get_json, api_params
 
 from aiohttp import ClientSession
-from pydantic import Field, constr
+from pydantic import Field, StringConstraints
 from pydantic.dataclasses import dataclass
 
 
@@ -43,8 +44,12 @@ class SimilarKeySorting(str, Enum):
 
 @dataclass
 class _Params:
-    key: constr(min_length=1, strip_whitespace=True) = Field(repr=True, frozen=True)
-    query: constr(min_length=1, strip_whitespace=True) | None = Field(repr=True, frozen=True)
+    key: Annotated[str, StringConstraints(min_length=1, strip_whitespace=True)] = Field(
+        repr=True, frozen=True
+    )
+    query: Annotated[str, StringConstraints(min_length=1, strip_whitespace=True)] | None = Field(
+        repr=True, frozen=True
+    )
     sortname: SimilarKeySorting = Field(repr=True, frozen=True)
     sortorder: SortOrder = Field(repr=True, frozen=True)
     page: int = Field(gt=0, repr=True, frozen=True)

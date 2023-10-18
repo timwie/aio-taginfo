@@ -1,17 +1,20 @@
 """`/api/v4/key/prevalent_values` endpoint."""
+from typing import Annotated
 
 from aio_taginfo.api.v4 import ObjectType, Response
 from aio_taginfo.api.v4._internal import api_get_json, api_params
 from aio_taginfo.api.v4.key import PrevalentValue
 
 from aiohttp import ClientSession
-from pydantic import Field, constr
+from pydantic import Field, StringConstraints
 from pydantic.dataclasses import dataclass
 
 
 @dataclass
 class _Params:
-    key: constr(min_length=1, strip_whitespace=True) = Field(repr=True, frozen=True)
+    key: Annotated[str, StringConstraints(min_length=1, strip_whitespace=True)] = Field(
+        repr=True, frozen=True
+    )
     min_fraction: float = Field(ge=0.01, le=1.0, allow_inf_nan=False, repr=True, frozen=True)
     filter: ObjectType = Field(repr=True, frozen=True)
 

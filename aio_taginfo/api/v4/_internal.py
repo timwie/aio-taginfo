@@ -12,7 +12,6 @@ from aio_taginfo.error import TagInfoCallError, TagInfoValidationError, TagInfoV
 import aiohttp
 import pydantic
 from aiohttp import ClientResponse, ClientSession
-from aiohttp.typedefs import LooseHeaders
 from pydantic import TypeAdapter
 
 
@@ -130,7 +129,7 @@ async def _get(
     content_type: str,
     session: ClientSession | None = None,
     params: dict | None = None,
-    headers: LooseHeaders | None = None,
+    headers: dict | None = None,
 ) -> AsyncIterator[ClientResponse]:
     url = urllib.parse.urljoin(_URL_BASE, path)
     assert url.startswith(_URL_BASE), "given 'path' cannot start with a '/'"

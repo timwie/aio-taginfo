@@ -95,7 +95,6 @@ jobs:
 
       - name: Check types with mypy
         run: poetry run mypy aio_taginfo/
-        continue-on-error: true
 
   publish-package:
     name: Publish new release on PyPI
