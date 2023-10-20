@@ -1,6 +1,31 @@
 A typed async client for the [taginfo] API, a system for finding and aggregating
-information about [OpenStreetMap] tags, and making it browsable and searchable.
+information about [OpenStreetMap]'s [tags], and making it browsable and searchable.
 
+This library makes use of [aiohttp] for requests, and [Pydantic] for parsing
+and validating the responses.
+
+[taginfo]: https://taginfo.openstreetmap.org
+[OpenStreetMap]: https://www.openstreetmap.org
+[tags]: https://wiki.openstreetmap.org/wiki/Tags
+[aiohttp]: https://docs.aiohttp.org/
+[Pydantic]: https://pydantic.dev/
+
+#### Contents
+- [Rationale](#rationale)
+- [Usage](#usage)
+  - [Example](#example)
+- [Endpoints](#endpoints)
+
+#### See also
+- An overview of modules, classes and functions can be found in the [API reference](https://www.timwie.dev/aio-taginfo/)
+- The version history is available in [CHANGELOG.md](https://github.com/timwie/aio-taginfo/blob/main/CHANGELOG.md)
+- The [taginfo website](https://taginfo.openstreetmap.org/),
+  its [API documentation](https://taginfo.openstreetmap.org/taginfo/apidoc),
+  and its [OSM Wiki page](https://wiki.openstreetmap.org/wiki/Taginfo)
+
+<br>
+
+## Rationale
 > OpenStreetMap uses tags to add meaning to geographic objects. There is no fixed
 > list of those tags. New tags can be invented and used as needed. Everybody can
 > come up with a new tag and add it to new or existing objects. This makes
@@ -21,14 +46,6 @@ information about [OpenStreetMap] tags, and making it browsable and searchable.
 > ways. The API is used internally for the web user interface and can also be used
 > by anybody who wants to integrate taginfo data into their websites or
 > applications.
-
-This library makes use of [aiohttp] for requests, and [Pydantic] for parsing
-and validating the responses.
-
-[taginfo]: https://taginfo.openstreetmap.org
-[OpenStreetMap]: https://www.openstreetmap.org
-[aiohttp]: https://docs.aiohttp.org/
-[Pydantic]: https://pydantic.dev/
 
 <br>
 
@@ -69,15 +86,18 @@ the same license as the OpenStreetMap data.
 [OpenStreetMap Foundation]: https://osmfoundation.org/
 [legal code]: https://opendatacommons.org/licenses/odbl/1.0/
 
+### Example
 Here is an example of an API request using this library:
 
 ```python
+from aio_taginfo import key_overview
+
 # either use a temporary session…
-response: Response[KeyOverview] = await aio_taginfo.key_overview(key="amenity")
+response: Response[KeyOverview] = await key_overview(key="amenity")
 
 # …or provide your own
 async with aiohttp.ClientSession() as session:
-    response: Response[KeyOverview] = await aio_taginfo.key_overview(key="amenity", session=session)
+    response: Response[KeyOverview] = await key_overview(key="amenity", session=session)
 ```
 
 <br>
