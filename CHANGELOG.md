@@ -4,7 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 <br>
 
-## Unreleased
+## [0.2.0] – 2023-10-20
 * Add Python 3.12 support
 * Drop Python 3.9 support
 * Increased `aiohttp` requirement to `~3.9.0b0`
@@ -22,3 +22,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   * `/api/4/site/config/geodistribution`
 
 [0.1.0]: https://github.com/timwie/aio-taginfo/releases/tag/v0.1.0
+[0.1.0]: https://github.com/timwie/aio-taginfo/releases/tag/v0.2.0
