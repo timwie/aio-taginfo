@@ -43,24 +43,27 @@ classifiers = [
 "Coverage" = "https://codecov.io/gh/timwie/aio-taginfo"
 
 [tool.poetry.dependencies]
-aiohttp = { version = "~3.9.0b0", extras = ["speedups"] }
-pydantic = "~2.4"
+aiohttp = { version = "~3.9.0rc0", extras = ["speedups"] }
+pydantic = "~2.5"
 python = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
-aioresponses = "^0.7.4"
-black = "^23.10.0"
+# TODO "aioresponses" is broken since 3.9.0b1
+#   https://github.com/pnuckowski/aioresponses/issues/247
+# aioresponses = "^0.7.4"
+aioresponses = { git = "https://github.com/JCHacking/aioresponses.git", branch = "fix_aiohttp3.9_writer_can_not_await" }
+black = "^23.11.0"
 codecov = "^2.1.13"
 invoke = "^2.2.0"
 isort = "^5.12.0"
-mypy = "^1.6.1"
+mypy = "^1.7.0"
 pdoc = "^14.1.0"
-pytest = "^7.4.2"
+pytest = "^7.4.3"
 pytest-asyncio = "^0.21.1"
 pytest-cov = "^4.1.0"
 pytest-randomly = "^3.15.0"
 ruff = "^0.1.1"
-pyright = "^1.1.332"
+pyright = "^1.1.335"
 
 [tool.ruff]
 # https://github.com/charliermarsh/ruff#configuration
