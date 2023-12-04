@@ -4,6 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 <br>
 
+## Unreleased
+* Increased `aiohttp` requirement to `~3.9`
+
+<br>
+
 ## [0.2.0] – 2023-10-20
 * Add Python 3.12 support
 * Drop Python 3.9 support
