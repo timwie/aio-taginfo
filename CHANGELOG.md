@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 * Increased `aiohttp` requirement to `~3.9`
+* Add `py.typed` to make the package PEP 561 compatible
 
 <br>
 
