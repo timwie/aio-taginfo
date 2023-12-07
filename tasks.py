@@ -24,7 +24,7 @@ def doco(c: Context):
 def fmt(c: Context):
     """Run code formatters"""
     c.run("isort aio_taginfo/ tests/ tasks.py", echo=True, pty=True)
-    c.run("black aio_taginfo/ tests/ tasks.py", echo=True, pty=True)
+    c.run("ruff format aio_taginfo/ tests/ tasks.py", echo=True, pty=True)
 
 
 @task

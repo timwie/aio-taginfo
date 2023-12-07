@@ -55,7 +55,7 @@ class PngResponse:
 
     data: bytes = Field(repr=False, frozen=True)
 
-    @model_validator(mode="after")
+    @model_validator(mode="after")  # pyright: ignore[reportGeneralTypeIssues]
     def post_root(self) -> "PngResponse":
         """Basic PNG validation by checking for magic bytes."""
         if not self.data.startswith(_PNG_MAGIC):
