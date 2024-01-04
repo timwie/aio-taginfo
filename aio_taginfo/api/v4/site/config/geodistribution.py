@@ -26,7 +26,7 @@ async def call(session: ClientSession | None = None) -> "SiteConfigGeodistributi
     )
 
 
-@dataclass
+@dataclass(kw_only=True)
 class SiteConfigGeodistribution:
     """
     Information about the background map for distribution charts.

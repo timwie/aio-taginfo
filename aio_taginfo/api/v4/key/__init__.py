@@ -4,7 +4,7 @@ from pydantic import Field
 from pydantic.dataclasses import dataclass
 
 
-@dataclass
+@dataclass(kw_only=True)
 class PrevalentValue:
     """
     One value of a given tag and the number of times it was used.

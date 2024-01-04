@@ -52,12 +52,12 @@ invoke = "^2.2.0"
 isort = "^5.13.2"
 mypy = "^1.8.0"
 pdoc = "^14.3.0"
-pytest = "^7.4.3"
+pytest = "^7.4.4"
 pytest-asyncio = "^0.23.2"
 pytest-cov = "^4.1.0"
 pytest-randomly = "^3.15.0"
 ruff = "^0.1.1"
-pyright = "^1.1.342"
+pyright = "^1.1.344"
 
 [tool.ruff]
 # https://github.com/charliermarsh/ruff#configuration

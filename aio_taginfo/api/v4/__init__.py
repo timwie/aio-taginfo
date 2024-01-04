@@ -22,7 +22,7 @@ __all__ = (
 T = TypeVar("T")
 
 
-@dataclass
+@dataclass(kw_only=True)
 class Response(Generic[T]):
     """
     JSON data response.
@@ -44,7 +44,7 @@ class Response(Generic[T]):
     rp: int | None = Field(default=None, gt=0, repr=True, frozen=True)
 
 
-@dataclass
+@dataclass(kw_only=True)
 class PngResponse:
     """
     PNG image response.

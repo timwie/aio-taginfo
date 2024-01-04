@@ -10,7 +10,7 @@ from pydantic import Field, StringConstraints
 from pydantic.dataclasses import dataclass
 
 
-@dataclass
+@dataclass(kw_only=True)
 class _Params:
     key: Annotated[str, StringConstraints(min_length=1, strip_whitespace=True)] = Field(
         repr=True, frozen=True

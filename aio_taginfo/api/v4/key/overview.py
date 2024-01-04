@@ -19,7 +19,7 @@ __all__ = (
 )
 
 
-@dataclass
+@dataclass(kw_only=True)
 class _Params:
     key: Annotated[str, StringConstraints(min_length=1, strip_whitespace=True)] = Field(
         repr=True, frozen=True
@@ -50,7 +50,7 @@ async def call(
     )
 
 
-@dataclass
+@dataclass(kw_only=True)
 class KeyObjectCount:
     """
     Usage statistic of a given key for a given type of object.
@@ -68,7 +68,7 @@ class KeyObjectCount:
     values: int = Field(ge=0, repr=True, frozen=True)
 
 
-@dataclass
+@dataclass(kw_only=True)
 class KeyDescription:
     """
     Description of a given key in some language.
@@ -82,7 +82,7 @@ class KeyDescription:
     dir: PrintingDirection = Field(repr=False, frozen=True)
 
 
-@dataclass
+@dataclass(kw_only=True)
 class KeyWikiPage:
     """
     Language code for which a wiki page about a given key are available.
@@ -100,7 +100,7 @@ class KeyWikiPage:
     dir: PrintingDirection = Field(repr=False, frozen=True)
 
 
-@dataclass
+@dataclass(kw_only=True)
 class KeyOverview:
     """
     Various data for a given key.

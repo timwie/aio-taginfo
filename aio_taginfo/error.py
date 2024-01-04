@@ -10,21 +10,21 @@ class TagInfoError(Exception):
     """Base class for taginfo API errors."""
 
 
-@dataclass
+@dataclass(kw_only=True)
 class TagInfoValueError(Exception):
     """Failed to validate given parameters; did not call the taginfo API."""
 
     cause: pydantic.ValidationError
 
 
-@dataclass
+@dataclass(kw_only=True)
 class TagInfoCallError(Exception):
     """Failed HTTP call to the taginfo API."""
 
     cause: aiohttp.ClientError
 
 
-@dataclass
+@dataclass(kw_only=True)
 class TagInfoValidationError(Exception):
     """
     Failed to validate the response of the taginfo API.

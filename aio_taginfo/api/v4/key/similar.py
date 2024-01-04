@@ -18,7 +18,7 @@ __all__ = (
 )
 
 
-@dataclass
+@dataclass(kw_only=True)
 class SimilarKey:
     """
     Result of a key that is similar to a given key.
@@ -42,7 +42,7 @@ class SimilarKeySorting(str, Enum):
     SIMILARITY = "similarity"
 
 
-@dataclass
+@dataclass(kw_only=True)
 class _Params:
     key: Annotated[str, StringConstraints(min_length=1, strip_whitespace=True)] = Field(
         repr=True, frozen=True
