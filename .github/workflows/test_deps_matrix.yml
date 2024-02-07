@@ -28,7 +28,7 @@ jobs:
       - name: Install dependencies & library
         run: |
           poetry install --no-interaction
-          poetry add aiohttp=~${{ matrix.pydantic }} --python="<=${{ matrix.python }}" --no-interaction
+          poetry add aiohttp=~${{ matrix.aiohttp }} --python="<=${{ matrix.python }}" --no-interaction
           poetry add pydantic=~${{ matrix.pydantic }} --python="<=${{ matrix.python }}" --no-interaction
 
       - name: Test with pytest
