@@ -5,7 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 <br>
 
 ## Unreleased
-* Increased `aiohttp` requirement to `~3.9`
+* Change `aiohttp` requirement to `^3.9` (from `~3.9.0b0`)
+* Change `pydantic` requirement to `^2.4` (from `~2.4`)
 * Add `py.typed` to make the package PEP 561 compatible
 
 <br>
@@ -28,4 +29,4 @@ This project adheres to [Semantic Versioning](http://semver.org/).
   * `/api/4/site/config/geodistribution`
 
 [0.1.0]: https://github.com/timwie/aio-taginfo/releases/tag/v0.1.0
-[0.1.0]: https://github.com/timwie/aio-taginfo/releases/tag/v0.2.0
+[0.2.0]: https://github.com/timwie/aio-taginfo/releases/tag/v0.2.0

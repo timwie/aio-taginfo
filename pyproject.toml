@@ -41,8 +41,8 @@ classifiers = [
 "Coverage" = "https://codecov.io/gh/timwie/aio-taginfo"
 
 [tool.poetry.dependencies]
-aiohttp = { version = "~3.9", extras = ["speedups"] }
-pydantic = "~2.5"
+aiohttp = { version = "^3.9", extras = ["speedups"] }
+pydantic = "^2.4"  # TODO matrix CI tests: 2.4, 2.5, 2.6
 python = "^3.10"
 
 [tool.poetry.group.dev.dependencies]
@@ -51,34 +51,38 @@ codecov = "^2.1.13"
 invoke = "^2.2.0"
 isort = "^5.13.2"
 mypy = "^1.8.0"
-pdoc = "^14.3.0"
-pytest = "^7.4.4"
-pytest-asyncio = "^0.23.2"
+pdoc = "^14.4.0"
+pytest = "^8.0.0"
+pytest-asyncio = "^0.23.5a0"
 pytest-cov = "^4.1.0"
 pytest-randomly = "^3.15.0"
-ruff = "^0.1.1"
-pyright = "^1.1.344"
+ruff = "^0.2.1"
+pyright = "^1.1.350"
 
 [tool.ruff]
-# https://github.com/charliermarsh/ruff#configuration
-# https://beta.ruff.rs/docs/rules/
+# https://docs.astral.sh/ruff/settings/
+# https://docs.astral.sh/ruff/rules/
 line-length = 100
 target-version = "py310"
+
+[tool.ruff.lint]
 select = [
     "F", "E", "W", "N", "D", "UP",
     "ANN", "S", "B", "C4", "EM", "SIM", "ARG",
-    "PL", "TRY", "PERF", "RUF"
+    "PL", "TRY", "PERF", "RUF",
+    "FBT", "PTH", "DTZ",
 ]
 ignore = [
+    "S101",
     "D105", "D107", "D203", "D212",
     "ANN003", "ANN101", "ANN102", "ANN401",
     "C408",
     "PLR2004", "PLW2901",
     "TRY003",
-    "S101",
+    "UP015",
 ]
 
-[tool.ruff.pydocstyle]
+[tool.ruff.lint.pydocstyle]
 convention = "google"
 
 [tool.black]

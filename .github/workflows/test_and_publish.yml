@@ -23,7 +23,7 @@ jobs:
         uses: snok/install-poetry@v1
 
       - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
           cache: 'poetry'
@@ -49,7 +49,7 @@ jobs:
         uses: snok/install-poetry@v1
 
       - name: Set up Python 3.10
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.10"
           cache: 'poetry'
@@ -75,7 +75,7 @@ jobs:
         uses: snok/install-poetry@v1
 
       - name: Set up Python 3.10
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.10"
           cache: 'poetry'
@@ -136,7 +136,7 @@ jobs:
         uses: snok/install-poetry@v1
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: "3.10"
           cache: 'poetry'
@@ -149,13 +149,13 @@ jobs:
         run: poetry run pdoc -o ./doc aio_taginfo/
 
       - name: Setup Pages
-        uses: actions/configure-pages@v3
+        uses: actions/configure-pages@v4
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@v3
         with:
           path: './doc'
 
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v4
