@@ -1,4 +1,5 @@
 """`/api/v4/key/overview` endpoint."""
+
 from typing import Annotated
 
 from aio_taginfo.api.v4 import ObjectType, PrintingDirection, Response

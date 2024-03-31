@@ -9,8 +9,8 @@ from pydantic.dataclasses import dataclass
 
 
 __all__ = (
-    "key",
-    "site",
+    "key",  # pyright: ignore[reportUnsupportedDunderAll]
+    "site",  # pyright: ignore[reportUnsupportedDunderAll]
     "Response",
     "PngResponse",
     "SortOrder",

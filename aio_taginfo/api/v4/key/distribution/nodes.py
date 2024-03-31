@@ -1,4 +1,5 @@
 """`/api/v4/key/distribution/nodes` endpoint."""
+
 from typing import Annotated
 
 from aio_taginfo.api.v4 import PngResponse
@@ -11,9 +12,9 @@ from pydantic.dataclasses import dataclass
 
 @dataclass(kw_only=True)
 class _Params:
-    key: Annotated[
-        str, StringConstraints(min_length=1, strip_whitespace=True, strict=True)
-    ] = Field(repr=True, frozen=True)
+    key: Annotated[str, StringConstraints(min_length=1, strip_whitespace=True, strict=True)] = (
+        Field(repr=True, frozen=True)
+    )
 
 
 async def call(key: str, session: ClientSession | None = None) -> PngResponse:

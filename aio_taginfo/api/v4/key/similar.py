@@ -56,7 +56,7 @@ class _Params:
     rp: int = Field(ge=0, repr=True, frozen=True)
 
 
-async def call(  # noqa: PLR0913
+async def call(
     key: str,
     query: str | None = None,
     sortname: SimilarKeySorting = SimilarKeySorting.OTHER_KEY,

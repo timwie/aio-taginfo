@@ -11,16 +11,20 @@ All the calls are re-exported here at the top level for convenience.
 * ``aio_taginfo.api.v4.key.similar``
 * ``aio_taginfo.api.v4.site.config.geodistribution``
 """
+
 import importlib.metadata
 
 
 __version__: str = importlib.metadata.version("aio-taginfo")
 
+# we add this to all modules for pdoc;
+# see https://pdoc.dev/docs/pdoc.html#use-numpydoc-or-google-docstrings
 __docformat__ = "google"
 
+# we also use __all__ in all modules for pdoc; this lets us control the order
 __all__ = (
-    "api",
-    "error",
+    "api",  # pyright: ignore[reportUnsupportedDunderAll]
+    "error",  # pyright: ignore[reportUnsupportedDunderAll]
     "key_distribution_nodes",
     "key_overview",
     "key_prevalent_values",
