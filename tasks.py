@@ -28,6 +28,13 @@ def fmt(c: Context):
 
 
 @task
+def install(c: Context):
+    """Install all dependencies"""
+    c.run("poetry lock --no-update", echo=True, pty=True)
+    c.run("poetry install", echo=True, pty=True)
+
+
+@task
 def lint(c: Context):
     """Run linter and type checker"""
     c.run("ruff check aio_taginfo/", echo=True, warn=True, pty=True)
