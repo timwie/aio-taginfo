@@ -64,7 +64,7 @@ async def call(
     page: int = 1,
     rp: int = 0,
     session: ClientSession | None = None,
-) -> Response[list["SimilarKey"]]:
+) -> Response[list[SimilarKey]]:
     """
     Find keys that are similar to a given key.
 

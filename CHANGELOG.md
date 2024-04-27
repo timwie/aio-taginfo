@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 <br>
 
 ## Unreleased
+* Implement `/api/4/tags/popular` endpoint
 * Relax `aiohttp` requirement to `^3.9` (from `~3.9.0b0`)
 * Relax `pydantic` requirement to `^2.4` (from `~2.4`)
 * Add `py.typed` to make the package PEP 561 compatible

@@ -4,6 +4,7 @@ from aio_taginfo.api.v4.key import PrevalentValue
 from aio_taginfo.api.v4.key.overview import KeyOverview, Response
 from aio_taginfo.api.v4.key.similar import SimilarKey
 from aio_taginfo.api.v4.site.config.geodistribution import SiteConfigGeodistribution
+from aio_taginfo.api.v4.tags.popular import PopularTag
 
 import pytest
 from pydantic import TypeAdapter, ValidationError
@@ -72,3 +73,12 @@ def test_key_similar():
     type_adapter = TypeAdapter(Response[list[SimilarKey]])
     response = type_adapter.validate_json(response_str, strict=True)
     assert response.data[0].other_key == "FIXME:highway"
+
+
+def test_tags_popular():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "tags_popular.json"
+    response_str = data_file.read_text()
+    type_adapter = TypeAdapter(Response[list[PopularTag]])
+    response = type_adapter.validate_json(response_str, strict=True)
+    assert response.data[0].key == "building"

@@ -151,6 +151,6 @@ This library is in early development and most endpoints are still missing.
 |   | `/api/4/tag/stats`                   | `Response[list[T]](page=None)` |
 |   | `/api/4/tag/wiki_pages`              | `Response[list[T]](page=None)` |
 |   | `/api/4/tags/list`                   | `Response[list[T]](page=None)` |
-|   | `/api/4/tags/popular`                | `Response[list[T]]`            |
+| ✅ | `/api/4/tags/popular`                | `Response[list[T]]`            |
 |   | `/api/4/unicode/characters`          | `Response[list[T]](page=None)` |
 |   | `/api/4/wiki/languages`              | `Response[list[T]](page=None)` |

@@ -6,9 +6,11 @@ from aio_taginfo import (
     key_prevalent_values,
     key_similar,
     site_config_geodistribution,
+    tags_popular,
 )
 from aio_taginfo.api.v4 import SortOrder
 from aio_taginfo.api.v4.key.similar import SimilarKeySorting
+from aio_taginfo.api.v4.tags.popular import PopularTagSorting
 from aio_taginfo.error import TagInfoCallError, TagInfoValidationError, TagInfoValueError
 
 import pytest
@@ -189,3 +191,52 @@ async def test_key_similar():
 
     with pytest.raises(TagInfoValueError):
         await key_similar(key="highway", rp=-1)
+
+
+@pytest.mark.asyncio
+async def test_tags_popular():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "tags_popular.json"
+    response_str = data_file.read_text()
+
+    base_url = "https://taginfo.openstreetmap.org/api/4/tags/popular"
+
+    with aioresponses() as m:
+        m.get(
+            url=f"{base_url}?page=1&rp=0&sortname=count_all&sortorder=desc",
+            body=response_str,
+            status=200,
+            content_type="application/json",
+        )
+        response = await tags_popular()
+        assert response.data[0].key == "building"
+
+        m.get(
+            url=f"{base_url}?page=2&query=fixme&rp=3&sortname=tag&sortorder=asc",
+            body=response_str,
+            status=200,
+            content_type="application/json",
+        )
+        response = await tags_popular(
+            query="fixme",
+            sortname=PopularTagSorting.TAG,
+            sortorder=SortOrder.ASC,
+            page=2,
+            rp=3,
+        )
+        assert response.data[0].key == "building"
+
+    with pytest.raises(TagInfoValueError):
+        await tags_popular(query="   ")
+
+    with pytest.raises(TagInfoValueError):
+        await tags_popular(sortname="something else")
+
+    with pytest.raises(TagInfoValueError):
+        await tags_popular(sortorder="something else")
+
+    with pytest.raises(TagInfoValueError):
+        await tags_popular(page=-1)
+
+    with pytest.raises(TagInfoValueError):
+        await tags_popular(rp=-1)
