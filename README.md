@@ -1,6 +1,12 @@
 A typed async client for the [taginfo] API, a system for finding and aggregating
 information about [OpenStreetMap]'s [tags], and making it browsable and searchable.
 
+A tag consists of two items, a key and a value. For instance,
+[`highway=residential`](https://wiki.openstreetmap.org/wiki/Tag:highway%3Dresidential)
+is a tag with a key of [`highway`](https://wiki.openstreetmap.org/wiki/Key:highway)
+and a value of `residential`, which should be used on a
+[way](https://wiki.openstreetmap.org/wiki/Way) to indicate a road along which people live.
+
 This library makes use of [aiohttp] for requests, and [Pydantic] for parsing
 and validating the responses.
 
