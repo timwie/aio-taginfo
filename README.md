@@ -1,14 +1,6 @@
 A typed async client for the [taginfo] API, a system for finding and aggregating
 information about [OpenStreetMap]'s [tags], and making it browsable and searchable.
 
-A tag consists of two items, a key and a value. For instance,
-[`highway=residential`](https://wiki.openstreetmap.org/wiki/Tag:highway%3Dresidential)
-is a tag with a key of [`highway`](https://wiki.openstreetmap.org/wiki/Key:highway)
-and a value of `residential`, which should be used on a
-[way](https://wiki.openstreetmap.org/wiki/Way) to indicate a road along which people live.
-
-![Example of a way with its tags](.github/overpass-turbo-tags-example.png)
-
 This library makes use of [aiohttp] for requests, and [Pydantic] for parsing
 and validating the responses.
 
@@ -33,6 +25,15 @@ and validating the responses.
 <br>
 
 ## Rationale
+A tag consists of two items, a key and a value. For instance,
+[`highway=residential`](https://wiki.openstreetmap.org/wiki/Tag:highway%3Dresidential)
+is a tag with a key of [`highway`](https://wiki.openstreetmap.org/wiki/Key:highway)
+and a value of `residential`, which should be used on a
+[way](https://wiki.openstreetmap.org/wiki/Way) to indicate a road along which people live.
+
+![Example of a way with its tags](.github/overpass-turbo-tags-example.png)
+
+Now, why is there need for the taginfo API?
 > OpenStreetMap uses tags to add meaning to geographic objects. There is no fixed
 > list of those tags. New tags can be invented and used as needed. Everybody can
 > come up with a new tag and add it to new or existing objects. This makes
@@ -53,6 +54,8 @@ and validating the responses.
 <br>
 
 ## Usage
+Before using this library, please be aware of the general rules when using the taginfo API:
+
 > Taginfo has an API that lets you access the contents of its databases in several
 > ways. The API is used internally for the web user interface and can also be used
 > by anybody who wants to integrate taginfo data into their websites or
@@ -104,7 +107,8 @@ from aio_taginfo import key_overview
 response: Response[KeyOverview] = await key_overview(key="amenity")
 
 # …or provide your own
-async with aiohttp.ClientSession() as session:
+headers = {"User-Agent": "your contact info"}
+async with aiohttp.ClientSession(headers=headers) as session:
     response: Response[KeyOverview] = await key_overview(key="amenity", session=session)
 ```
 
