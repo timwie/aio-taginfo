@@ -20,7 +20,8 @@ and validating the responses.
 - The version history is available in [CHANGELOG.md](https://github.com/timwie/aio-taginfo/blob/main/CHANGELOG.md)
 - The [taginfo website](https://taginfo.openstreetmap.org/),
   its [API documentation](https://taginfo.openstreetmap.org/taginfo/apidoc),
-  and its [OSM Wiki page](https://wiki.openstreetmap.org/wiki/Taginfo)
+  its [OSM Wiki page](https://wiki.openstreetmap.org/wiki/Taginfo),
+  and its [repository](https://github.com/taginfo/taginfo)
 
 <br>
 
