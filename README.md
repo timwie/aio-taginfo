@@ -13,7 +13,6 @@ and validating the responses.
 #### Contents
 - [Rationale](#rationale)
 - [Usage](#usage)
-  - [Example](#example)
 - [Endpoints](#endpoints)
 
 #### See also
@@ -42,14 +41,15 @@ and validating the responses.
 > to bring together all information about tags to help you understand how they are
 > used and what they mean.
 
+
+<br>
+
+## Usage
 > Taginfo has an API that lets you access the contents of its databases in several
 > ways. The API is used internally for the web user interface and can also be used
 > by anybody who wants to integrate taginfo data into their websites or
 > applications.
 
-<br>
-
-## Usage
 > The API is intended for the use of the OpenStreetMap community. Do not use it
 > for other services. If you are not sure, ask on the mailing list (see below).
 > 
@@ -100,55 +100,57 @@ async with aiohttp.ClientSession() as session:
     response: Response[KeyOverview] = await key_overview(key="amenity", session=session)
 ```
 
+Most endpoints will return a [`Response[T]`](https://www.timwie.dev/aio-taginfo/aio_taginfo/api/v4.html#Response),
+or `Response[list[T]]` for those returning multiple or paginated items.
+
 <br>
 
 ## Endpoints
-This library is early in development and most endpoints are still missing.
+This library is in early development and most endpoints are still missing.
 
-
-|     | Endpoint                             | Schema    |
-|----:|--------------------------------------|-----------|
-|     | `/api/4/key/chronology`              | multiple  |
-|     | `/api/4/key/combinations`            | paginated |
-|   ✅ | `/api/4/key/distribution/nodes`      | image     |
-|     | `/api/4/key/distribution/ways`       | image     |
-|   ✅ | `/api/4/key/overview`                | single    |
-|   ✅ | `/api/4/key/prevalent_values`        | multiple  |
-|     | `/api/4/key/projects`                | paginated |
-|   ✅ | `/api/4/key/similar`                 | paginated |
-|     | `/api/4/key/stats`                   | multiple  |
-|     | `/api/4/key/values`                  | paginated |
-|     | `/api/4/key/wiki_pages`              | multiple  |
-|     | `/api/4/keys/all`                    | paginated |
-|     | `/api/4/keys/similar`                | paginated |
-|     | `/api/4/keys/wiki_pages`             | paginated |
-|     | `/api/4/keys/without_wiki_page`      | paginated |
-|     | `/api/4/project/icon`                | image     |
-|     | `/api/4/project/tags`                | paginated |
-|     | `/api/4/projects/all`                | paginated |
-|     | `/api/4/projects/keys`               | paginated |
-|     | `/api/4/projects/tags`               | paginated |
-|     | `/api/4/relation/projects`           | paginated |
-|     | `/api/4/relation/roles`              | paginated |
-|     | `/api/4/relation/stats`              | multiple  |
-|     | `/api/4/relation/wiki_pages`         | multiple  |
-|     | `/api/4/relations/all`               | paginated |
-|     | `/api/4/search/by_key_and_value`     | paginated |
-|     | `/api/4/search/by_keyword`           | paginated |
-|     | `/api/4/search/by_role`              | paginated |
-|     | `/api/4/search/by_value`             | paginated |
-|   ✅ | `/api/4/site/config/geodistribution` | other     |
-|     | `/api/4/site/info`                   | other     |
-|     | `/api/4/site/sources`                | other     |
-|     | `/api/4/tag/chronology`              | multiple  |
-|     | `/api/4/tag/combinations`            | paginated |
-|     | `/api/4/tag/distribution/nodes`      | image     |
-|     | `/api/4/tag/distribution/ways`       | image     |
-|     | `/api/4/tag/overview`                | single    |
-|     | `/api/4/tag/projects`                | paginated |
-|     | `/api/4/tag/stats`                   | multiple  |
-|     | `/api/4/tag/wiki_pages`              | multiple  |
-|     | `/api/4/tags/list`                   | multiple  |
-|     | `/api/4/tags/popular`                | paginated |
-|     | `/api/4/unicode/characters`          | multiple  |
-|     | `/api/4/wiki/languages`              | multiple  |
+|   | Endpoint                             | Schema                         |
+|--:|--------------------------------------|--------------------------------|
+|   | `/api/4/key/chronology`              | `Response[list[T]](page=None)` |
+|   | `/api/4/key/combinations`            | `Response[list[T]]`            |
+| ✅ | `/api/4/key/distribution/nodes`      | `PngResponse`                  |
+|   | `/api/4/key/distribution/ways`       | `PngResponse`                  |
+| ✅ | `/api/4/key/overview`                | `Response[T]`                  |
+| ✅ | `/api/4/key/prevalent_values`        | `Response[list[T]](page=None)` |
+|   | `/api/4/key/projects`                | `Response[list[T]]`            |
+| ✅ | `/api/4/key/similar`                 | `Response[list[T]]`            |
+|   | `/api/4/key/stats`                   | `Response[list[T]](page=None)` |
+|   | `/api/4/key/values`                  | `Response[list[T]]`            |
+|   | `/api/4/key/wiki_pages`              | `Response[list[T]](page=None)` |
+|   | `/api/4/keys/all`                    | `Response[list[T]]`            |
+|   | `/api/4/keys/similar`                | `Response[list[T]]`            |
+|   | `/api/4/keys/wiki_pages`             | `Response[list[T]]`            |
+|   | `/api/4/keys/without_wiki_page`      | `Response[list[T]]`            |
+|   | `/api/4/project/icon`                | `PngResponse`                  |
+|   | `/api/4/project/tags`                | `Response[list[T]]`            |
+|   | `/api/4/projects/all`                | `Response[list[T]]`            |
+|   | `/api/4/projects/keys`               | `Response[list[T]]`            |
+|   | `/api/4/projects/tags`               | `Response[list[T]]`            |
+|   | `/api/4/relation/projects`           | `Response[list[T]]`            |
+|   | `/api/4/relation/roles`              | `Response[list[T]]`            |
+|   | `/api/4/relation/stats`              | `Response[list[T]](page=None)` |
+|   | `/api/4/relation/wiki_pages`         | `Response[list[T]](page=None)` |
+|   | `/api/4/relations/all`               | `Response[list[T]]`            |
+|   | `/api/4/search/by_key_and_value`     | `Response[list[T]]`            |
+|   | `/api/4/search/by_keyword`           | `Response[list[T]]`            |
+|   | `/api/4/search/by_role`              | `Response[list[T]]`            |
+|   | `/api/4/search/by_value`             | `Response[list[T]]`            |
+| ✅ | `/api/4/site/config/geodistribution` | `T`                            |
+|   | `/api/4/site/info`                   | `T`                            |
+|   | `/api/4/site/sources`                | `T`                            |
+|   | `/api/4/tag/chronology`              | `Response[list[T]](page=None)` |
+|   | `/api/4/tag/combinations`            | `Response[list[T]]`            |
+|   | `/api/4/tag/distribution/nodes`      | `PngResponse`                  |
+|   | `/api/4/tag/distribution/ways`       | `PngResponse`                  |
+|   | `/api/4/tag/overview`                | `Response[T]`                  |
+|   | `/api/4/tag/projects`                | `Response[list[T]]`            |
+|   | `/api/4/tag/stats`                   | `Response[list[T]](page=None)` |
+|   | `/api/4/tag/wiki_pages`              | `Response[list[T]](page=None)` |
+|   | `/api/4/tags/list`                   | `Response[list[T]](page=None)` |
+|   | `/api/4/tags/popular`                | `Response[list[T]]`            |
+|   | `/api/4/unicode/characters`          | `Response[list[T]](page=None)` |
+|   | `/api/4/wiki/languages`              | `Response[list[T]](page=None)` |
