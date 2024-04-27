@@ -7,6 +7,8 @@ is a tag with a key of [`highway`](https://wiki.openstreetmap.org/wiki/Key:highw
 and a value of `residential`, which should be used on a
 [way](https://wiki.openstreetmap.org/wiki/Way) to indicate a road along which people live.
 
+![Example of a way with its tags](.github/overpass-turbo-tags-example.png)
+
 This library makes use of [aiohttp] for requests, and [Pydantic] for parsing
 and validating the responses.
 
