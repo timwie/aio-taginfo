@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "aio-taginfo"
-version = "0.3.0"
+version = "0.3.0.post1"
 description = "Async client for the OpenStreetMap taginfo API"
 authors = ["Tim Wiechers <mail@timwie.dev>"]
 license = "MIT"
