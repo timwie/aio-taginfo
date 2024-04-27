@@ -32,7 +32,7 @@ is a tag with a key of [`highway`](https://wiki.openstreetmap.org/wiki/Key:highw
 and a value of `residential`, which should be used on a
 [way](https://wiki.openstreetmap.org/wiki/Way) to indicate a road along which people live.
 
-![Example of a way with its tags](https://github.com/timwie/aio-taginfo/blob/main/.github/overpass-turbo-tags-example.png)
+![Example of a way with its tags](https://raw.githubusercontent.com/timwie/aio-taginfo/main/.github/overpass-turbo-tags-example.png)
 
 Now, why is there need for the taginfo API?
 > OpenStreetMap uses tags to add meaning to geographic objects. There is no fixed
