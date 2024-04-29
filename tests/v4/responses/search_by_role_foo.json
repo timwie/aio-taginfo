@@ -1,0 +1,59 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/search/by_role?query=foo&page=1&rp=10",
+  "data_until": "2024-04-28T00:59:42Z",
+  "page": 1,
+  "rp": 10,
+  "total": 28,
+  "data": [
+    {
+      "rtype": "site",
+      "role": "food court",
+      "count_all": 1
+    },
+    {
+      "rtype": "multipolygon",
+      "role": "footway",
+      "count_all": 1
+    },
+    {
+      "rtype": "multipolygon",
+      "role": "name=Canton Food Centre shop=greengrocer",
+      "count_all": 1
+    },
+    {
+      "rtype": "route",
+      "role": "Footway to Evacuation Pick up point to West Mega Dike Portion",
+      "count_all": 1
+    },
+    {
+      "rtype": "route",
+      "role": "Footway to West Mega Dike",
+      "count_all": 1
+    },
+    {
+      "rtype": "route",
+      "role": "permissive bridleway and public footpath",
+      "count_all": 1
+    },
+    {
+      "rtype": "route",
+      "role": "footpath on track",
+      "count_all": 1
+    },
+    {
+      "rtype": "route",
+      "role": "footway orward",
+      "count_all": 1
+    },
+    {
+      "rtype": "bridge",
+      "role": "footway",
+      "count_all": 1
+    },
+    {
+      "rtype": "public_transport",
+      "role": "Food",
+      "count_all": 1
+    }
+  ]
+}

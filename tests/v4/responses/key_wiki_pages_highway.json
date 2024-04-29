@@ -1,0 +1,1134 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/key/wiki_pages?key=highway",
+  "data_until": "2024-04-28T00:59:42Z",
+  "total": 29,
+  "data": [
+    {
+      "lang": "ar",
+      "dir": "auto",
+      "language": "العربية",
+      "language_en": "Arabic",
+      "title": "Ar:Key:highway",
+      "description": "علامة الطريق السريع \"highway\" هي العلامة الأساسية المستخدمة لأي نوع من الشوارع أو الطرق.",
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "maxwidth",
+        "oneway",
+        "width"
+      ],
+      "tags_linked": [
+        "access=yes",
+        "highway",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "maxwidth",
+        "oneway",
+        "width"
+      ],
+      "status": null
+    },
+    {
+      "lang": "br",
+      "dir": "auto",
+      "language": null,
+      "language_en": null,
+      "title": "Br:Key:highway",
+      "description": "",
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [],
+      "tags_combination": [],
+      "tags_linked": [],
+      "status": null
+    },
+    {
+      "lang": "cs",
+      "dir": "ltr",
+      "language": "Čeština",
+      "language_en": "Czech",
+      "title": "Cs:Key:highway",
+      "description": "Klíč highway je hlavní značkou používanou pro označení pozemních komunikací.",
+      "image": {
+        "title": "File:Motorway-DE-A4-Aachen.JPG",
+        "width": 1208,
+        "height": 670,
+        "mime": "image/jpeg",
+        "image_url": "https://wiki.openstreetmap.org/w/images/d/d4/Motorway-DE-A4-Aachen.JPG",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/d/d4/Motorway-DE-A4-Aachen.JPG/",
+        "thumb_url_suffix": "px-Motorway-DE-A4-Aachen.JPG"
+      },
+      "on_node": true,
+      "on_way": true,
+      "on_area": true,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [
+        "access",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "maxwidth",
+        "oneway"
+      ],
+      "tags_linked": [
+        "access",
+        "access=yes",
+        "highway",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "maxwidth",
+        "oneway"
+      ],
+      "status": null
+    },
+    {
+      "lang": "de",
+      "dir": "ltr",
+      "language": "Deutsch",
+      "language_en": "German",
+      "title": "DE:Key:highway",
+      "description": "Highway ist das Haupt-Attribut für Straßen und Wege aller Art.",
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      },
+      "on_node": true,
+      "on_way": true,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [],
+      "tags_linked": [
+        "access",
+        "access=yes",
+        "highway",
+        "highway=residential",
+        "highway=tertiary",
+        "highway=trunk",
+        "highway=unclassified",
+        "lanes",
+        "maxheight",
+        "maxspeed",
+        "motor_vehicle",
+        "oneway=yes",
+        "surface",
+        "vehicle"
+      ],
+      "status": "approved"
+    },
+    {
+      "lang": "en",
+      "dir": "ltr",
+      "language": "English",
+      "language_en": "English",
+      "title": "Key:highway",
+      "description": "Used for roads and road-related facilities.",
+      "image": {
+        "title": "File:Roads in Switzerland (27965437018).jpg",
+        "width": 6000,
+        "height": 4000,
+        "mime": "image/jpeg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Roads_in_Switzerland_%2827965437018%29.jpg",
+        "thumb_url_prefix": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Roads_in_Switzerland_%2827965437018%29.jpg/",
+        "thumb_url_suffix": "px-Roads_in_Switzerland_%2827965437018%29.jpg"
+      },
+      "on_node": true,
+      "on_way": true,
+      "on_area": true,
+      "on_relation": false,
+      "tags_implies": [],
+      "tags_combination": [],
+      "tags_linked": [
+        "cycleway:left",
+        "cycleway:right",
+        "cycleway=opposite",
+        "cycleway=opposite_*",
+        "highway",
+        "highway=motorway",
+        "highway=motorway_link",
+        "highway=primary",
+        "highway=service",
+        "highway=tertiary",
+        "highway=track",
+        "highway=trunk",
+        "mountain_pass=yes",
+        "oneway:bicycle=no",
+        "surface",
+        "surface=asphalt",
+        "tracktype",
+        "tracktype=grade1"
+      ],
+      "status": "approved"
+    },
+    {
+      "lang": "es",
+      "dir": "ltr",
+      "language": "Español",
+      "language_en": "Spanish",
+      "title": "ES:Key:highway",
+      "description": "La etiqueta «highway» es la etiqueta principal que se usa para cualquier tipo de calle o vía.",
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [
+        "abutters",
+        "access",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway",
+        "width"
+      ],
+      "tags_linked": [
+        "abutters",
+        "access",
+        "access=yes",
+        "highway",
+        "highway=motorway",
+        "highway=motorway_link",
+        "highway=primary",
+        "highway=service",
+        "highway=tertiary",
+        "highway=track",
+        "highway=trunk",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway",
+        "surface",
+        "surface=asphalt",
+        "tracktype",
+        "tracktype=grade1",
+        "width"
+      ],
+      "status": "approved"
+    },
+    {
+      "lang": "et",
+      "dir": "auto",
+      "language": "Eesti",
+      "language_en": "Estonian",
+      "title": "Et:Key:highway",
+      "description": "''highway'' on ükskõik millise tänava või tee peamine märgis.",
+      "image": {
+        "title": "File:Motorway-DE-A4-Aachen.JPG",
+        "width": 1208,
+        "height": 670,
+        "mime": "image/jpeg",
+        "image_url": "https://wiki.openstreetmap.org/w/images/d/d4/Motorway-DE-A4-Aachen.JPG",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/d/d4/Motorway-DE-A4-Aachen.JPG/",
+        "thumb_url_suffix": "px-Motorway-DE-A4-Aachen.JPG"
+      },
+      "on_node": true,
+      "on_way": true,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [],
+      "tags_linked": [
+        "access",
+        "access=yes",
+        "lanes",
+        "maxheight",
+        "maxspeed",
+        "surface",
+        "width"
+      ],
+      "status": null
+    },
+    {
+      "lang": "fa",
+      "dir": "rtl",
+      "language": "فارسی",
+      "language_en": "Farsi",
+      "title": "Fa:Key:highway",
+      "description": "تگ highway تگ اصلی برای انواع خیابان یا جاده است.",
+      "image": {
+        "title": "File:Motorway-DE-A4-Aachen.JPG",
+        "width": 1208,
+        "height": 670,
+        "mime": "image/jpeg",
+        "image_url": "https://wiki.openstreetmap.org/w/images/d/d4/Motorway-DE-A4-Aachen.JPG",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/d/d4/Motorway-DE-A4-Aachen.JPG/",
+        "thumb_url_suffix": "px-Motorway-DE-A4-Aachen.JPG"
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [
+        "access",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway",
+        "width"
+      ],
+      "tags_linked": [
+        "access",
+        "access=yes",
+        "highway",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "motorway",
+        "oneway",
+        "service",
+        "width"
+      ],
+      "status": null
+    },
+    {
+      "lang": "fr",
+      "dir": "ltr",
+      "language": "Français",
+      "language_en": "French",
+      "title": "FR:Key:highway",
+      "description": "Le tag highway est le tag principal utilisé pour toutes sortes de rues et de routes.",
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [
+        "abutters",
+        "access",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway"
+      ],
+      "tags_linked": [
+        "abutters",
+        "access",
+        "access=yes",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway"
+      ],
+      "status": null
+    },
+    {
+      "lang": "hu",
+      "dir": "ltr",
+      "language": "Magyar",
+      "language_en": "Hungarian",
+      "title": "Hu:Key:highway",
+      "description": "Utcák és utak megadására használatos.",
+      "image": {
+        "title": "File:Motorway-DE-A4-Aachen.JPG",
+        "width": 1208,
+        "height": 670,
+        "mime": "image/jpeg",
+        "image_url": "https://wiki.openstreetmap.org/w/images/d/d4/Motorway-DE-A4-Aachen.JPG",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/d/d4/Motorway-DE-A4-Aachen.JPG/",
+        "thumb_url_suffix": "px-Motorway-DE-A4-Aachen.JPG"
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [
+        "abutters",
+        "access",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway"
+      ],
+      "tags_linked": [
+        "abutters",
+        "access",
+        "access=yes",
+        "highway",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway"
+      ],
+      "status": null
+    },
+    {
+      "lang": "hu",
+      "dir": "ltr",
+      "language": "Magyar",
+      "language_en": "Hungarian",
+      "title": "HU:Key:highway",
+      "description": "",
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [],
+      "tags_combination": [],
+      "tags_linked": [],
+      "status": null
+    },
+    {
+      "lang": "it",
+      "dir": "ltr",
+      "language": "Italiano",
+      "language_en": "Italian",
+      "title": "IT:Key:highway",
+      "description": "La chiave highway è quella principale per etichettare le strade.",
+      "image": {
+        "title": "File:Motorway-DE-A4-Aachen.JPG",
+        "width": 1208,
+        "height": 670,
+        "mime": "image/jpeg",
+        "image_url": "https://wiki.openstreetmap.org/w/images/d/d4/Motorway-DE-A4-Aachen.JPG",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/d/d4/Motorway-DE-A4-Aachen.JPG/",
+        "thumb_url_suffix": "px-Motorway-DE-A4-Aachen.JPG"
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [],
+      "tags_combination": [],
+      "tags_linked": [
+        "access",
+        "lanes",
+        "maxheight",
+        "maxspeed",
+        "surface",
+        "width"
+      ],
+      "status": null
+    },
+    {
+      "lang": "ja",
+      "dir": "ltr",
+      "language": "日本語",
+      "language_en": "Japanese",
+      "title": "JA:Key:highway",
+      "description": "highway タグは、あらゆる種類の通りや道などに使用される主要タグです。",
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [
+        "access",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway",
+        "width"
+      ],
+      "tags_linked": [
+        "access",
+        "access=yes",
+        "highway",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway",
+        "width"
+      ],
+      "status": "approved"
+    },
+    {
+      "lang": "ko",
+      "dir": "ltr",
+      "language": "한국어",
+      "language_en": "Korean",
+      "title": "Ko:Key:highway",
+      "description": "도로 태그는 모든 종류의 도로나 길을 나타낼 때 사용하는 중요 태그입니다.",
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [
+        "access",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "maxwidth",
+        "oneway",
+        "width"
+      ],
+      "tags_linked": [
+        "access",
+        "access=yes",
+        "highway",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "maxwidth",
+        "oneway",
+        "width"
+      ],
+      "status": null
+    },
+    {
+      "lang": "lv",
+      "dir": "ltr",
+      "language": "Latviešu Valoda",
+      "language_en": "Latvian",
+      "title": "Lv:Key:highway",
+      "description": "",
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [],
+      "tags_combination": [],
+      "tags_linked": [],
+      "status": null
+    },
+    {
+      "lang": "no",
+      "dir": "ltr",
+      "language": "Norsk",
+      "language_en": "Norwegian",
+      "title": "No:Key:highway",
+      "description": "Highway-taggen er den primære nøkkelen for alle slags stier eller veier",
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "maxwidth",
+        "oneway",
+        "width"
+      ],
+      "tags_linked": [
+        "access=yes",
+        "highway",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "maxwidth",
+        "oneway",
+        "width"
+      ],
+      "status": null
+    },
+    {
+      "lang": "oc",
+      "dir": "auto",
+      "language": "occitan",
+      "language_en": "Occitan",
+      "title": "Oc:Key:highway",
+      "description": "L'etiqueta ''highway'' s'emplega per tota mena de vias e camins.",
+      "image": {
+        "title": "File:Motorway-DE-A4-Aachen.JPG",
+        "width": 1208,
+        "height": 670,
+        "mime": "image/jpeg",
+        "image_url": "https://wiki.openstreetmap.org/w/images/d/d4/Motorway-DE-A4-Aachen.JPG",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/d/d4/Motorway-DE-A4-Aachen.JPG/",
+        "thumb_url_suffix": "px-Motorway-DE-A4-Aachen.JPG"
+      },
+      "on_node": true,
+      "on_way": true,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [
+        "abutters",
+        "access",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway"
+      ],
+      "tags_linked": [
+        "abutters",
+        "access",
+        "access=yes",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway"
+      ],
+      "status": null
+    },
+    {
+      "lang": "pl",
+      "dir": "ltr",
+      "language": "Polski",
+      "language_en": "Polish",
+      "title": "Pl:Key:highway",
+      "description": "Używany do określania dróg i obiektów związanych z drogami.",
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [],
+      "tags_combination": [],
+      "tags_linked": [
+        "area:highway",
+        "highway"
+      ],
+      "status": null
+    },
+    {
+      "lang": "pt",
+      "dir": "ltr",
+      "language": "Português",
+      "language_en": "Portuguese",
+      "title": "Pt:Key:highway",
+      "description": "A etiqueta ''highway'' (rodovia) serve para descrever o tipo de via, como uma autoestrada ou um caminho pedonal.",
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [
+        "abutters",
+        "access",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway"
+      ],
+      "tags_linked": [
+        "abutters",
+        "access",
+        "access=yes",
+        "highway=motorway",
+        "highway=primary",
+        "highway=residential",
+        "highway=secondary",
+        "highway=service",
+        "highway=tertiary",
+        "highway=trunk",
+        "highway=unclassified",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway"
+      ],
+      "status": "approved"
+    },
+    {
+      "lang": "pt-br",
+      "dir": "ltr",
+      "language": "Português do Brasil",
+      "language_en": "Brazilian Portuguese",
+      "title": "PT-br:Key:highway",
+      "description": "",
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [],
+      "tags_combination": [],
+      "tags_linked": [],
+      "status": null
+    },
+    {
+      "lang": "pt-br",
+      "dir": "ltr",
+      "language": "Português do Brasil",
+      "language_en": "Brazilian Portuguese",
+      "title": "Pt-br:Key:highway",
+      "description": "",
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [],
+      "tags_combination": [],
+      "tags_linked": [],
+      "status": null
+    },
+    {
+      "lang": "ru",
+      "dir": "ltr",
+      "language": "Русский",
+      "language_en": "Russian",
+      "title": "RU:Key:highway",
+      "description": "Основной тег, применяемый для обозначения любого типа улицы или дороги",
+      "image": {
+        "title": "File:Roads in Switzerland (27965437018).jpg",
+        "width": 6000,
+        "height": 4000,
+        "mime": "image/jpeg",
+        "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/78/Roads_in_Switzerland_%2827965437018%29.jpg",
+        "thumb_url_prefix": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Roads_in_Switzerland_%2827965437018%29.jpg/",
+        "thumb_url_suffix": "px-Roads_in_Switzerland_%2827965437018%29.jpg"
+      },
+      "on_node": true,
+      "on_way": true,
+      "on_area": true,
+      "on_relation": false,
+      "tags_implies": [],
+      "tags_combination": [
+        "access",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "maxwidth",
+        "oneway",
+        "width"
+      ],
+      "tags_linked": [
+        "access",
+        "highway=primary",
+        "lanes",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "maxwidth",
+        "oneway",
+        "surface",
+        "width"
+      ],
+      "status": null
+    },
+    {
+      "lang": "sq",
+      "dir": "auto",
+      "language": "Shqip",
+      "language_en": "Albanian",
+      "title": "Sq:Key:highway",
+      "description": "",
+      "image": {
+        "title": "File:Motorway-DE-A4-Aachen.JPG",
+        "width": 1208,
+        "height": 670,
+        "mime": "image/jpeg",
+        "image_url": "https://wiki.openstreetmap.org/w/images/d/d4/Motorway-DE-A4-Aachen.JPG",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/d/d4/Motorway-DE-A4-Aachen.JPG/",
+        "thumb_url_suffix": "px-Motorway-DE-A4-Aachen.JPG"
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [],
+      "tags_linked": [
+        "access=yes"
+      ],
+      "status": null
+    },
+    {
+      "lang": "tr",
+      "dir": "ltr",
+      "language": "Türkçe",
+      "language_en": "Turkish",
+      "title": "Tr:Key:highway",
+      "description": "highway etiketi her türlü yolu belirlemekte kullanılır.",
+      "image": {
+        "title": "File:Motorway-DE-A4-Aachen.JPG",
+        "width": 1208,
+        "height": 670,
+        "mime": "image/jpeg",
+        "image_url": "https://wiki.openstreetmap.org/w/images/d/d4/Motorway-DE-A4-Aachen.JPG",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/d/d4/Motorway-DE-A4-Aachen.JPG/",
+        "thumb_url_suffix": "px-Motorway-DE-A4-Aachen.JPG"
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [],
+      "tags_combination": [],
+      "tags_linked": [],
+      "status": null
+    },
+    {
+      "lang": "uk",
+      "dir": "ltr",
+      "language": "Українська",
+      "language_en": "Ukrainian",
+      "title": "Uk:Key:highway",
+      "description": "Теґ highway — це основний теґ, що використовується для позначення шляхів та вулиць.",
+      "image": {
+        "title": "File:Motorway-DE-A4-Aachen.JPG",
+        "width": 1208,
+        "height": 670,
+        "mime": "image/jpeg",
+        "image_url": "https://wiki.openstreetmap.org/w/images/d/d4/Motorway-DE-A4-Aachen.JPG",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/d/d4/Motorway-DE-A4-Aachen.JPG/",
+        "thumb_url_suffix": "px-Motorway-DE-A4-Aachen.JPG"
+      },
+      "on_node": true,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [
+        "abutters",
+        "access",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway"
+      ],
+      "tags_linked": [
+        "abutters",
+        "access",
+        "access=yes",
+        "highway=motorway",
+        "highway=primary",
+        "highway=residential",
+        "highway=secondary",
+        "highway=service",
+        "highway=tertiary",
+        "highway=trunk",
+        "highway=unclassified",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway"
+      ],
+      "status": "approved"
+    },
+    {
+      "lang": "vi",
+      "dir": "ltr",
+      "language": "Tiếng Việt",
+      "language_en": "Vietnamese",
+      "title": "Vi:Key:highway",
+      "description": "Đường bộ",
+      "image": {
+        "title": "File:Motorway-DE-A4-Aachen.JPG",
+        "width": 1208,
+        "height": 670,
+        "mime": "image/jpeg",
+        "image_url": "https://wiki.openstreetmap.org/w/images/d/d4/Motorway-DE-A4-Aachen.JPG",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/d/d4/Motorway-DE-A4-Aachen.JPG/",
+        "thumb_url_suffix": "px-Motorway-DE-A4-Aachen.JPG"
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [
+        "abutters",
+        "access",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway"
+      ],
+      "tags_linked": [
+        "abutters",
+        "access",
+        "access=yes",
+        "highway",
+        "highway=motorway",
+        "highway=primary",
+        "highway=residential",
+        "highway=secondary",
+        "highway=service",
+        "highway=tertiary",
+        "highway=trunk",
+        "highway=unclassified",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "oneway"
+      ],
+      "status": "approved"
+    },
+    {
+      "lang": "yue",
+      "dir": "auto",
+      "language": "粤语",
+      "language_en": "Yue Chinese/Cantonese",
+      "title": "Yue:Key:highway",
+      "description": "高速公路標籤係主要嘅標籤畀街道或者路徑用。",
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "maxwidth",
+        "oneway",
+        "width"
+      ],
+      "tags_linked": [
+        "access=yes",
+        "highway",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "maxwidth",
+        "oneway",
+        "width"
+      ],
+      "status": null
+    },
+    {
+      "lang": "zh-hans",
+      "dir": "auto",
+      "language": "简体中文",
+      "language_en": "Simplified Chinese",
+      "title": "Zh-hans:Key:highway",
+      "description": "highway标签是用于任何类型道路的主要标签。",
+      "image": {
+        "title": "File:Motorway-DE-A4-Aachen.JPG",
+        "width": 1208,
+        "height": 670,
+        "mime": "image/jpeg",
+        "image_url": "https://wiki.openstreetmap.org/w/images/d/d4/Motorway-DE-A4-Aachen.JPG",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/d/d4/Motorway-DE-A4-Aachen.JPG/",
+        "thumb_url_suffix": "px-Motorway-DE-A4-Aachen.JPG"
+      },
+      "on_node": true,
+      "on_way": true,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [],
+      "tags_linked": [
+        "access=yes",
+        "highway",
+        "highway=motorway",
+        "highway=motorway_link",
+        "highway=primary",
+        "highway=service",
+        "highway=tertiary",
+        "highway=track",
+        "highway=trunk",
+        "surface",
+        "surface=asphalt",
+        "tracktype",
+        "tracktype=grade1"
+      ],
+      "status": null
+    },
+    {
+      "lang": "zh-hant",
+      "dir": "auto",
+      "language": "繁體中文",
+      "language_en": "Traditional Chinese",
+      "title": "Zh-hant:Key:highway",
+      "description": "主要的道路標籤，以及標示其重要程度。",
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      },
+      "on_node": false,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "tags_implies": [
+        "access=yes"
+      ],
+      "tags_combination": [
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "maxwidth",
+        "oneway",
+        "width"
+      ],
+      "tags_linked": [
+        "access=yes",
+        "highway",
+        "maxheight",
+        "maxspeed",
+        "maxweight",
+        "maxwidth",
+        "oneway",
+        "width"
+      ],
+      "status": null
+    }
+  ]
+}

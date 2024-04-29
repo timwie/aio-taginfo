@@ -1,0 +1,79 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/keys/similar?page=1&rp=10&sortname=count_all_common&sortorder=desc",
+  "data_until": "2024-04-28T00:59:42Z",
+  "page": 1,
+  "rp": 10,
+  "total": 17908,
+  "data": [
+    {
+      "key_common": "building",
+      "key_rare": "buildng",
+      "count_all_common": 605297971,
+      "count_all_rare": 7,
+      "similarity": 1
+    },
+    {
+      "key_common": "source",
+      "key_rare": "bounce",
+      "count_all_common": 273285992,
+      "count_all_rare": 3,
+      "similarity": 2
+    },
+    {
+      "key_common": "addr:city",
+      "key_rare": "addr3:city",
+      "count_all_common": 110115733,
+      "count_all_rare": 6,
+      "similarity": 1
+    },
+    {
+      "key_common": "name",
+      "key_rare": "namde",
+      "count_all_common": 101083584,
+      "count_all_rare": 1,
+      "similarity": 1
+    },
+    {
+      "key_common": "name",
+      "key_rare": "rake",
+      "count_all_common": 101083584,
+      "count_all_rare": 1,
+      "similarity": 2
+    },
+    {
+      "key_common": "name",
+      "key_rare": "frame",
+      "count_all_common": 101083584,
+      "count_all_rare": 1,
+      "similarity": 2
+    },
+    {
+      "key_common": "name",
+      "key_rare": "naac",
+      "count_all_common": 101083584,
+      "count_all_rare": 1,
+      "similarity": 2
+    },
+    {
+      "key_common": "name",
+      "key_rare": "rate",
+      "count_all_common": 101083584,
+      "count_all_rare": 4,
+      "similarity": 2
+    },
+    {
+      "key_common": "name",
+      "key_rare": "fake",
+      "count_all_common": 101083584,
+      "count_all_rare": 4,
+      "similarity": 2
+    },
+    {
+      "key_common": "name",
+      "key_rare": "cage",
+      "count_all_common": 101083584,
+      "count_all_rare": 5,
+      "similarity": 2
+    }
+  ]
+}

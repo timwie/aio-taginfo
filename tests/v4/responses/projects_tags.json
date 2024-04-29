@@ -1,0 +1,89 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/projects/tags?page=1&rp=10&sortname=tag&sortorder=asc",
+  "data_until": "2024-04-28T00:59:42Z",
+  "page": 1,
+  "rp": 10,
+  "total": 193215,
+  "data": [
+    {
+      "key": "3dr:type",
+      "value": "0.0",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 2456,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "3dr:type",
+      "value": "0.1",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 8,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "3dr:type",
+      "value": "0.2",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 9,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "3dr:type",
+      "value": "0.3",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 11,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "3dr:type",
+      "value": "1.0",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 443,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "3dr:type",
+      "value": "1.1",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 88,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "3dr:type",
+      "value": "2.0",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 5947,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "3dr:type",
+      "value": "2.1",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 28,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "3dr:type",
+      "value": "2.2",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 563,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "3dr:type",
+      "value": "2.3",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 49,
+      "count_all_fraction": 0
+    }
+  ]
+}

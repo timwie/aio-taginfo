@@ -1,0 +1,69 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/key/combinations?key=highway&page=1&rp=10&sortname=together_count&sortorder=desc",
+  "data_until": "2024-04-28T00:59:42Z",
+  "page": 1,
+  "rp": 10,
+  "total": 26433,
+  "data": [
+    {
+      "other_key": "surface",
+      "together_count": 58128837,
+      "to_fraction": 0.2271,
+      "from_fraction": 0.9575
+    },
+    {
+      "other_key": "name",
+      "together_count": 53821180,
+      "to_fraction": 0.2103,
+      "from_fraction": 0.5324
+    },
+    {
+      "other_key": "source",
+      "together_count": 38053373,
+      "to_fraction": 0.1487,
+      "from_fraction": 0.1392
+    },
+    {
+      "other_key": "service",
+      "together_count": 23280462,
+      "to_fraction": 0.0909,
+      "from_fraction": 0.9322
+    },
+    {
+      "other_key": "oneway",
+      "together_count": 22111045,
+      "to_fraction": 0.0864,
+      "from_fraction": 0.9918
+    },
+    {
+      "other_key": "maxspeed",
+      "together_count": 17053188,
+      "to_fraction": 0.0666,
+      "from_fraction": 0.9343
+    },
+    {
+      "other_key": "lanes",
+      "together_count": 16345843,
+      "to_fraction": 0.0639,
+      "from_fraction": 0.9982
+    },
+    {
+      "other_key": "access",
+      "together_count": 14268205,
+      "to_fraction": 0.0557,
+      "from_fraction": 0.6803
+    },
+    {
+      "other_key": "tiger:cfcc",
+      "together_count": 12617882,
+      "to_fraction": 0.0493,
+      "from_fraction": 0.9874
+    },
+    {
+      "other_key": "tiger:county",
+      "together_count": 12523985,
+      "to_fraction": 0.0489,
+      "from_fraction": 0.9875
+    }
+  ]
+}

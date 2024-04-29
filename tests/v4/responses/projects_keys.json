@@ -1,0 +1,79 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/projects/keys?page=1&rp=10&sortname=key&sortorder=asc",
+  "data_until": "2024-04-28T00:59:42Z",
+  "page": 1,
+  "rp": 10,
+  "total": 6792,
+  "data": [
+    {
+      "key": "3dmr",
+      "projects": 1,
+      "in_wiki": 2,
+      "count_all": 45,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "3dr:height1",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 1483,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "3dr:height2",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 239,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "3dr:lenght1",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 0,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "3dr:lenght2",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 0,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "3dr:type",
+      "projects": 1,
+      "in_wiki": 6,
+      "count_all": 11880,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "4wd_only",
+      "projects": 4,
+      "in_wiki": 6,
+      "count_all": 42270,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "BLfD:criteria",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 1533,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "BLfD:inscription_date",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 3,
+      "count_all_fraction": 0
+    },
+    {
+      "key": "BY_PT",
+      "projects": 1,
+      "in_wiki": 0,
+      "count_all": 314,
+      "count_all_fraction": 0
+    }
+  ]
+}

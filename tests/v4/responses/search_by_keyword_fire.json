@@ -1,0 +1,49 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/search/by_keyword?query=fire&page=1&rp=10",
+  "data_until": "2024-04-28T00:59:42Z",
+  "page": 1,
+  "rp": 10,
+  "total": 106,
+  "data": [
+    {
+      "key": "actuator",
+      "value": "manual"
+    },
+    {
+      "key": "amenity",
+      "value": "fire_station"
+    },
+    {
+      "key": "amenity",
+      "value": "library"
+    },
+    {
+      "key": "amenity",
+      "value": "recycling"
+    },
+    {
+      "key": "amenity",
+      "value": "training"
+    },
+    {
+      "key": "barrier",
+      "value": "berm"
+    },
+    {
+      "key": "barrier",
+      "value": "cycle_barrier"
+    },
+    {
+      "key": "barrier",
+      "value": "retaining_wall"
+    },
+    {
+      "key": "building",
+      "value": "fire_lookout"
+    },
+    {
+      "key": "building",
+      "value": "fire_station"
+    }
+  ]
+}

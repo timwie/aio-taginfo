@@ -1,0 +1,44 @@
+[
+  {
+    "id": "db",
+    "name": "Database",
+    "data_until": "2024-04-28 00:59:42",
+    "update_start": "2024-04-28 02:43:38",
+    "update_end": "2024-04-28 04:31:53"
+  },
+  {
+    "id": "wiki",
+    "name": "Wiki",
+    "data_until": "2024-04-28 04:34:51",
+    "update_start": "2024-04-28 04:34:51",
+    "update_end": "2024-04-28 04:40:47"
+  },
+  {
+    "id": "languages",
+    "name": "Languages",
+    "data_until": "2024-04-28 04:31:54",
+    "update_start": "2024-04-28 04:31:54",
+    "update_end": "2024-04-28 04:32:06"
+  },
+  {
+    "id": "projects",
+    "name": "Projects",
+    "data_until": "2024-04-28 04:32:06",
+    "update_start": "2024-04-28 04:32:06",
+    "update_end": "2024-04-28 04:34:50"
+  },
+  {
+    "id": "chronology",
+    "name": "Chronology",
+    "data_until": "2024-04-28 00:59:42",
+    "update_start": "2024-04-28 04:41:02",
+    "update_end": "2024-04-28 05:05:47"
+  },
+  {
+    "id": "wikidata",
+    "name": "Wikidata",
+    "data_until": "2024-04-28 04:40:47",
+    "update_start": "2024-04-28 04:40:47",
+    "update_end": "2024-04-28 04:41:02"
+  }
+]

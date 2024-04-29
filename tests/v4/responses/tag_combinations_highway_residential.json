@@ -1,0 +1,79 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/tag/combinations?key=highway&value=residential&page=1&rp=10&sortname=together_count&sortorder=desc",
+  "data_until": "2024-04-28T00:59:42Z",
+  "page": 1,
+  "rp": 10,
+  "total": 1528,
+  "data": [
+    {
+      "other_key": "name",
+      "other_value": "",
+      "together_count": 26583503,
+      "to_fraction": 0.4008,
+      "from_fraction": 0.263
+    },
+    {
+      "other_key": "source",
+      "other_value": "",
+      "together_count": 15114115,
+      "to_fraction": 0.2279,
+      "from_fraction": 0.0553
+    },
+    {
+      "other_key": "surface",
+      "other_value": "",
+      "together_count": 12784949,
+      "to_fraction": 0.1928,
+      "from_fraction": 0.2106
+    },
+    {
+      "other_key": "tiger:cfcc",
+      "other_value": "",
+      "together_count": 6942418,
+      "to_fraction": 0.1047,
+      "from_fraction": 0.5433
+    },
+    {
+      "other_key": "tiger:cfcc",
+      "other_value": "A41",
+      "together_count": 6858633,
+      "to_fraction": 0.1034,
+      "from_fraction": 0.6828
+    },
+    {
+      "other_key": "tiger:county",
+      "other_value": "",
+      "together_count": 6828011,
+      "to_fraction": 0.1029,
+      "from_fraction": 0.5384
+    },
+    {
+      "other_key": "surface",
+      "other_value": "asphalt",
+      "together_count": 6673735,
+      "to_fraction": 0.1006,
+      "from_fraction": 0.2464
+    },
+    {
+      "other_key": "tiger:reviewed",
+      "other_value": "",
+      "together_count": 6303040,
+      "to_fraction": 0.095,
+      "from_fraction": 0.5694
+    },
+    {
+      "other_key": "tiger:reviewed",
+      "other_value": "no",
+      "together_count": 6194960,
+      "to_fraction": 0.0934,
+      "from_fraction": 0.5731
+    },
+    {
+      "other_key": "maxspeed",
+      "other_value": "",
+      "together_count": 5790274,
+      "to_fraction": 0.0873,
+      "from_fraction": 0.3172
+    }
+  ]
+}

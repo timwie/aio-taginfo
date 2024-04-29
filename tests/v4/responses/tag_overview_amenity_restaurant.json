@@ -1,0 +1,203 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/tag/overview?key=amenity&value=restaurant",
+  "data_until": "2024-04-28T00:59:42Z",
+  "total": 1,
+  "data": {
+    "key": "amenity",
+    "value": "restaurant",
+    "counts": [
+      {
+        "type": "all",
+        "count": 1377907,
+        "count_fraction": 0.0001
+      },
+      {
+        "type": "nodes",
+        "count": 1105120,
+        "count_fraction": 0.0047
+      },
+      {
+        "type": "ways",
+        "count": 271221,
+        "count_fraction": 0.0003
+      },
+      {
+        "type": "relations",
+        "count": 1566,
+        "count_fraction": 0.0001
+      }
+    ],
+    "wiki_pages": [
+      {
+        "lang": "ar",
+        "english": "Arabic",
+        "native": "العربية",
+        "dir": "auto"
+      },
+      {
+        "lang": "ca",
+        "english": "Catalan",
+        "native": "Català",
+        "dir": "ltr"
+      },
+      {
+        "lang": "cs",
+        "english": "Czech",
+        "native": "Čeština",
+        "dir": "ltr"
+      },
+      {
+        "lang": "de",
+        "english": "German",
+        "native": "Deutsch",
+        "dir": "ltr"
+      },
+      {
+        "lang": "el",
+        "english": "Greek",
+        "native": "Ελληνικά",
+        "dir": "auto"
+      },
+      {
+        "lang": "en",
+        "english": "English",
+        "native": "English",
+        "dir": "ltr"
+      },
+      {
+        "lang": "eo",
+        "english": "Esperanto",
+        "native": "Esperanto",
+        "dir": "ltr"
+      },
+      {
+        "lang": "es",
+        "english": "Spanish",
+        "native": "Español",
+        "dir": "ltr"
+      },
+      {
+        "lang": "fr",
+        "english": "French",
+        "native": "Français",
+        "dir": "ltr"
+      },
+      {
+        "lang": "it",
+        "english": "Italian",
+        "native": "Italiano",
+        "dir": "ltr"
+      },
+      {
+        "lang": "ja",
+        "english": "Japanese",
+        "native": "日本語",
+        "dir": "ltr"
+      },
+      {
+        "lang": "ko",
+        "english": "Korean",
+        "native": "한국어",
+        "dir": "ltr"
+      },
+      {
+        "lang": "pl",
+        "english": "Polish",
+        "native": "Polski",
+        "dir": "ltr"
+      },
+      {
+        "lang": "pt",
+        "english": "Portuguese",
+        "native": "Português",
+        "dir": "ltr"
+      },
+      {
+        "lang": "pt-br",
+        "english": "Brazilian Portuguese",
+        "native": "Português do Brasil",
+        "dir": "ltr"
+      },
+      {
+        "lang": "ru",
+        "english": "Russian",
+        "native": "Русский",
+        "dir": "ltr"
+      },
+      {
+        "lang": "uk",
+        "english": "Ukrainian",
+        "native": "Українська",
+        "dir": "ltr"
+      }
+    ],
+    "projects": 34,
+    "has_map": true,
+    "description": {
+      "ar": {
+        "text": "مطعم يبيع وجبات كاملة للجلوس مع وجود خدمة النادل، وقد يبيع الكحول.",
+        "dir": "auto"
+      },
+      "ca": {
+        "text": "Etiqueta usada per a llocs més o menys formals, amb instal·lacions on seure i menjar, amb servei per part de cambrers, i normalment amb autorització per vendre begudes alcohòliques.",
+        "dir": "ltr"
+      },
+      "cs": {
+        "text": "Restaurace",
+        "dir": "ltr"
+      },
+      "de": {
+        "text": "Eine Einrichtung mit Sitzplätzen, in der Speisen und Getränke angeboten werden.",
+        "dir": "ltr"
+      },
+      "el": {
+        "text": "Εστιατόριο, Ταβέρνα, Μεζεδοπωλείο, Μαγειρείο, Οινομαγειρείο - Μέρος για εστίαση με σερβιτόρους, το οποίο παρέχει πλήρη γεύματα και έχει άδεια πώλησης για αλκοολούχα ποτά",
+        "dir": "auto"
+      },
+      "en": {
+        "text": "A restaurant sells full sit-down meals with servers, and may sell alcohol.",
+        "dir": "ltr"
+      },
+      "eo": {
+        "text": "Restoracio vendas plenajn sidmanĝojn kun kelneroj, kaj povas vendi alkoholon.",
+        "dir": "ltr"
+      },
+      "es": {
+        "text": "Etiqueta usada para sitios más o menos formales, con instalaciones donde sentarse y comer, con servicio por parte de camareros, y normalmente con autorización para vender bebidas alcohólicas.",
+        "dir": "ltr"
+      },
+      "fr": {
+        "text": "lieu où on est généralement assis, où on achète des repas complets servis par des serveurs et qui a souvent l'autorisation de vendre des boissons alcoolisées.",
+        "dir": "ltr"
+      },
+      "it": {
+        "text": "Un esercizio di somministrazione con posti a sedere che offre pasti completi serviti da camerieri, e di solito sono autorizzati a vendere alcolici.",
+        "dir": "ltr"
+      },
+      "ja": {
+        "text": "レストラン。着席で、給仕により一式の食事が提供され、酒類の販売もある場合がある。",
+        "dir": "ltr"
+      },
+      "ko": {
+        "text": "좌석이 있으며, 음식을 판매하는 곳. 주류를 취급하기도 합니다.",
+        "dir": "ltr"
+      },
+      "pl": {
+        "text": "Restauracja.",
+        "dir": "ltr"
+      },
+      "pt": {
+        "text": "Restaurante: estabelecimento que confeciona e serve refeições completas em prato servidas por garçons/empregados de mesa e em certos países com licença para venderem bebidas alcoólicas.",
+        "dir": "ltr"
+      },
+      "ru": {
+        "text": "Ресторан (предприятие общественного питания с широким ассортиментом блюд сложного приготовления, где посетители сидят за столиками и их обслуживают официанты, может продаваться алкоголь).",
+        "dir": "ltr"
+      },
+      "uk": {
+        "text": "Заклад громадського харчування де подаються страви та напої, який відрізняється вищою якістю послуг, широким меню. Обслуговування відвідувачів здійснюється офіціантами.",
+        "dir": "ltr"
+      }
+    }
+  }
+}

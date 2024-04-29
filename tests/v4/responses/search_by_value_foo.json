@@ -1,0 +1,59 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/search/by_value?query=foo&page=1&rp=10",
+  "data_until": "2024-04-28T00:59:42Z",
+  "page": 1,
+  "rp": 10,
+  "total": 593,
+  "data": [
+    {
+      "key": "comment",
+      "value": "wrong horizontal and vertical signallimg (cycles-only crossing on a foo-cycle-way)",
+      "count_all": 1
+    },
+    {
+      "key": "email",
+      "value": "foo.luzoncluster2@dict.gov.ph",
+      "count_all": 1
+    },
+    {
+      "key": "email",
+      "value": "foo_oujda@yahoo.fr",
+      "count_all": 1
+    },
+    {
+      "key": "email",
+      "value": "foo@vegecoffee.com",
+      "count_all": 1
+    },
+    {
+      "key": "footway",
+      "value": "foo",
+      "count_all": 1
+    },
+    {
+      "key": "tile_url",
+      "value": "https://services.digitalglobe.com/earthservice/tmsaccess/tms/1.0.0/DigitalGlobe:ImageryTileService@EPSG:3857@jpg/20/289403/609334.jpg?connectId=fa014fbc-6cbe-4b6f-b0ca-fbfb8d1e5b7d&foo=premium",
+      "count_all": 1
+    },
+    {
+      "key": "tile_url",
+      "value": "https://services.digitalglobe.com/earthservice/tmsaccess/tms/1.0.0/DigitalGlobe:ImageryTileService@EPSG:3857@jpg/17/36175/76166.jpg?connectId=fa014fbc-6cbe-4b6f-b0ca-fbfb8d1e5b7d&foo=premium",
+      "count_all": 1
+    },
+    {
+      "key": "tile_url",
+      "value": "https://services.digitalglobe.com/earthservice/tmsaccess/tms/1.0.0/DigitalGlobe:ImageryTileService@EPSG:3857@jpg/18/72344/152343.jpg?connectId=fa014fbc-6cbe-4b6f-b0ca-fbfb8d1e5b7d&foo=premium",
+      "count_all": 1
+    },
+    {
+      "key": "tile_url",
+      "value": "https://services.digitalglobe.com/earthservice/tmsaccess/tms/1.0.0/DigitalGlobe:ImageryTileService@EPSG:3857@jpg/19/144663/304551.jpg?connectId=fa014fbc-6cbe-4b6f-b0ca-fbfb8d1e5b7d&foo=premium",
+      "count_all": 1
+    },
+    {
+      "key": "tile_url",
+      "value": "https://services.digitalglobe.com/earthservice/tmsaccess/tms/1.0.0/DigitalGlobe:ImageryTileService@EPSG:3857@jpg/18/72344/152347.jpg?connectId=fa014fbc-6cbe-4b6f-b0ca-fbfb8d1e5b7d&foo=premium",
+      "count_all": 1
+    }
+  ]
+}

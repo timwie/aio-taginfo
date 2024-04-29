@@ -1,0 +1,99 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/relation/projects?rtype=route&page=1&rp=10&sortname=project_name&sortorder=asc",
+  "data_until": "2024-04-28T00:59:42Z",
+  "page": 1,
+  "rp": 10,
+  "total": 59,
+  "data": [
+    {
+      "project_id": "bikecitizens",
+      "project_name": "Bike Citizens Bicycle Navigation",
+      "project_icon_url": "https://map.bikecitizens.net/assets/favicons/favicon-16x16.png",
+      "rtype": "route",
+      "description": null,
+      "doc_url": null,
+      "icon_url": null
+    },
+    {
+      "project_id": "busy_hours",
+      "project_name": "Busy Hours",
+      "project_icon_url": "https://raw.githubusercontent.com/Jungle-Bus/resources/master/logo/Logo_Jungle_Bus-Busy_Hours.png",
+      "rtype": "route",
+      "description": "to select the public transport route objects",
+      "doc_url": null,
+      "icon_url": null
+    },
+    {
+      "project_id": "checkautopista",
+      "project_name": "CheckAutopista2",
+      "project_icon_url": "http://k1wiosm.github.io/checkautopista2/img/exit.svg",
+      "rtype": "route",
+      "description": null,
+      "doc_url": null,
+      "icon_url": null
+    },
+    {
+      "project_id": "guru_maps",
+      "project_name": "Guru Maps",
+      "project_icon_url": "https://gurumaps.app/img/logo.svg",
+      "rtype": "route",
+      "description": null,
+      "doc_url": null,
+      "icon_url": null
+    },
+    {
+      "project_id": "id_editor",
+      "project_name": "iD Tagging Schema",
+      "project_icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@release/dist/img/logo.png",
+      "rtype": "route",
+      "description": "🄿 Route",
+      "doc_url": null,
+      "icon_url": "https://cdn.jsdelivr.net/gh/openstreetmap/iD@develop/svg/iD-sprite/presets/route.svg"
+    },
+    {
+      "project_id": "josm_main_presets",
+      "project_name": "JOSM main presets",
+      "project_icon_url": "https://josm.openstreetmap.de/export/19040/josm/trunk/resources/images/logo_16x16x8.png",
+      "rtype": "route",
+      "description": "Required for 20: Transport/Public Transport/Public Transport Route (Rail), Transport/Public Transport/Public Transport Route (Bus), Transport/Public Transport/Public Transport Route (Ferry), Transport/Public Transport/Public Transport Route (Aerialway), Transport/Public Transport (Legacy)/Public transport route (Legacy), Transport/Public Transport (Legacy)/Public transport route (Legacy) (Ferry), Transport/Public Transport (Legacy)/Public transport route (Legacy) (Aerialway), ...",
+      "doc_url": null,
+      "icon_url": "https://josm.openstreetmap.de/export/19040/josm/trunk/resources/images/presets/misc/route.svg"
+    },
+    {
+      "project_id": "josm_external_presets",
+      "project_name": "JOSM user presets",
+      "project_icon_url": "https://josm.openstreetmap.de/export/19040/josm/trunk/resources/images/logo_16x16x8.png",
+      "rtype": "route",
+      "description": "CAI Required for: Club Alpino Italiano (CAI)/Club Alpino Italiano Hiking Relation",
+      "doc_url": null,
+      "icon_url": null
+    },
+    {
+      "project_id": "josm_external_presets",
+      "project_name": "JOSM user presets",
+      "project_icon_url": "https://josm.openstreetmap.de/export/19040/josm/trunk/resources/images/logo_16x16x8.png",
+      "rtype": "route",
+      "description": "OpenRailwayMap Infrastructure DE+AT Required for: OpenRailwayMap Infrastructure DE+AT/Line Number (Infrastructure), OpenRailwayMap Infrastructure DE+AT/Timetable Number, OpenRailwayMap Infrastructure DE+AT/Verladeeinrichtungen/Train Ferry Line (Route Relation)",
+      "doc_url": null,
+      "icon_url": null
+    },
+    {
+      "project_id": "josm_external_presets",
+      "project_name": "JOSM user presets",
+      "project_icon_url": "https://josm.openstreetmap.de/export/19040/josm/trunk/resources/images/logo_16x16x8.png",
+      "rtype": "route",
+      "description": "Persian Presets Required for 15: پریست‌های ایران/حمل و نقل/حمل و نقل عمومی/مسیر حمل و نقل ریلی, پریست‌های ایران/حمل و نقل/حمل و نقل عمومی/مسیر حمل و نقل اتوبوس, پریست‌های ایران/ریلیشن/مسیر/مسیر دوچرخه, پریست‌های ایران/ریلیشن/مسیر/مسیر دوچرخه کوهستانی, پریست‌های ایران/ریلیشن/مسیر/مسیر کوهنوردی, پریست‌های ایران/ریلیشن/مسیر/مسیر پیاده‌روی, پریست‌های ایران/ریلیشن/مسیر/مسیر دویدن, ...",
+      "doc_url": null,
+      "icon_url": null
+    },
+    {
+      "project_id": "josm_external_presets",
+      "project_name": "JOSM user presets",
+      "project_icon_url": "https://josm.openstreetmap.de/export/19040/josm/trunk/resources/images/logo_16x16x8.png",
+      "rtype": "route",
+      "description": "Belgium (Mapping in Belgium) Required for: How to map a? (Benelux)/Transport/Regional Walking Networks/RWN Route",
+      "doc_url": null,
+      "icon_url": null
+    }
+  ]
+}

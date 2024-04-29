@@ -1,0 +1,23 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/relation/stats?rtype=multipolygon",
+  "data_until": "2024-04-28T00:59:42Z",
+  "total": 4,
+  "data": [
+    {
+      "type": "all",
+      "count": 36953278
+    },
+    {
+      "type": "nodes",
+      "count": 9185
+    },
+    {
+      "type": "ways",
+      "count": 36940553
+    },
+    {
+      "type": "relations",
+      "count": 3540
+    }
+  ]
+}

@@ -1,0 +1,597 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/wiki/languages?sortname=wiki_key_pages&sortorder=desc",
+  "data_until": "2024-04-28T00:59:42Z",
+  "total": 59,
+  "data": [
+    {
+      "code": "en",
+      "dir": "ltr",
+      "native_name": "English",
+      "english_name": "English",
+      "wiki_key_pages": 5346,
+      "wiki_key_pages_fraction": 0.982178945434503,
+      "wiki_tag_pages": 6819,
+      "wiki_tag_pages_fraction": 0.9819988479262672
+    },
+    {
+      "code": "de",
+      "dir": "ltr",
+      "native_name": "Deutsch",
+      "english_name": "German",
+      "wiki_key_pages": 961,
+      "wiki_key_pages_fraction": 0.1765570457468308,
+      "wiki_tag_pages": 2347,
+      "wiki_tag_pages_fraction": 0.3379896313364055
+    },
+    {
+      "code": "ru",
+      "dir": "ltr",
+      "native_name": "Русский",
+      "english_name": "Russian",
+      "wiki_key_pages": 897,
+      "wiki_key_pages_fraction": 0.1647988241778431,
+      "wiki_tag_pages": 2273,
+      "wiki_tag_pages_fraction": 0.3273329493087558
+    },
+    {
+      "code": "cs",
+      "dir": "ltr",
+      "native_name": "Čeština",
+      "english_name": "Czech",
+      "wiki_key_pages": 818,
+      "wiki_key_pages_fraction": 0.15028476942862393,
+      "wiki_tag_pages": 1579,
+      "wiki_tag_pages_fraction": 0.2273905529953917
+    },
+    {
+      "code": "ja",
+      "dir": "ltr",
+      "native_name": "日本語",
+      "english_name": "Japanese",
+      "wiki_key_pages": 806,
+      "wiki_key_pages_fraction": 0.14808010288443874,
+      "wiki_tag_pages": 1566,
+      "wiki_tag_pages_fraction": 0.2255184331797235
+    },
+    {
+      "code": "fr",
+      "dir": "ltr",
+      "native_name": "Français",
+      "english_name": "French",
+      "wiki_key_pages": 645,
+      "wiki_key_pages_fraction": 0.11850082674995407,
+      "wiki_tag_pages": 1271,
+      "wiki_tag_pages_fraction": 0.18303571428571427
+    },
+    {
+      "code": "es",
+      "dir": "ltr",
+      "native_name": "Español",
+      "english_name": "Spanish",
+      "wiki_key_pages": 602,
+      "wiki_key_pages_fraction": 0.11060077163329046,
+      "wiki_tag_pages": 2172,
+      "wiki_tag_pages_fraction": 0.3127880184331797
+    },
+    {
+      "code": "pl",
+      "dir": "ltr",
+      "native_name": "Polski",
+      "english_name": "Polish",
+      "wiki_key_pages": 537,
+      "wiki_key_pages_fraction": 0.09865882785228734,
+      "wiki_tag_pages": 1414,
+      "wiki_tag_pages_fraction": 0.20362903225806453
+    },
+    {
+      "code": "pt",
+      "dir": "ltr",
+      "native_name": "Português",
+      "english_name": "Portuguese",
+      "wiki_key_pages": 221,
+      "wiki_key_pages_fraction": 0.040602608855410616,
+      "wiki_tag_pages": 704,
+      "wiki_tag_pages_fraction": 0.10138248847926268
+    },
+    {
+      "code": "uk",
+      "dir": "ltr",
+      "native_name": "Українська",
+      "english_name": "Ukrainian",
+      "wiki_key_pages": 219,
+      "wiki_key_pages_fraction": 0.040235164431379755,
+      "wiki_tag_pages": 670,
+      "wiki_tag_pages_fraction": 0.09648617511520738
+    },
+    {
+      "code": "pt-br",
+      "dir": "ltr",
+      "native_name": "Português do Brasil",
+      "english_name": "Brazilian Portuguese",
+      "wiki_key_pages": 211,
+      "wiki_key_pages_fraction": 0.03876538673525629,
+      "wiki_tag_pages": 587,
+      "wiki_tag_pages_fraction": 0.08453341013824885
+    },
+    {
+      "code": "it",
+      "dir": "ltr",
+      "native_name": "Italiano",
+      "english_name": "Italian",
+      "wiki_key_pages": 202,
+      "wiki_key_pages_fraction": 0.0371118868271174,
+      "wiki_tag_pages": 409,
+      "wiki_tag_pages_fraction": 0.058899769585253454
+    },
+    {
+      "code": "ko",
+      "dir": "ltr",
+      "native_name": "한국어",
+      "english_name": "Korean",
+      "wiki_key_pages": 79,
+      "wiki_key_pages_fraction": 0.01451405474921918,
+      "wiki_tag_pages": 214,
+      "wiki_tag_pages_fraction": 0.030817972350230413
+    },
+    {
+      "code": "nl",
+      "dir": "ltr",
+      "native_name": "Nederlands",
+      "english_name": "Dutch",
+      "wiki_key_pages": 71,
+      "wiki_key_pages_fraction": 0.013044277053095719,
+      "wiki_tag_pages": 84,
+      "wiki_tag_pages_fraction": 0.012096774193548387
+    },
+    {
+      "code": "zh-hans",
+      "dir": "auto",
+      "native_name": "简体中文",
+      "english_name": "Simplified Chinese",
+      "wiki_key_pages": 67,
+      "wiki_key_pages_fraction": 0.012309388205033989,
+      "wiki_tag_pages": 146,
+      "wiki_tag_pages_fraction": 0.021025345622119815
+    },
+    {
+      "code": "fi",
+      "dir": "ltr",
+      "native_name": "Suomi",
+      "english_name": "Finish",
+      "wiki_key_pages": 56,
+      "wiki_key_pages_fraction": 0.01028844387286423,
+      "wiki_tag_pages": 72,
+      "wiki_tag_pages_fraction": 0.010368663594470046
+    },
+    {
+      "code": "hu",
+      "dir": "ltr",
+      "native_name": "Magyar",
+      "english_name": "Hungarian",
+      "wiki_key_pages": 46,
+      "wiki_key_pages_fraction": 0.008451221752709903,
+      "wiki_tag_pages": 16,
+      "wiki_tag_pages_fraction": 0.002304147465437788
+    },
+    {
+      "code": "zh-hant",
+      "dir": "auto",
+      "native_name": "繁體中文",
+      "english_name": "Traditional Chinese",
+      "wiki_key_pages": 32,
+      "wiki_key_pages_fraction": 0.005879110784493846,
+      "wiki_tag_pages": 57,
+      "wiki_tag_pages_fraction": 0.008208525345622119
+    },
+    {
+      "code": "ca",
+      "dir": "ltr",
+      "native_name": "Català",
+      "english_name": "Catalan",
+      "wiki_key_pages": 20,
+      "wiki_key_pages_fraction": 0.0036744442403086534,
+      "wiki_tag_pages": 114,
+      "wiki_tag_pages_fraction": 0.016417050691244238
+    },
+    {
+      "code": "fa",
+      "dir": "rtl",
+      "native_name": "فارسی",
+      "english_name": "Farsi",
+      "wiki_key_pages": 20,
+      "wiki_key_pages_fraction": 0.0036744442403086534,
+      "wiki_tag_pages": 31,
+      "wiki_tag_pages_fraction": 0.004464285714285714
+    },
+    {
+      "code": "gl",
+      "dir": "ltr",
+      "native_name": "Galego",
+      "english_name": "Galician",
+      "wiki_key_pages": 16,
+      "wiki_key_pages_fraction": 0.002939555392246923,
+      "wiki_tag_pages": 17,
+      "wiki_tag_pages_fraction": 0.0024481566820276496
+    },
+    {
+      "code": "sv",
+      "dir": "auto",
+      "native_name": "Svenska",
+      "english_name": "Swedish",
+      "wiki_key_pages": 14,
+      "wiki_key_pages_fraction": 0.0025721109682160575,
+      "wiki_tag_pages": 40,
+      "wiki_tag_pages_fraction": 0.00576036866359447
+    },
+    {
+      "code": "da",
+      "dir": "ltr",
+      "native_name": "Dansk",
+      "english_name": "Danish",
+      "wiki_key_pages": 12,
+      "wiki_key_pages_fraction": 0.002204666544185192,
+      "wiki_tag_pages": 26,
+      "wiki_tag_pages_fraction": 0.0037442396313364054
+    },
+    {
+      "code": "hr",
+      "dir": "ltr",
+      "native_name": "Hrvatski",
+      "english_name": "Croatian",
+      "wiki_key_pages": 12,
+      "wiki_key_pages_fraction": 0.002204666544185192,
+      "wiki_tag_pages": 3,
+      "wiki_tag_pages_fraction": 0.0004320276497695853
+    },
+    {
+      "code": "no",
+      "dir": "ltr",
+      "native_name": "Norsk",
+      "english_name": "Norwegian",
+      "wiki_key_pages": 9,
+      "wiki_key_pages_fraction": 0.001653499908138894,
+      "wiki_tag_pages": 11,
+      "wiki_tag_pages_fraction": 0.0015841013824884793
+    },
+    {
+      "code": "sr",
+      "dir": "auto",
+      "native_name": "српски језик / srpski jezik",
+      "english_name": "Serbian",
+      "wiki_key_pages": 8,
+      "wiki_key_pages_fraction": 0.0014697776961234614,
+      "wiki_tag_pages": 0,
+      "wiki_tag_pages_fraction": 0
+    },
+    {
+      "code": "tr",
+      "dir": "ltr",
+      "native_name": "Türkçe",
+      "english_name": "Turkish",
+      "wiki_key_pages": 8,
+      "wiki_key_pages_fraction": 0.0014697776961234614,
+      "wiki_tag_pages": 7,
+      "wiki_tag_pages_fraction": 0.0010080645161290322
+    },
+    {
+      "code": "el",
+      "dir": "auto",
+      "native_name": "Ελληνικά",
+      "english_name": "Greek",
+      "wiki_key_pages": 7,
+      "wiki_key_pages_fraction": 0.0012860554841080288,
+      "wiki_tag_pages": 29,
+      "wiki_tag_pages_fraction": 0.004176267281105991
+    },
+    {
+      "code": "eo",
+      "dir": "ltr",
+      "native_name": "Esperanto",
+      "english_name": "Esperanto",
+      "wiki_key_pages": 7,
+      "wiki_key_pages_fraction": 0.0012860554841080288,
+      "wiki_tag_pages": 17,
+      "wiki_tag_pages_fraction": 0.0024481566820276496
+    },
+    {
+      "code": "et",
+      "dir": "auto",
+      "native_name": "Eesti",
+      "english_name": "Estonian",
+      "wiki_key_pages": 6,
+      "wiki_key_pages_fraction": 0.001102333272092596,
+      "wiki_tag_pages": 5,
+      "wiki_tag_pages_fraction": 0.0007200460829493088
+    },
+    {
+      "code": "oc",
+      "dir": "auto",
+      "native_name": "occitan",
+      "english_name": "Occitan",
+      "wiki_key_pages": 6,
+      "wiki_key_pages_fraction": 0.001102333272092596,
+      "wiki_tag_pages": 38,
+      "wiki_tag_pages_fraction": 0.005472350230414746
+    },
+    {
+      "code": "sk",
+      "dir": "ltr",
+      "native_name": "Slovenský",
+      "english_name": "Slovak",
+      "wiki_key_pages": 6,
+      "wiki_key_pages_fraction": 0.001102333272092596,
+      "wiki_tag_pages": 1,
+      "wiki_tag_pages_fraction": 0.00014400921658986175
+    },
+    {
+      "code": "ar",
+      "dir": "auto",
+      "native_name": "العربية",
+      "english_name": "Arabic",
+      "wiki_key_pages": 5,
+      "wiki_key_pages_fraction": 0.0009186110600771634,
+      "wiki_tag_pages": 5,
+      "wiki_tag_pages_fraction": 0.0007200460829493088
+    },
+    {
+      "code": "yue",
+      "dir": "auto",
+      "native_name": "粤语",
+      "english_name": "Yue Chinese/Cantonese",
+      "wiki_key_pages": 5,
+      "wiki_key_pages_fraction": 0.0009186110600771634,
+      "wiki_tag_pages": 35,
+      "wiki_tag_pages_fraction": 0.005040322580645161
+    },
+    {
+      "code": "bg",
+      "dir": "ltr",
+      "native_name": "Български език",
+      "english_name": "Bulgarian",
+      "wiki_key_pages": 4,
+      "wiki_key_pages_fraction": 0.0007348888480617307,
+      "wiki_tag_pages": 8,
+      "wiki_tag_pages_fraction": 0.001152073732718894
+    },
+    {
+      "code": "gcf",
+      "dir": "auto",
+      "native_name": "Gwadloupéyen",
+      "english_name": "Guadeloupean Creole French",
+      "wiki_key_pages": 4,
+      "wiki_key_pages_fraction": 0.0007348888480617307,
+      "wiki_tag_pages": 78,
+      "wiki_tag_pages_fraction": 0.011232718894009217
+    },
+    {
+      "code": "ro",
+      "dir": "auto",
+      "native_name": "Română",
+      "english_name": "Romanian",
+      "wiki_key_pages": 3,
+      "wiki_key_pages_fraction": 0.000551166636046298,
+      "wiki_tag_pages": 3,
+      "wiki_tag_pages_fraction": 0.0004320276497695853
+    },
+    {
+      "code": "vi",
+      "dir": "ltr",
+      "native_name": "Tiếng Việt",
+      "english_name": "Vietnamese",
+      "wiki_key_pages": 3,
+      "wiki_key_pages_fraction": 0.000551166636046298,
+      "wiki_tag_pages": 7,
+      "wiki_tag_pages_fraction": 0.0010080645161290322
+    },
+    {
+      "code": "ht",
+      "dir": "auto",
+      "native_name": "Kreyòl ayisyen",
+      "english_name": "Haitian Creole",
+      "wiki_key_pages": 2,
+      "wiki_key_pages_fraction": 0.00036744442403086535,
+      "wiki_tag_pages": 0,
+      "wiki_tag_pages_fraction": 0
+    },
+    {
+      "code": "id",
+      "dir": "ltr",
+      "native_name": "Bahasa Indonesia",
+      "english_name": "Indonesian",
+      "wiki_key_pages": 2,
+      "wiki_key_pages_fraction": 0.00036744442403086535,
+      "wiki_tag_pages": 6,
+      "wiki_tag_pages_fraction": 0.0008640552995391706
+    },
+    {
+      "code": "lv",
+      "dir": "ltr",
+      "native_name": "Latviešu Valoda",
+      "english_name": "Latvian",
+      "wiki_key_pages": 2,
+      "wiki_key_pages_fraction": 0.00036744442403086535,
+      "wiki_tag_pages": 0,
+      "wiki_tag_pages_fraction": 0
+    },
+    {
+      "code": "sh",
+      "dir": "auto",
+      "native_name": "Serbo-Croatian",
+      "english_name": "Serbo-Croatian",
+      "wiki_key_pages": 2,
+      "wiki_key_pages_fraction": 0.00036744442403086535,
+      "wiki_tag_pages": 0,
+      "wiki_tag_pages_fraction": 0
+    },
+    {
+      "code": "pnb",
+      "dir": "auto",
+      "native_name": "پَن٘جابی",
+      "english_name": "Western Panjabi",
+      "wiki_key_pages": 2,
+      "wiki_key_pages_fraction": 0.00036744442403086535,
+      "wiki_tag_pages": 0,
+      "wiki_tag_pages_fraction": 0
+    },
+    {
+      "code": "he",
+      "dir": "auto",
+      "native_name": "עברית",
+      "english_name": "Hebrew",
+      "wiki_key_pages": 1,
+      "wiki_key_pages_fraction": 0.00018372221201543268,
+      "wiki_tag_pages": 1,
+      "wiki_tag_pages_fraction": 0.00014400921658986175
+    },
+    {
+      "code": "lt",
+      "dir": "auto",
+      "native_name": "Lietuvių Kalba",
+      "english_name": "Lithuanian",
+      "wiki_key_pages": 1,
+      "wiki_key_pages_fraction": 0.00018372221201543268,
+      "wiki_tag_pages": 0,
+      "wiki_tag_pages_fraction": 0
+    },
+    {
+      "code": "ne",
+      "dir": "auto",
+      "native_name": "नेपाली",
+      "english_name": "Nepali",
+      "wiki_key_pages": 1,
+      "wiki_key_pages_fraction": 0.00018372221201543268,
+      "wiki_tag_pages": 3,
+      "wiki_tag_pages_fraction": 0.0004320276497695853
+    },
+    {
+      "code": "sq",
+      "dir": "auto",
+      "native_name": "Shqip",
+      "english_name": "Albanian",
+      "wiki_key_pages": 1,
+      "wiki_key_pages_fraction": 0.00018372221201543268,
+      "wiki_tag_pages": 0,
+      "wiki_tag_pages_fraction": 0
+    },
+    {
+      "code": "br",
+      "dir": "auto",
+      "native_name": null,
+      "english_name": null,
+      "wiki_key_pages": 1,
+      "wiki_key_pages_fraction": 0.00018372221201543268,
+      "wiki_tag_pages": 0,
+      "wiki_tag_pages_fraction": 0
+    },
+    {
+      "code": "pa",
+      "dir": "auto",
+      "native_name": null,
+      "english_name": null,
+      "wiki_key_pages": 1,
+      "wiki_key_pages_fraction": 0.00018372221201543268,
+      "wiki_tag_pages": 0,
+      "wiki_tag_pages_fraction": 0
+    },
+    {
+      "code": "skr",
+      "dir": "auto",
+      "native_name": null,
+      "english_name": null,
+      "wiki_key_pages": 1,
+      "wiki_key_pages_fraction": 0.00018372221201543268,
+      "wiki_tag_pages": 0,
+      "wiki_tag_pages_fraction": 0
+    },
+    {
+      "code": "tl",
+      "dir": "auto",
+      "native_name": null,
+      "english_name": null,
+      "wiki_key_pages": 1,
+      "wiki_key_pages_fraction": 0.00018372221201543268,
+      "wiki_tag_pages": 7,
+      "wiki_tag_pages_fraction": 0.0010080645161290322
+    },
+    {
+      "code": "uz",
+      "dir": "auto",
+      "native_name": null,
+      "english_name": null,
+      "wiki_key_pages": 1,
+      "wiki_key_pages_fraction": 0.00018372221201543268,
+      "wiki_tag_pages": 0,
+      "wiki_tag_pages_fraction": 0
+    },
+    {
+      "code": "az",
+      "dir": "ltr",
+      "native_name": "Azərbaycan dili",
+      "english_name": "Azerbaijani",
+      "wiki_key_pages": 0,
+      "wiki_key_pages_fraction": 0,
+      "wiki_tag_pages": 2,
+      "wiki_tag_pages_fraction": 0.0002880184331797235
+    },
+    {
+      "code": "bn",
+      "dir": "auto",
+      "native_name": "বাংলা",
+      "english_name": "Bengali",
+      "wiki_key_pages": 0,
+      "wiki_key_pages_fraction": 0,
+      "wiki_tag_pages": 0,
+      "wiki_tag_pages_fraction": 0
+    },
+    {
+      "code": "cz",
+      "dir": "auto",
+      "native_name": "Česky",
+      "english_name": "Czech",
+      "wiki_key_pages": 0,
+      "wiki_key_pages_fraction": 0,
+      "wiki_tag_pages": 0,
+      "wiki_tag_pages_fraction": 0
+    },
+    {
+      "code": "ms",
+      "dir": "auto",
+      "native_name": "Bahasa Melayu",
+      "english_name": "Malay",
+      "wiki_key_pages": 0,
+      "wiki_key_pages_fraction": 0,
+      "wiki_tag_pages": 8,
+      "wiki_tag_pages_fraction": 0.001152073732718894
+    },
+    {
+      "code": "ro-md",
+      "dir": "auto",
+      "native_name": "Română (Moldova)",
+      "english_name": "Moldovan",
+      "wiki_key_pages": 0,
+      "wiki_key_pages_fraction": 0,
+      "wiki_tag_pages": 0,
+      "wiki_tag_pages_fraction": 0
+    },
+    {
+      "code": "zh-cn",
+      "dir": "ltr",
+      "native_name": "简体中文",
+      "english_name": "Simplified Chinese",
+      "wiki_key_pages": 0,
+      "wiki_key_pages_fraction": 0,
+      "wiki_tag_pages": 0,
+      "wiki_tag_pages_fraction": 0
+    },
+    {
+      "code": "zh-tw",
+      "dir": "ltr",
+      "native_name": "繁體中文",
+      "english_name": "Traditional Chinese",
+      "wiki_key_pages": 0,
+      "wiki_key_pages_fraction": 0,
+      "wiki_tag_pages": 0,
+      "wiki_tag_pages_fraction": 0
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/relation/roles?rtype=multipolygon&page=1&rp=10",
+  "data_until": "2024-04-28T00:59:42Z",
+  "page": 1,
+  "rp": 10,
+  "total": 237,
+  "data": [
+    {
+      "rtype": "multipolygon",
+      "role": "",
+      "count_all_members": 18060,
+      "count_all_members_fraction": 0.0005,
+      "count_node_members": 1250,
+      "count_node_members_fraction": 0.1361,
+      "count_way_members": 16642,
+      "count_way_members_fraction": 0.0005,
+      "count_relation_members": 168,
+      "count_relation_members_fraction": 0.0475
+    },
+    {
+      "rtype": "multipolygon",
+      "role": " admin_centre",
+      "count_all_members": 1,
+      "count_all_members_fraction": 0,
+      "count_node_members": 1,
+      "count_node_members_fraction": 0.0001,
+      "count_way_members": 0,
+      "count_way_members_fraction": 0,
+      "count_relation_members": 0,
+      "count_relation_members_fraction": 0
+    },
+    {
+      "rtype": "multipolygon",
+      "role": "#9",
+      "count_all_members": 1,
+      "count_all_members_fraction": 0,
+      "count_node_members": 0,
+      "count_node_members_fraction": 0,
+      "count_way_members": 1,
+      "count_way_members_fraction": 0,
+      "count_relation_members": 0,
+      "count_relation_members_fraction": 0
+    },
+    {
+      "rtype": "multipolygon",
+      "role": "1",
+      "count_all_members": 1,
+      "count_all_members_fraction": 0,
+      "count_node_members": 0,
+      "count_node_members_fraction": 0,
+      "count_way_members": 1,
+      "count_way_members_fraction": 0,
+      "count_relation_members": 0,
+      "count_relation_members_fraction": 0
+    },
+    {
+      "rtype": "multipolygon",
+      "role": "176 Shaheed Syed Nazrul Islam Sarani (Old 47, Bijoy Nagar) Dhaka - 1000, Bangladesh",
+      "count_all_members": 1,
+      "count_all_members_fraction": 0,
+      "count_node_members": 1,
+      "count_node_members_fraction": 0.0001,
+      "count_way_members": 0,
+      "count_way_members_fraction": 0,
+      "count_relation_members": 0,
+      "count_relation_members_fraction": 0
+    },
+    {
+      "rtype": "multipolygon",
+      "role": "1ª Tuca de Ixeia",
+      "count_all_members": 1,
+      "count_all_members_fraction": 0,
+      "count_node_members": 1,
+      "count_node_members_fraction": 0.0001,
+      "count_way_members": 0,
+      "count_way_members_fraction": 0,
+      "count_relation_members": 0,
+      "count_relation_members_fraction": 0
+    },
+    {
+      "rtype": "multipolygon",
+      "role": "2ª Tuca de Ixeia",
+      "count_all_members": 1,
+      "count_all_members_fraction": 0,
+      "count_node_members": 1,
+      "count_node_members_fraction": 0.0001,
+      "count_way_members": 0,
+      "count_way_members_fraction": 0,
+      "count_relation_members": 0,
+      "count_relation_members_fraction": 0
+    },
+    {
+      "rtype": "multipolygon",
+      "role": "3ª Tuca de Ixeia",
+      "count_all_members": 1,
+      "count_all_members_fraction": 0,
+      "count_node_members": 1,
+      "count_node_members_fraction": 0.0001,
+      "count_way_members": 0,
+      "count_way_members_fraction": 0,
+      "count_relation_members": 0,
+      "count_relation_members_fraction": 0
+    },
+    {
+      "rtype": "multipolygon",
+      "role": "4ª Tuca de Ixeia",
+      "count_all_members": 2,
+      "count_all_members_fraction": 0,
+      "count_node_members": 2,
+      "count_node_members_fraction": 0.0002,
+      "count_way_members": 0,
+      "count_way_members_fraction": 0,
+      "count_relation_members": 0,
+      "count_relation_members_fraction": 0
+    },
+    {
+      "rtype": "multipolygon",
+      "role": "Abu Dhabi Islamic Bank - ADIB",
+      "count_all_members": 1,
+      "count_all_members_fraction": 0,
+      "count_node_members": 1,
+      "count_node_members_fraction": 0.0001,
+      "count_way_members": 0,
+      "count_way_members_fraction": 0,
+      "count_relation_members": 0,
+      "count_relation_members_fraction": 0
+    }
+  ]
+}

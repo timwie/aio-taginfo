@@ -1,0 +1,129 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/projects/all?page=1&rp=10&sortname=name&sortorder=asc",
+  "data_until": "2024-04-28T00:59:42Z",
+  "page": 1,
+  "rp": 10,
+  "total": 207,
+  "data": [
+    {
+      "id": "architects_in_osm",
+      "name": "Architects in OSM (BE, CH, FR, NL)",
+      "project_url": "https://osm.ascolteo.fr/xref/FR/",
+      "icon_url": "https://osm.ascolteo.fr/xref/favicon.png",
+      "doc_url": "https://osm.ascolteo.fr/aide",
+      "description": "Data about buildings and architects in OSM",
+      "key_entries": 10,
+      "tag_entries": 0,
+      "unique_keys": 10,
+      "unique_tags": 0
+    },
+    {
+      "id": "babykarte",
+      "name": "Babykarte",
+      "project_url": "https://babykarte.openstreetmap.de/",
+      "icon_url": "https://babykarte.github.io/favicon.ico",
+      "doc_url": "https://wiki.openstreetmap.org/wiki/Babykarte",
+      "description": "A map for parents of infants and toddlers.",
+      "key_entries": 2,
+      "tag_entries": 30,
+      "unique_keys": 15,
+      "unique_tags": 30
+    },
+    {
+      "id": "bano",
+      "name": "BANO project (Base d'Adresses Nationale Ouverte) - France",
+      "project_url": "http://openstreetmap.fr/bano",
+      "icon_url": null,
+      "doc_url": null,
+      "description": "Open Adresses Database for France",
+      "key_entries": 4,
+      "tag_entries": 0,
+      "unique_keys": 4,
+      "unique_tags": 0
+    },
+    {
+      "id": "bexhillosm",
+      "name": "Bexhill OpenStreetMap",
+      "project_url": "https://bexhill-osm.org.uk",
+      "icon_url": "https://bexhill-osm.org.uk/favicon-32x32.png",
+      "doc_url": "https://wiki.openstreetmap.org/wiki/Bexhill-on-Sea",
+      "description": "A highly detailed map of Bexhill-on-Sea, England. Discover art, shops, walks, history and a wealth of other information.",
+      "key_entries": 39,
+      "tag_entries": 1,
+      "unique_keys": 40,
+      "unique_tags": 1
+    },
+    {
+      "id": "bikecitizens",
+      "name": "Bike Citizens Bicycle Navigation",
+      "project_url": "https://map.bikecitizens.net",
+      "icon_url": "https://map.bikecitizens.net/assets/favicons/favicon-16x16.png",
+      "doc_url": null,
+      "description": "Bicycle routing app and online route planner designed for urban cyclists.",
+      "key_entries": 26,
+      "tag_entries": 96,
+      "unique_keys": 37,
+      "unique_tags": 94
+    },
+    {
+      "id": "boxlocator",
+      "name": "Box Locator",
+      "project_url": "https://boxlocator.eu",
+      "icon_url": "https://boxlocator.eu/favicon.ico",
+      "doc_url": null,
+      "description": "Find vending machines and special amenities i.e. post offices near you.",
+      "key_entries": 1,
+      "tag_entries": 46,
+      "unique_keys": 2,
+      "unique_tags": 45
+    },
+    {
+      "id": "bus_lanes",
+      "name": "Bus lanes viewer",
+      "project_url": "https://zlant.github.io/bus-lanes/",
+      "icon_url": null,
+      "doc_url": "https://github.com/zlant/bus-lanes",
+      "description": "Bus lanes viewer from OpenStreetMap",
+      "key_entries": 6,
+      "tag_entries": 33,
+      "unique_keys": 14,
+      "unique_tags": 33
+    },
+    {
+      "id": "busy_hours",
+      "name": "Busy Hours",
+      "project_url": "https://jungle-bus.github.io/Busy-Hours/#/",
+      "icon_url": "https://raw.githubusercontent.com/Jungle-Bus/resources/master/logo/Logo_Jungle_Bus-Busy_Hours.png",
+      "doc_url": "https://github.com/Jungle-Bus/Busy-Hours",
+      "description": "Easy editing of OpenStreetMap public transport hours",
+      "key_entries": 11,
+      "tag_entries": 2,
+      "unique_keys": 12,
+      "unique_tags": 2
+    },
+    {
+      "id": "caddieapp",
+      "name": "Caddieapp",
+      "project_url": "https://caddie.app",
+      "icon_url": "https://caddie.app/taginfo.png",
+      "doc_url": null,
+      "description": "Golf app providing course maps and distance measurement using OpenStreetMap data",
+      "key_entries": 7,
+      "tag_entries": 8,
+      "unique_keys": 9,
+      "unique_tags": 8
+    },
+    {
+      "id": "cartomobil_ite",
+      "name": "CartoMobil'ite",
+      "project_url": "https://carto.mobilite.xyz/",
+      "icon_url": "https://github.com/Cartomobil-ite/cartomobil-ite/raw/master/static/favicon.png",
+      "doc_url": "https://github.com/Cartomobil-ite/cartomobil-ite",
+      "description": "The collaborative map for sustainable, active and inclusive mobility in Tahiti and Moorea.",
+      "key_entries": 78,
+      "tag_entries": 4,
+      "unique_keys": 82,
+      "unique_tags": 4
+    }
+  ]
+}

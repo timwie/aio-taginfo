@@ -1,0 +1,211 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/relation/wiki_pages?rtype=multipolygon",
+  "data_until": "2024-04-28T00:59:42Z",
+  "total": 12,
+  "data": [
+    {
+      "lang": "cs",
+      "dir": "ltr",
+      "language": "Čeština",
+      "language_en": "Czech",
+      "title": "Cs:Relation:multipolygon",
+      "description": "Relace multipolygon slouží ke kreslení složitých ploch.",
+      "image": {
+        "title": "File:Multipolygon Illustration 6.svg",
+        "width": 400,
+        "height": 325,
+        "mime": "image/svg+xml",
+        "image_url": "https://wiki.openstreetmap.org/w/images/a/af/Multipolygon_Illustration_6.svg",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/a/af/Multipolygon_Illustration_6.svg/",
+        "thumb_url_suffix": "px-Multipolygon_Illustration_6.svg.png"
+      }
+    },
+    {
+      "lang": "de",
+      "dir": "ltr",
+      "language": "Deutsch",
+      "language_en": "German",
+      "title": "DE:Relation:multipolygon",
+      "description": "Die Relation ''Multipolygon'' wird zur Darstellung von komplexen Flächen verwendet. Das sind insbesondere Flächen mit 'Löchern', großen Umfängen oder geographisch getrennt liegenden Flächenstücken.",
+      "image": {
+        "title": "File:Multipolygon Illustration 6.svg",
+        "width": 400,
+        "height": 325,
+        "mime": "image/svg+xml",
+        "image_url": "https://wiki.openstreetmap.org/w/images/a/af/Multipolygon_Illustration_6.svg",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/a/af/Multipolygon_Illustration_6.svg/",
+        "thumb_url_suffix": "px-Multipolygon_Illustration_6.svg.png"
+      }
+    },
+    {
+      "lang": "en",
+      "dir": "ltr",
+      "language": "English",
+      "language_en": "English",
+      "title": "Relation:multipolygon",
+      "description": "The multipolygon relation is used to represent complex areas.",
+      "image": {
+        "title": "File:Multipolygon Illustration 6.svg",
+        "width": 400,
+        "height": 325,
+        "mime": "image/svg+xml",
+        "image_url": "https://wiki.openstreetmap.org/w/images/a/af/Multipolygon_Illustration_6.svg",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/a/af/Multipolygon_Illustration_6.svg/",
+        "thumb_url_suffix": "px-Multipolygon_Illustration_6.svg.png"
+      }
+    },
+    {
+      "lang": "es",
+      "dir": "ltr",
+      "language": "Español",
+      "language_en": "Spanish",
+      "title": "ES:Relation:multipolygon",
+      "description": "Esta relación se usa para representar áreas con agujeros.",
+      "image": {
+        "title": "File:Multipolygon Illustration 6.svg",
+        "width": 400,
+        "height": 325,
+        "mime": "image/svg+xml",
+        "image_url": "https://wiki.openstreetmap.org/w/images/a/af/Multipolygon_Illustration_6.svg",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/a/af/Multipolygon_Illustration_6.svg/",
+        "thumb_url_suffix": "px-Multipolygon_Illustration_6.svg.png"
+      }
+    },
+    {
+      "lang": "fr",
+      "dir": "ltr",
+      "language": "Français",
+      "language_en": "French",
+      "title": "FR:Relation:multipolygon",
+      "description": "La relation multipolygon est utilisée pour représenter les surfaces complexes.",
+      "image": {
+        "title": "File:Multipolygon Illustration 6.svg",
+        "width": 400,
+        "height": 325,
+        "mime": "image/svg+xml",
+        "image_url": "https://wiki.openstreetmap.org/w/images/a/af/Multipolygon_Illustration_6.svg",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/a/af/Multipolygon_Illustration_6.svg/",
+        "thumb_url_suffix": "px-Multipolygon_Illustration_6.svg.png"
+      }
+    },
+    {
+      "lang": "hu",
+      "dir": "ltr",
+      "language": "Magyar",
+      "language_en": "Hungarian",
+      "title": "Hu:Relation:multipolygon",
+      "description": "A multipoligon kapcsolatot összetett területek ábrázolására használjuk.",
+      "image": {
+        "title": "File:Multipolygon Illustration 6.svg",
+        "width": 400,
+        "height": 325,
+        "mime": "image/svg+xml",
+        "image_url": "https://wiki.openstreetmap.org/w/images/a/af/Multipolygon_Illustration_6.svg",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/a/af/Multipolygon_Illustration_6.svg/",
+        "thumb_url_suffix": "px-Multipolygon_Illustration_6.svg.png"
+      }
+    },
+    {
+      "lang": "it",
+      "dir": "ltr",
+      "language": "Italiano",
+      "language_en": "Italian",
+      "title": "IT:Relation:multipolygon",
+      "description": "La relazione multipolygon si usa per rappresentare aree complesse.",
+      "image": {
+        "title": "File:Multipolygon Illustration 6.svg",
+        "width": 400,
+        "height": 325,
+        "mime": "image/svg+xml",
+        "image_url": "https://wiki.openstreetmap.org/w/images/a/af/Multipolygon_Illustration_6.svg",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/a/af/Multipolygon_Illustration_6.svg/",
+        "thumb_url_suffix": "px-Multipolygon_Illustration_6.svg.png"
+      }
+    },
+    {
+      "lang": "ja",
+      "dir": "ltr",
+      "language": "日本語",
+      "language_en": "Japanese",
+      "title": "JA:Relation:multipolygon",
+      "description": "マルチポリゴンリレーションは複雑なエリアを表すのに使用します。",
+      "image": {
+        "title": "File:Multipolygon Illustration 6.svg",
+        "width": 400,
+        "height": 325,
+        "mime": "image/svg+xml",
+        "image_url": "https://wiki.openstreetmap.org/w/images/a/af/Multipolygon_Illustration_6.svg",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/a/af/Multipolygon_Illustration_6.svg/",
+        "thumb_url_suffix": "px-Multipolygon_Illustration_6.svg.png"
+      }
+    },
+    {
+      "lang": "nl",
+      "dir": "ltr",
+      "language": "Nederlands",
+      "language_en": "Dutch",
+      "title": "NL:Relation:multipolygon",
+      "description": "De relatie multipolygon wordt gebruikt om complexe gebieden weer te geven.",
+      "image": {
+        "title": "File:Multipolygon Illustration 6.svg",
+        "width": 400,
+        "height": 325,
+        "mime": "image/svg+xml",
+        "image_url": "https://wiki.openstreetmap.org/w/images/a/af/Multipolygon_Illustration_6.svg",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/a/af/Multipolygon_Illustration_6.svg/",
+        "thumb_url_suffix": "px-Multipolygon_Illustration_6.svg.png"
+      }
+    },
+    {
+      "lang": "pl",
+      "dir": "ltr",
+      "language": "Polski",
+      "language_en": "Polish",
+      "title": "Pl:Relation:multipolygon",
+      "description": "Grupowanie złożonych obszarów.",
+      "image": {
+        "title": "File:Multipolygon Illustration 6.svg",
+        "width": 400,
+        "height": 325,
+        "mime": "image/svg+xml",
+        "image_url": "https://wiki.openstreetmap.org/w/images/a/af/Multipolygon_Illustration_6.svg",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/a/af/Multipolygon_Illustration_6.svg/",
+        "thumb_url_suffix": "px-Multipolygon_Illustration_6.svg.png"
+      }
+    },
+    {
+      "lang": "ru",
+      "dir": "ltr",
+      "language": "Русский",
+      "language_en": "Russian",
+      "title": "RU:Relation:multipolygon",
+      "description": null,
+      "image": {
+        "title": null,
+        "width": 0,
+        "height": 0,
+        "mime": null,
+        "image_url": null,
+        "thumb_url_prefix": null,
+        "thumb_url_suffix": null
+      }
+    },
+    {
+      "lang": "uk",
+      "dir": "ltr",
+      "language": "Українська",
+      "language_en": "Ukrainian",
+      "title": "Uk:Relation:multipolygon",
+      "description": "Зв’язок мультиполігон використовується для створення комплексних полігонів.",
+      "image": {
+        "title": "File:Multipolygon Illustration 6.svg",
+        "width": 400,
+        "height": 325,
+        "mime": "image/svg+xml",
+        "image_url": "https://wiki.openstreetmap.org/w/images/a/af/Multipolygon_Illustration_6.svg",
+        "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/a/af/Multipolygon_Illustration_6.svg/",
+        "thumb_url_suffix": "px-Multipolygon_Illustration_6.svg.png"
+      }
+    }
+  ]
+}

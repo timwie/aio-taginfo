@@ -1,0 +1,682 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/tags/list?tags=highway=primary,secondary,amenity=post_box",
+  "data_until": "2024-04-28T00:59:42Z",
+  "total": 3,
+  "data": [
+    {
+      "key": "highway",
+      "value": "primary",
+      "in_wiki": 1,
+      "count_all": 3536756,
+      "count_all_fraction": 0.0003,
+      "count_nodes": 38,
+      "count_nodes_fraction": 0,
+      "count_ways": 3536470,
+      "count_ways_fraction": 0.0035,
+      "count_relations": 248,
+      "count_relations_fraction": 0,
+      "wiki": {
+        "cs": {
+          "description": "Hlavní silniční tahy spojující velká města (silnice 1. třídy).",
+          "image": {
+            "image": "File:Primary-photo.jpg",
+            "width": 800,
+            "height": 600,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/c/c3/Primary-photo.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Primary-photo.jpg/",
+            "thumb_url_suffix": "px-Primary-photo.jpg"
+          }
+        },
+        "de": {
+          "description": "überregionale Landstraße, Bundesstraße (D), Hauptstrasse (CH)",
+          "image": {
+            "image": "File:Primary-photo.jpg",
+            "width": 800,
+            "height": 600,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/c/c3/Primary-photo.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Primary-photo.jpg/",
+            "thumb_url_suffix": "px-Primary-photo.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Rendering-highway_primary_carto.png"
+          }
+        },
+        "en": {
+          "description": "A highway linking large towns.",
+          "image": {
+            "image": "File:Primary-photo.jpg",
+            "width": 800,
+            "height": 600,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/c/c3/Primary-photo.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Primary-photo.jpg/",
+            "thumb_url_suffix": "px-Primary-photo.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Rendering-highway primary carto.png",
+            "width": 125,
+            "height": 125,
+            "mime": "image/png",
+            "image_url": "https://wiki.openstreetmap.org/w/images/1/15/Rendering-highway_primary_carto.png",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/1/15/Rendering-highway_primary_carto.png/",
+            "thumb_url_suffix": "px-Rendering-highway_primary_carto.png"
+          }
+        },
+        "es": {
+          "description": "Una vía de circulación que enlaza grandes ciudades.",
+          "image": {
+            "image": "File:Primary-photo.jpg",
+            "width": 800,
+            "height": 600,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/c/c3/Primary-photo.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Primary-photo.jpg/",
+            "thumb_url_suffix": "px-Primary-photo.jpg"
+          }
+        },
+        "fr": {
+          "description": "Une route principale reliant de grandes villes.",
+          "image": {
+            "image": "File:Primary-photo.jpg",
+            "width": 800,
+            "height": 600,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/c/c3/Primary-photo.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Primary-photo.jpg/",
+            "thumb_url_suffix": "px-Primary-photo.jpg"
+          }
+        },
+        "gcf": {
+          "description": "Chimen a gouvèlman",
+          "image": {
+            "image": "File:Primary-photo.jpg",
+            "width": 800,
+            "height": 600,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/c/c3/Primary-photo.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Primary-photo.jpg/",
+            "thumb_url_suffix": "px-Primary-photo.jpg"
+          }
+        },
+        "it": {
+          "description": "Una strada che collega grandi città.",
+          "image": {
+            "image": "File:Primary-photo.jpg",
+            "width": 800,
+            "height": 600,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/c/c3/Primary-photo.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Primary-photo.jpg/",
+            "thumb_url_suffix": "px-Primary-photo.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Rendering-highway_primary_carto.png"
+          }
+        },
+        "ja": {
+          "description": "第一種道路。大きな町を結ぶ道路です。",
+          "image": {
+            "image": "File:Primary-photo.jpg",
+            "width": 800,
+            "height": 600,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/c/c3/Primary-photo.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Primary-photo.jpg/",
+            "thumb_url_suffix": "px-Primary-photo.jpg"
+          }
+        },
+        "ko": {
+          "description": "국도에만 해당되는 도로를 말합니다.",
+          "image": {
+            "image": "File:Korea Nationl Route 5 at Hwacheon, Gangwon-do 1.JPG",
+            "width": 3872,
+            "height": 2592,
+            "mime": "image/jpeg",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Korea_Nationl_Route_5_at_Hwacheon%2C_Gangwon-do_1.JPG",
+            "thumb_url_prefix": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Korea_Nationl_Route_5_at_Hwacheon%2C_Gangwon-do_1.JPG/",
+            "thumb_url_suffix": "px-Korea_Nationl_Route_5_at_Hwacheon%2C_Gangwon-do_1.JPG"
+          }
+        },
+        "ms": {
+          "description": null
+        },
+        "pl": {
+          "description": "Droga główna łącząca większe miasta.",
+          "image": {
+            "image": "File:Primary-photo.jpg",
+            "width": 800,
+            "height": 600,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/c/c3/Primary-photo.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Primary-photo.jpg/",
+            "thumb_url_suffix": "px-Primary-photo.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Rendering-highway_primary_carto.png"
+          }
+        },
+        "pt": {
+          "description": "Via muito importante com bastante fluxo e que liga grandes cidades. Brasil: Utilize o mais recente padrão adotado em 2020. Portugal: usar em Estradas Nacionais (EN) não desclassificadas.",
+          "image": {
+            "image": "File:Primary-photo.jpg",
+            "width": 800,
+            "height": 600,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/c/c3/Primary-photo.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Primary-photo.jpg/",
+            "thumb_url_suffix": "px-Primary-photo.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Rendering-highway_primary_carto.png"
+          }
+        },
+        "pt-br": {
+          "description": null
+        },
+        "ru": {
+          "description": "Дорога, соединяющая большие города.",
+          "image": {
+            "image": "File:Primary-photo.jpg",
+            "width": 800,
+            "height": 600,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/c/c3/Primary-photo.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Primary-photo.jpg/",
+            "thumb_url_suffix": "px-Primary-photo.jpg"
+          }
+        },
+        "uk": {
+          "description": "Дороги, які з'єднують великі міста."
+        },
+        "vi": {
+          "description": "Đường tỉnh hoặc đường đô thị chính"
+        },
+        "zh-hans": {
+          "description": "连接中小城市的道路。",
+          "image": {
+            "image": "File:Primary-photo.jpg",
+            "width": 800,
+            "height": 600,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/c/c3/Primary-photo.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Primary-photo.jpg/",
+            "thumb_url_suffix": "px-Primary-photo.jpg"
+          }
+        },
+        "zh-hant": {
+          "description": "連結大型市鎮的道路。",
+          "image": {
+            "image": "File:Primary-photo.jpg",
+            "width": 800,
+            "height": 600,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/c/c3/Primary-photo.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/c/c3/Primary-photo.jpg/",
+            "thumb_url_suffix": "px-Primary-photo.jpg"
+          }
+        }
+      },
+      "on_node": false,
+      "on_way": true,
+      "on_area": false,
+      "on_relation": false,
+      "projects": 0
+    },
+    {
+      "key": "highway",
+      "value": "secondary",
+      "in_wiki": 1,
+      "count_all": 5125127,
+      "count_all_fraction": 0.0005,
+      "count_nodes": 44,
+      "count_nodes_fraction": 0,
+      "count_ways": 5124267,
+      "count_ways_fraction": 0.005,
+      "count_relations": 816,
+      "count_relations_fraction": 0.0001,
+      "wiki": {
+        "cs": {
+          "description": "Hlavní silniční tahy spojující velká města (silnice 2. třídy).",
+          "image": {
+            "image": "File:Meyenburg-L134.jpg",
+            "width": 1024,
+            "height": 768,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/1/17/Meyenburg-L134.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/1/17/Meyenburg-L134.jpg/",
+            "thumb_url_suffix": "px-Meyenburg-L134.jpg"
+          }
+        },
+        "de": {
+          "description": "Landes- oder Staatsstraße, überregionale Verbindungsstraße zwischen größeren Orten (DE, AT), Hauptstraße 2. Ordnung (CH)",
+          "image": {
+            "image": "File:Meyenburg-L134.jpg",
+            "width": 1024,
+            "height": 768,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/1/17/Meyenburg-L134.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/1/17/Meyenburg-L134.jpg/",
+            "thumb_url_suffix": "px-Meyenburg-L134.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Rendering-highway_secondary_carto.png"
+          }
+        },
+        "en": {
+          "description": "A highway linking large towns.",
+          "image": {
+            "image": "File:Meyenburg-L134.jpg",
+            "width": 1024,
+            "height": 768,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/1/17/Meyenburg-L134.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/1/17/Meyenburg-L134.jpg/",
+            "thumb_url_suffix": "px-Meyenburg-L134.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Rendering-highway secondary carto.png",
+            "width": 125,
+            "height": 125,
+            "mime": "image/png",
+            "image_url": "https://wiki.openstreetmap.org/w/images/1/14/Rendering-highway_secondary_carto.png",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/1/14/Rendering-highway_secondary_carto.png/",
+            "thumb_url_suffix": "px-Rendering-highway_secondary_carto.png"
+          }
+        },
+        "es": {
+          "description": "Una vía de circulación que enlaza ciudades medianas.",
+          "image": {
+            "image": "File:Meyenburg-L134.jpg",
+            "width": 1024,
+            "height": 768,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/1/17/Meyenburg-L134.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/1/17/Meyenburg-L134.jpg/",
+            "thumb_url_suffix": "px-Meyenburg-L134.jpg"
+          }
+        },
+        "fa": {
+          "description": "A highway linking large towns.",
+          "image": {
+            "image": "File:Meyenburg-L134.jpg",
+            "width": 1024,
+            "height": 768,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/1/17/Meyenburg-L134.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/1/17/Meyenburg-L134.jpg/",
+            "thumb_url_suffix": "px-Meyenburg-L134.jpg"
+          }
+        },
+        "fi": {
+          "description": "Alueelliset pääkadut taajamissa, seututiet taajamien ulkopuolella.",
+          "image": {
+            "image": "File:Fi secondary.jpg",
+            "width": 800,
+            "height": 450,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/0/05/Fi_secondary.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/0/05/Fi_secondary.jpg/",
+            "thumb_url_suffix": "px-Fi_secondary.jpg"
+          }
+        },
+        "fr": {
+          "description": "Une route reliant des villes.",
+          "image": {
+            "image": "File:Meyenburg-L134.jpg",
+            "width": 1024,
+            "height": 768,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/1/17/Meyenburg-L134.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/1/17/Meyenburg-L134.jpg/",
+            "thumb_url_suffix": "px-Meyenburg-L134.jpg"
+          }
+        },
+        "it": {
+          "description": "Una strada di collegamento tra piccole città, spesso a una sola corsia.",
+          "image": {
+            "image": "File:Meyenburg-L134.jpg",
+            "width": 1024,
+            "height": 768,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/1/17/Meyenburg-L134.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/1/17/Meyenburg-L134.jpg/",
+            "thumb_url_suffix": "px-Meyenburg-L134.jpg"
+          }
+        },
+        "ja": {
+          "description": "第二種道路。大きな町を結ぶ道路です。",
+          "image": {
+            "image": "File:Meyenburg-L134.jpg",
+            "width": 1024,
+            "height": 768,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/1/17/Meyenburg-L134.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/1/17/Meyenburg-L134.jpg/",
+            "thumb_url_suffix": "px-Meyenburg-L134.jpg"
+          }
+        },
+        "ko": {
+          "description": "지방도에 해당되는 도로를 말합니다.",
+          "image": {
+            "image": "File:Korean local line 1011.JPG",
+            "width": 2448,
+            "height": 3264,
+            "mime": "image/jpeg",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Korean_local_line_1011.JPG",
+            "thumb_url_prefix": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Korean_local_line_1011.JPG/",
+            "thumb_url_suffix": "px-Korean_local_line_1011.JPG"
+          }
+        },
+        "ms": {
+          "description": "Jalan raya ke bandar-bandar dan pekan-pekan utama dari jalan-jalan primer atau lebuh raya",
+          "image": {
+            "image": "File:Balakong town, Selangor.jpg",
+            "width": 2232,
+            "height": 1628,
+            "mime": "image/jpeg",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/15/Balakong_town%2C_Selangor.jpg",
+            "thumb_url_prefix": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Balakong_town%2C_Selangor.jpg/",
+            "thumb_url_suffix": "px-Balakong_town%2C_Selangor.jpg"
+          }
+        },
+        "pl": {
+          "description": "Droga łącząca większe miasta.",
+          "image": {
+            "image": "File:Meyenburg-L134.jpg",
+            "width": 1024,
+            "height": 768,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/1/17/Meyenburg-L134.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/1/17/Meyenburg-L134.jpg/",
+            "thumb_url_suffix": "px-Meyenburg-L134.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Rendering-highway_secondary_carto.png"
+          }
+        },
+        "pt": {
+          "description": "Estrada importante que liga cidades, mas com bastante uso local. Em Portugal: usar em Estradas Regionais (ER) e Municipais (EM) com marcação no eixo.",
+          "osmcarto_rendering": {
+            "image": "File:Rendering-highway_secondary_carto.png"
+          }
+        },
+        "pt-br": {
+          "description": null
+        },
+        "ru": {
+          "description": "Дороги, соединяющие крупные населённые пункты.",
+          "image": {
+            "image": "File:Meyenburg-L134.jpg",
+            "width": 1024,
+            "height": 768,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/1/17/Meyenburg-L134.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/1/17/Meyenburg-L134.jpg/",
+            "thumb_url_suffix": "px-Meyenburg-L134.jpg"
+          }
+        },
+        "uk": {
+          "description": "Дороги, що з'єднують малі міста, а також різні частини великих міст.",
+          "image": {
+            "image": "File:Meyenburg-L134.jpg",
+            "width": 1024,
+            "height": 768,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/1/17/Meyenburg-L134.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/1/17/Meyenburg-L134.jpg/",
+            "thumb_url_suffix": "px-Meyenburg-L134.jpg"
+          }
+        },
+        "vi": {
+          "description": "Đường đô thị phụ hoặc đường huyện (cấp quận - huyện). Ở mức đô thị, loại đường này góp phần làm giảm lưu lượng giao thông ở các tuyến chính lớn hơn"
+        },
+        "zh-hans": {
+          "description": "次要道路是连接重要城镇的道路。",
+          "image": {
+            "image": "File:Meyenburg-L134.jpg",
+            "width": 1024,
+            "height": 768,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/1/17/Meyenburg-L134.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/1/17/Meyenburg-L134.jpg/",
+            "thumb_url_suffix": "px-Meyenburg-L134.jpg"
+          }
+        },
+        "zh-hant": {
+          "description": "二級道路。連接大型市鎮的道路。",
+          "image": {
+            "image": "File:Meyenburg-L134.jpg",
+            "width": 1024,
+            "height": 768,
+            "mime": "image/jpeg",
+            "image_url": "https://wiki.openstreetmap.org/w/images/1/17/Meyenburg-L134.jpg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/1/17/Meyenburg-L134.jpg/",
+            "thumb_url_suffix": "px-Meyenburg-L134.jpg"
+          }
+        }
+      },
+      "on_node": false,
+      "on_way": true,
+      "on_area": false,
+      "on_relation": false,
+      "projects": 0
+    },
+    {
+      "key": "amenity",
+      "value": "post_box",
+      "in_wiki": 1,
+      "count_all": 375965,
+      "count_all_fraction": 0,
+      "count_nodes": 375842,
+      "count_nodes_fraction": 0.0016,
+      "count_ways": 122,
+      "count_ways_fraction": 0,
+      "count_relations": 1,
+      "count_relations_fraction": 0,
+      "wiki": {
+        "ca": {
+          "description": "Un receptable accessible al pública on es col·loca la correspondència per a ser enviada..",
+          "image": {
+            "image": "File:Correio Mailbox Brasil.jpg",
+            "width": 1599,
+            "height": 2206,
+            "mime": "image/jpeg",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Correio_Mailbox_in_Belo_Horizonte%2C_Brasil.jpg",
+            "thumb_url_prefix": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Correio_Mailbox_in_Belo_Horizonte%2C_Brasil.jpg/",
+            "thumb_url_suffix": "px-Correio_Mailbox_in_Belo_Horizonte%2C_Brasil.jpg"
+          }
+        },
+        "cs": {
+          "description": "Poštovní schránka pro odchozí poštu",
+          "image": {
+            "image": "File:USPS Mailbox.jpg",
+            "width": 1200,
+            "height": 1600,
+            "mime": "image/jpeg",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/USPS_Mailbox.jpg",
+            "thumb_url_prefix": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/USPS_Mailbox.jpg/",
+            "thumb_url_suffix": "px-USPS_Mailbox.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Post_box-12.svg"
+          }
+        },
+        "de": {
+          "description": "Kasten zum Einwerfen von Briefen durch den Versender zwecks Weitertransport durch das Postunternehmen",
+          "image": {
+            "image": "File:German letterbox.jpg",
+            "width": 3072,
+            "height": 2304,
+            "mime": "image/jpeg",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/a/a2/German_letterbox.jpg",
+            "thumb_url_prefix": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/German_letterbox.jpg/",
+            "thumb_url_suffix": "px-German_letterbox.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Post_box-12.svg"
+          }
+        },
+        "en": {
+          "description": "A box to deposit outgoing postal items.",
+          "image": {
+            "image": "File:USPS Mailbox.jpg",
+            "width": 1200,
+            "height": 1600,
+            "mime": "image/jpeg",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/USPS_Mailbox.jpg",
+            "thumb_url_prefix": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/USPS_Mailbox.jpg/",
+            "thumb_url_suffix": "px-USPS_Mailbox.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Post box-12.svg",
+            "width": 12,
+            "height": 12,
+            "mime": "image/svg+xml",
+            "image_url": "https://wiki.openstreetmap.org/w/images/d/d4/Post_box-12.svg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/d/d4/Post_box-12.svg/",
+            "thumb_url_suffix": "px-Post_box-12.svg.png"
+          }
+        },
+        "es": {
+          "description": "Una caja o receptáculo para depositar los envíos postales salientes.",
+          "image": {
+            "image": "File:USPS Mailbox.jpg",
+            "width": 1200,
+            "height": 1600,
+            "mime": "image/jpeg",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/USPS_Mailbox.jpg",
+            "thumb_url_prefix": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/USPS_Mailbox.jpg/",
+            "thumb_url_suffix": "px-USPS_Mailbox.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Post_box-12.svg"
+          }
+        },
+        "fr": {
+          "description": "Une boîte aux lettres pour l'expédition du courrier.",
+          "image": {
+            "image": "File:Bal.png",
+            "width": 584,
+            "height": 718,
+            "mime": "image/png",
+            "image_url": "https://wiki.openstreetmap.org/w/images/7/7e/Bal.png",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/7/7e/Bal.png/",
+            "thumb_url_suffix": "px-Bal.png"
+          }
+        },
+        "ja": {
+          "description": "郵便ポスト。郵便物を出すボックスです。",
+          "image": {
+            "image": "File:USPS Mailbox.jpg",
+            "width": 1200,
+            "height": 1600,
+            "mime": "image/jpeg",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/USPS_Mailbox.jpg",
+            "thumb_url_prefix": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/USPS_Mailbox.jpg/",
+            "thumb_url_suffix": "px-USPS_Mailbox.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Post_box-12.svg"
+          }
+        },
+        "pl": {
+          "description": "Zaznaczenie lokalizacji skrzynki pocztowej.",
+          "image": {
+            "image": "File:Poczta Polska Mailbox.jpg",
+            "width": 2300,
+            "height": 1900,
+            "mime": "image/jpeg",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Poczta_Polska_Mailbox.jpg",
+            "thumb_url_prefix": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Poczta_Polska_Mailbox.jpg/",
+            "thumb_url_suffix": "px-Poczta_Polska_Mailbox.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Post_box-12.svg"
+          }
+        },
+        "pt": {
+          "description": "Caixa de correio, caixa postal ou marco de correio: recipiente, normalmente só com uma ranhura (ou mais se tiver correio diferenciado) para deixar cartas para serem enviadas por empresas de transportes de correio.",
+          "image": {
+            "image": "File:Correio Mailbox Brasil.jpg",
+            "width": 1599,
+            "height": 2206,
+            "mime": "image/jpeg",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Correio_Mailbox_in_Belo_Horizonte%2C_Brasil.jpg",
+            "thumb_url_prefix": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Correio_Mailbox_in_Belo_Horizonte%2C_Brasil.jpg/",
+            "thumb_url_suffix": "px-Correio_Mailbox_in_Belo_Horizonte%2C_Brasil.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Post_box-12.svg"
+          }
+        },
+        "pt-br": {
+          "description": null
+        },
+        "ru": {
+          "description": "Почтовый ящик для сбора исходящих почтовых отправлений.",
+          "image": {
+            "image": "File:USPS Mailbox.jpg",
+            "width": 1200,
+            "height": 1600,
+            "mime": "image/jpeg",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/USPS_Mailbox.jpg",
+            "thumb_url_prefix": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/USPS_Mailbox.jpg/",
+            "thumb_url_suffix": "px-USPS_Mailbox.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Post box-12.svg",
+            "width": 12,
+            "height": 12,
+            "mime": "image/svg+xml",
+            "image_url": "https://wiki.openstreetmap.org/w/images/d/d4/Post_box-12.svg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/d/d4/Post_box-12.svg/",
+            "thumb_url_suffix": "px-Post_box-12.svg.png"
+          }
+        },
+        "uk": {
+          "description": "Поштова скриня для вихідних поштових відправлень.",
+          "image": {
+            "image": "File:Ukrainian Postbox in Dnipro.jpg",
+            "width": 1536,
+            "height": 2048,
+            "mime": "image/jpeg",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/8/85/Ukrainian_Postbox_in_Dnipro.jpg",
+            "thumb_url_prefix": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Ukrainian_Postbox_in_Dnipro.jpg/",
+            "thumb_url_suffix": "px-Ukrainian_Postbox_in_Dnipro.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Post box-12.svg",
+            "width": 12,
+            "height": 12,
+            "mime": "image/svg+xml",
+            "image_url": "https://wiki.openstreetmap.org/w/images/d/d4/Post_box-12.svg",
+            "thumb_url_prefix": "https://wiki.openstreetmap.org/w/images/thumb/d/d4/Post_box-12.svg/",
+            "thumb_url_suffix": "px-Post_box-12.svg.png"
+          }
+        },
+        "zh-hant": {
+          "description": "用來存入物品郵寄的箱子。",
+          "image": {
+            "image": "File:USPS Mailbox.jpg",
+            "width": 1200,
+            "height": 1600,
+            "mime": "image/jpeg",
+            "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/USPS_Mailbox.jpg",
+            "thumb_url_prefix": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/USPS_Mailbox.jpg/",
+            "thumb_url_suffix": "px-USPS_Mailbox.jpg"
+          },
+          "osmcarto_rendering": {
+            "image": "File:Post_box-12.svg"
+          }
+        }
+      },
+      "on_node": true,
+      "on_way": false,
+      "on_area": false,
+      "on_relation": false,
+      "projects": 0
+    }
+  ]
+}

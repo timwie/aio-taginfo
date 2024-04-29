@@ -1,0 +1,75 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/keys/wiki_pages?page=1&rp=10&sortname=key&sortorder=asc",
+  "data_until": "2024-04-28T00:59:42Z",
+  "page": 1,
+  "rp": 10,
+  "total": 5443,
+  "data": [
+    {
+      "key": "*",
+      "lang": {
+        "cs": "r",
+        "en": "r",
+        "uk": "r",
+        "ja": "r"
+      }
+    },
+    {
+      "key": "*:backward",
+      "lang": {
+        "en": "r"
+      }
+    },
+    {
+      "key": "*:bicycle",
+      "lang": {
+        "en": "r"
+      }
+    },
+    {
+      "key": "*:both_ways",
+      "lang": {
+        "en": "p",
+        "uk": "p",
+        "de": "p"
+      }
+    },
+    {
+      "key": "*:clothes",
+      "lang": {
+        "en": "p"
+      }
+    },
+    {
+      "key": "*:conditional",
+      "lang": {
+        "en": "p",
+        "uk": "p"
+      }
+    },
+    {
+      "key": "*:en",
+      "lang": {
+        "en": "r"
+      }
+    },
+    {
+      "key": "*:forward",
+      "lang": {
+        "en": "r"
+      }
+    },
+    {
+      "key": "*:genitive",
+      "lang": {
+        "en": "p"
+      }
+    },
+    {
+      "key": "*:hgv",
+      "lang": {
+        "en": "r"
+      }
+    }
+  ]
+}

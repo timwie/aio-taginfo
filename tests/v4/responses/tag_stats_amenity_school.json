@@ -1,0 +1,27 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/tag/stats?key=amenity&value=school",
+  "data_until": "2024-04-28T00:59:42Z",
+  "total": 4,
+  "data": [
+    {
+      "type": "all",
+      "count": 1307441,
+      "count_fraction": 0.0001
+    },
+    {
+      "type": "nodes",
+      "count": 502252,
+      "count_fraction": 0.0021
+    },
+    {
+      "type": "ways",
+      "count": 779254,
+      "count_fraction": 0.0008
+    },
+    {
+      "type": "relations",
+      "count": 25935,
+      "count_fraction": 0.0021
+    }
+  ]
+}

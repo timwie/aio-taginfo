@@ -1,0 +1,213 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/keys/without_wiki_page?min_count=1000&english=1&page=1&rp=10&sortname=count_all&sortorder=desc",
+  "data_until": "2024-04-28T00:59:42Z",
+  "page": 1,
+  "rp": 10,
+  "total": 3346,
+  "data": [
+    {
+      "key": "it:fvg:ctrn:revision",
+      "count_all": 572560,
+      "count_all_fraction": 0.000056275311624604463,
+      "values_all": 12,
+      "users_all": 1047,
+      "prevalent_values": [
+        {
+          "value": "1A0",
+          "count": 369755,
+          "fraction": 0.6457925806902334
+        },
+        {
+          "value": "000",
+          "count": 74128,
+          "fraction": 0.12946765404499092
+        },
+        {
+          "value": "1AN",
+          "count": 71941,
+          "fraction": 0.12564796702528994
+        },
+        {
+          "value": "1AM",
+          "count": 56693,
+          "fraction": 0.09901669694005868
+        }
+      ]
+    },
+    {
+      "key": "ref:FR:FANTOIR",
+      "count_all": 566989,
+      "count_all_fraction": 0.00005572775370742431,
+      "values_all": 495574,
+      "users_all": 6731,
+      "prevalent_values": []
+    },
+    {
+      "key": "mvdgis:cod_nombre",
+      "count_all": 246018,
+      "count_all_fraction": 0.000024180417100848718,
+      "values_all": 5194,
+      "users_all": 323,
+      "prevalent_values": []
+    },
+    {
+      "key": "mvdgis:padron",
+      "count_all": 227307,
+      "count_all_fraction": 0.000022341365550254937,
+      "values_all": 205773,
+      "users_all": 199,
+      "prevalent_values": []
+    },
+    {
+      "key": "linz2osm:objectid",
+      "count_all": 219900,
+      "count_all_fraction": 0.000021613352358269042,
+      "values_all": 219783,
+      "users_all": 262,
+      "prevalent_values": []
+    },
+    {
+      "key": "canvec:UUID",
+      "count_all": 156401,
+      "count_all_fraction": 0.000015372214289157055,
+      "values_all": 127465,
+      "users_all": 1138,
+      "prevalent_values": [
+        {
+          "value": "6c7e666ee36f40aaa76fd9bd9df48ca7",
+          "count": 1837,
+          "fraction": 0.011745449197895155
+        },
+        {
+          "value": "3efee5538f6b434782e0d873c67fcfc2",
+          "count": 1651,
+          "fraction": 0.010556198489779477
+        }
+      ]
+    },
+    {
+      "key": "NHD:Permanent_",
+      "count_all": 153609,
+      "count_all_fraction": 0.000015097796463853338,
+      "values_all": 152092,
+      "users_all": 685,
+      "prevalent_values": []
+    },
+    {
+      "key": "canvec:CODE",
+      "count_all": 136170,
+      "count_all_fraction": 0.00001338376621475896,
+      "values_all": 151,
+      "users_all": 1190,
+      "prevalent_values": [
+        {
+          "value": "1240022",
+          "count": 35001,
+          "fraction": 0.2570389953734303
+        },
+        {
+          "value": "1470171",
+          "count": 34540,
+          "fraction": 0.25365352133362706
+        },
+        {
+          "value": "1480272",
+          "count": 15949,
+          "fraction": 0.11712565175883087
+        },
+        {
+          "value": "1320042",
+          "count": 13478,
+          "fraction": 0.0989792171550268
+        },
+        {
+          "value": "1760011",
+          "count": 10780,
+          "fraction": 0.07916574869648234
+        },
+        {
+          "value": "2010252",
+          "count": 6834,
+          "fraction": 0.050187265917602995
+        },
+        {
+          "value": "1480052",
+          "count": 4881,
+          "fraction": 0.03584489975765587
+        },
+        {
+          "value": "1490032",
+          "count": 3302,
+          "fraction": 0.024249100389219357
+        }
+      ]
+    },
+    {
+      "key": "addr:neighbourhood:en",
+      "count_all": 134259,
+      "count_all_fraction": 0.000013195939400949719,
+      "values_all": 1559,
+      "users_all": 135,
+      "prevalent_values": [
+        {
+          "value": "Ezbet Al Qatawi",
+          "count": 3203,
+          "fraction": 0.023856873654652576
+        },
+        {
+          "value": "Palm Beach",
+          "count": 2719,
+          "fraction": 0.02025190117608503
+        },
+        {
+          "value": "Al Salam 2",
+          "count": 2243,
+          "fraction": 0.01670651501947728
+        },
+        {
+          "value": "Ezba Ibrahim Bek",
+          "count": 2025,
+          "fraction": 0.01508278774607289
+        },
+        {
+          "value": "Al Dwagen",
+          "count": 2020,
+          "fraction": 0.015045546294848017
+        },
+        {
+          "value": "Ezbet Al Bakatoshy",
+          "count": 1936,
+          "fraction": 0.014419889914270179
+        },
+        {
+          "value": "Area A",
+          "count": 1598,
+          "fraction": 0.011902367811468877
+        },
+        {
+          "value": "Area D",
+          "count": 1419,
+          "fraction": 0.010569123857618483
+        },
+        {
+          "value": "Al Maraghy Al Qadima Area",
+          "count": 1393,
+          "fraction": 0.010375468311249152
+        },
+        {
+          "value": "Sidi Barakat",
+          "count": 1361,
+          "fraction": 0.010137123023409977
+        }
+      ]
+    },
+    {
+      "key": "dcgis:gis_id",
+      "count_all": 133957,
+      "count_all_fraction": 0.000013166256670562282,
+      "values_all": 114655,
+      "users_all": 580,
+      "prevalent_values": []
+    }
+  ]
+}

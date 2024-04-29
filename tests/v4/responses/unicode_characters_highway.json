@@ -1,0 +1,63 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/unicode/characters?string=highway",
+  "data_until": "2024-04-28T00:59:42Z",
+  "total": 7,
+  "data": [
+    {
+      "char": "h",
+      "codepoint": 104,
+      "script": "Latn",
+      "script_name": "Latin",
+      "category": "Ll",
+      "name": "LATIN SMALL LETTER H"
+    },
+    {
+      "char": "i",
+      "codepoint": 105,
+      "script": "Latn",
+      "script_name": "Latin",
+      "category": "Ll",
+      "name": "LATIN SMALL LETTER I"
+    },
+    {
+      "char": "g",
+      "codepoint": 103,
+      "script": "Latn",
+      "script_name": "Latin",
+      "category": "Ll",
+      "name": "LATIN SMALL LETTER G"
+    },
+    {
+      "char": "h",
+      "codepoint": 104,
+      "script": "Latn",
+      "script_name": "Latin",
+      "category": "Ll",
+      "name": "LATIN SMALL LETTER H"
+    },
+    {
+      "char": "w",
+      "codepoint": 119,
+      "script": "Latn",
+      "script_name": "Latin",
+      "category": "Ll",
+      "name": "LATIN SMALL LETTER W"
+    },
+    {
+      "char": "a",
+      "codepoint": 97,
+      "script": "Latn",
+      "script_name": "Latin",
+      "category": "Ll",
+      "name": "LATIN SMALL LETTER A"
+    },
+    {
+      "char": "y",
+      "codepoint": 121,
+      "script": "Latn",
+      "script_name": "Latin",
+      "category": "Ll",
+      "name": "LATIN SMALL LETTER Y"
+    }
+  ]
+}

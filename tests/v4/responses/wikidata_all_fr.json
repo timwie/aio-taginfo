@@ -1,0 +1,69 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/wikidata/all?lang=fr&page=1&rp=10&sortname=item&sortorder=asc",
+  "data_until": "2024-04-28T00:59:42Z",
+  "page": 1,
+  "rp": 10,
+  "total": 3006,
+  "data": [
+    {
+      "type": "key",
+      "item": "P17",
+      "description": "pays",
+      "key": "country"
+    },
+    {
+      "type": "key",
+      "item": "P17",
+      "description": "pays",
+      "key": "addr:country"
+    },
+    {
+      "type": "key",
+      "item": "P18",
+      "description": "image",
+      "key": "wikimedia_commons"
+    },
+    {
+      "type": "key",
+      "item": "P101",
+      "description": "domaine d'activité",
+      "key": "craft"
+    },
+    {
+      "type": "key",
+      "item": "P137",
+      "description": "opérateur",
+      "key": "operator:wikidata"
+    },
+    {
+      "type": "key",
+      "item": "P138",
+      "description": "nommé(e) en référence à",
+      "key": "name:etymology"
+    },
+    {
+      "type": "key",
+      "item": "P140",
+      "description": "religion ou conception du monde",
+      "key": "religion"
+    },
+    {
+      "type": "key",
+      "item": "P140",
+      "description": "religion ou conception du monde",
+      "key": "denomination"
+    },
+    {
+      "type": "key",
+      "item": "P149",
+      "description": "style architectural",
+      "key": "building:architecture"
+    },
+    {
+      "type": "key",
+      "item": "P170",
+      "description": "créé par",
+      "key": "artist:wikidata"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/key/values?key=highway&page=1&rp=10&sortname=count_ways&sortorder=desc",
+  "data_until": "2024-04-28T00:59:42Z",
+  "page": 1,
+  "rp": 10,
+  "total": 225,
+  "data": [
+    {
+      "value": "residential",
+      "count": 66325069,
+      "fraction": 0.2591,
+      "in_wiki": true,
+      "description": "Road in a residential area",
+      "desclang": "en",
+      "descdir": "ltr"
+    },
+    {
+      "value": "service",
+      "count": 55691986,
+      "fraction": 0.2176,
+      "in_wiki": true,
+      "description": "Generally for access to a building, service station, beach, campsite, industrial estate, business park, etc.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },
+    {
+      "value": "track",
+      "count": 26333160,
+      "fraction": 0.1029,
+      "in_wiki": true,
+      "description": "A minor land-access road like a farm or forest track.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },
+    {
+      "value": "footway",
+      "count": 22860307,
+      "fraction": 0.0893,
+      "in_wiki": true,
+      "description": "A path mainly or exclusively for pedestrians.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },
+    {
+      "value": "unclassified",
+      "count": 17178625,
+      "fraction": 0.0671,
+      "in_wiki": true,
+      "description": "Public access road, non-residential.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },
+    {
+      "value": "path",
+      "count": 14114136,
+      "fraction": 0.0551,
+      "in_wiki": true,
+      "description": "A generic path used by pedestrians, small vehicles, for animal riding or livestock walking. Not used by two-track vehicles. Very broad, non-specific meaning.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },
+    {
+      "value": "tertiary",
+      "count": 7997168,
+      "fraction": 0.0312,
+      "in_wiki": true,
+      "description": "A road linking small settlements, or the local centres of a large town or city.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },
+    {
+      "value": "secondary",
+      "count": 5125127,
+      "fraction": 0.02,
+      "in_wiki": true,
+      "description": "A highway linking large towns.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },
+    {
+      "value": "primary",
+      "count": 3536756,
+      "fraction": 0.0138,
+      "in_wiki": true,
+      "description": "A highway linking large towns.",
+      "desclang": "en",
+      "descdir": "ltr"
+    },
+    {
+      "value": "living_street",
+      "count": 1852633,
+      "fraction": 0.0072,
+      "in_wiki": true,
+      "description": "Road with very low speed limits and other pedestrian friendly traffic rules.",
+      "desclang": "en",
+      "descdir": "ltr"
+    }
+  ]
+}

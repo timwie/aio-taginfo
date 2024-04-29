@@ -10,6 +10,7 @@ All the calls are re-exported here at the top level for convenience.
 * ``aio_taginfo.api.v4.key.prevalent_values``
 * ``aio_taginfo.api.v4.key.similar``
 * ``aio_taginfo.api.v4.site.config.geodistribution``
+* ``aio_taginfo.api.v4.tags.popular``
 """
 
 import importlib.metadata

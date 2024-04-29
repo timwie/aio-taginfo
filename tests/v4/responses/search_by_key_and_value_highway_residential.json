@@ -1,0 +1,59 @@
+{
+  "url": "https://taginfo.openstreetmap.org/api/4/search/by_key_and_value?query=highway%3Dresidential&page=1&rp=10",
+  "data_until": "2024-04-28T00:59:42Z",
+  "page": 1,
+  "rp": 10,
+  "total": 135,
+  "data": [
+    {
+      "key": "his:1972-:highway",
+      "value": "residential",
+      "count_all": 1
+    },
+    {
+      "key": "highway:~1969",
+      "value": "residential",
+      "count_all": 1
+    },
+    {
+      "key": "area:highway",
+      "value": "yes;residential",
+      "count_all": 1
+    },
+    {
+      "key": "area:highway",
+      "value": "residential_link",
+      "count_all": 1
+    },
+    {
+      "key": "note:highway",
+      "value": "das war als \"residential\" getaggt - das ist es nicht (Ortskenntnis). Ich weiß aber nicht genau, was es ist. Habe es nun als service getaggt. Vielleicht ist es footway.",
+      "count_all": 1
+    },
+    {
+      "key": "note:highway",
+      "value": "found and left as \"residential\"; suspect should be \"unclassified\"",
+      "count_all": 1
+    },
+    {
+      "key": "note:highway",
+      "value": "There are no residences on this road (the condo complex has its own residential road). The proper classification is Unclassified per the OSM wiki documentation.",
+      "count_all": 1
+    },
+    {
+      "key": "note:highway",
+      "value": "Isn't a residential road, it's frequently used as a thoroughfare.",
+      "count_all": 1
+    },
+    {
+      "key": "note:highway",
+      "value": "Possibly “residential”.",
+      "count_all": 1
+    },
+    {
+      "key": "note:highway",
+      "value": "not really residential, footways a bit intermittent etc",
+      "count_all": 1
+    }
+  ]
+}

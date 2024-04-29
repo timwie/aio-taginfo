@@ -1,0 +1,77 @@
+{
+  "page": 1,
+  "rp": 10,
+  "total": 8744,
+  "data": [
+    {
+      "type": "Variant",
+      "subtag": "1606nict",
+      "description": "Late Middle French (to 1606)",
+      "added": "2007-03-20",
+      "notes": "Prefixes: frm"
+    },
+    {
+      "type": "Variant",
+      "subtag": "1694acad",
+      "description": "Early Modern French",
+      "added": "2007-03-20",
+      "notes": "Prefixes: fr"
+    },
+    {
+      "type": "Variant",
+      "subtag": "1901",
+      "description": "Traditional German orthography",
+      "added": "2005-10-16",
+      "notes": "Prefixes: de"
+    },
+    {
+      "type": "Variant",
+      "subtag": "1959acad",
+      "description": "\"Academic\" (\"governmental\") variant of Belarusian as. codified in 1959",
+      "added": "2008-09-30",
+      "notes": "Prefixes: be"
+    },
+    {
+      "type": "Variant",
+      "subtag": "1994",
+      "description": "Standardized Resian orthography",
+      "added": "2007-07-28",
+      "notes": "Prefixes: sl-rozaj,sl-rozaj-biske,sl-rozaj-njiva,sl-rozaj-osojs,sl-rozaj-solba"
+    },
+    {
+      "type": "Variant",
+      "subtag": "1996",
+      "description": "German orthography of 1996",
+      "added": "2005-10-16",
+      "notes": "Prefixes: de"
+    },
+    {
+      "type": "Region",
+      "subtag": "AC",
+      "description": "Ascension Island",
+      "added": "2009-07-29",
+      "notes": ""
+    },
+    {
+      "type": "Region",
+      "subtag": "AD",
+      "description": "Andorra",
+      "added": "2005-10-16",
+      "notes": ""
+    },
+    {
+      "type": "Region",
+      "subtag": "AE",
+      "description": "United Arab Emirates",
+      "added": "2005-10-16",
+      "notes": ""
+    },
+    {
+      "type": "Region",
+      "subtag": "AF",
+      "description": "Afghanistan",
+      "added": "2005-10-16",
+      "notes": ""
+    }
+  ]
+}
