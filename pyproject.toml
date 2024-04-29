@@ -8,7 +8,7 @@ readme = "README.md"
 repository = "https://github.com/timwie/aio-taginfo"
 documentation = "https://www.timwie.dev/aio-taginfo/"
 packages = [{ include = "aio_taginfo" }]
-include = ["CHANGELOG.md"]
+include = ["RELEASES.md"]
 keywords = [
     "geospatial",
     "gis",
@@ -37,8 +37,8 @@ classifiers = [
 ]
 
 [tool.poetry.urls]
-"Changelog" = "https://github.com/timwie/aio-taginfo/blob/main/CHANGELOG.md"
-"Coverage" = "https://codecov.io/gh/timwie/aio-taginfo"
+"Release Notes" = "https://github.com/timwie/aio-taginfo/blob/main/RELEASES.md"
+"Test Coverage" = "https://codecov.io/gh/timwie/aio-taginfo"
 
 [tool.poetry.dependencies]
 aiohttp = { version = "^3.9", extras = ["speedups"] }

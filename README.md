@@ -17,7 +17,7 @@ and validating the responses.
 
 #### See also
 - An overview of modules, classes and functions can be found in the [API reference](https://www.timwie.dev/aio-taginfo/)
-- The version history is available in [CHANGELOG.md](https://github.com/timwie/aio-taginfo/blob/main/CHANGELOG.md)
+- The version history is available in [RELEASES.md](https://github.com/timwie/aio-taginfo/blob/main/RELEASES.md)
 - The [taginfo website](https://taginfo.openstreetmap.org/),
   its [API documentation](https://taginfo.openstreetmap.org/taginfo/apidoc),
   its [OSM Wiki page](https://wiki.openstreetmap.org/wiki/Taginfo),

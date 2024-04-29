@@ -11,7 +11,7 @@ from aio_taginfo import (
 from aio_taginfo.api.v4 import SortOrder
 from aio_taginfo.api.v4.key.similar import SimilarKeySorting
 from aio_taginfo.api.v4.tags.popular import PopularTagSorting
-from aio_taginfo.error import TagInfoCallError, TagInfoValidationError, TagInfoValueError
+from aio_taginfo.error import TaginfoCallError, TaginfoValidationError, TaginfoValueError
 
 import pytest
 from aiohttp import ClientSession
@@ -44,7 +44,7 @@ async def test_key_distribution_nodes():
             status=400,
             content_type="application/json",
         )
-        with pytest.raises(TagInfoCallError):
+        with pytest.raises(TaginfoCallError):
             await key_distribution_nodes(key="amenity")
 
         m.get(
@@ -53,7 +53,7 @@ async def test_key_distribution_nodes():
             status=200,
             content_type="image/png",
         )
-        with pytest.raises(TagInfoValidationError):
+        with pytest.raises(TaginfoValidationError):
             await key_distribution_nodes(key="amenity")
 
 
@@ -82,7 +82,7 @@ async def test_key_overview():
                 status=400,
                 content_type="application/json",
             )
-            with pytest.raises(TagInfoCallError):
+            with pytest.raises(TaginfoCallError):
                 await key_overview(key="amenity", session=session)
 
             m.get(
@@ -91,7 +91,7 @@ async def test_key_overview():
                 status=200,
                 content_type="application/json",
             )
-            with pytest.raises(TagInfoValidationError):
+            with pytest.raises(TaginfoValidationError):
                 await key_overview(key="amenity", session=session)
 
 
@@ -133,13 +133,13 @@ async def test_key_prevalent_values():
         response = await key_prevalent_values(key="highway")
         assert response.data[0].count == 65032833
 
-        with pytest.raises(TagInfoValueError):
+        with pytest.raises(TaginfoValueError):
             await key_prevalent_values(key="highway", min_fraction=0.001)
 
-        with pytest.raises(TagInfoValueError):
+        with pytest.raises(TaginfoValueError):
             await key_prevalent_values(key="    ")
 
-        with pytest.raises(TagInfoValueError):
+        with pytest.raises(TaginfoValueError):
             await key_prevalent_values(key="highway", filter="yes")
 
 
@@ -177,19 +177,19 @@ async def test_key_similar():
         )
         assert response.data[0].other_key == "FIXME:highway"
 
-    with pytest.raises(TagInfoValueError):
+    with pytest.raises(TaginfoValueError):
         await key_similar(key="highway", query="   ")
 
-    with pytest.raises(TagInfoValueError):
+    with pytest.raises(TaginfoValueError):
         await key_similar(key="highway", sortname="something else")
 
-    with pytest.raises(TagInfoValueError):
+    with pytest.raises(TaginfoValueError):
         await key_similar(key="highway", sortorder="something else")
 
-    with pytest.raises(TagInfoValueError):
+    with pytest.raises(TaginfoValueError):
         await key_similar(key="highway", page=-1)
 
-    with pytest.raises(TagInfoValueError):
+    with pytest.raises(TaginfoValueError):
         await key_similar(key="highway", rp=-1)
 
 
@@ -226,17 +226,17 @@ async def test_tags_popular():
         )
         assert response.data[0].key == "building"
 
-    with pytest.raises(TagInfoValueError):
+    with pytest.raises(TaginfoValueError):
         await tags_popular(query="   ")
 
-    with pytest.raises(TagInfoValueError):
+    with pytest.raises(TaginfoValueError):
         await tags_popular(sortname="something else")
 
-    with pytest.raises(TagInfoValueError):
+    with pytest.raises(TaginfoValueError):
         await tags_popular(sortorder="something else")
 
-    with pytest.raises(TagInfoValueError):
+    with pytest.raises(TaginfoValueError):
         await tags_popular(page=-1)
 
-    with pytest.raises(TagInfoValueError):
+    with pytest.raises(TaginfoValueError):
         await tags_popular(rp=-1)

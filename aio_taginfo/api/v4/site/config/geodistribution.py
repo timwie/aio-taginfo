@@ -17,7 +17,7 @@ async def call(session: ClientSession | None = None) -> "SiteConfigGeodistributi
         session: request client session
 
     Raises:
-        TagInfoError
+        TaginfoError
     """
     return await api_get_json(
         path="/api/4/site/config/geodistribution",

@@ -28,7 +28,7 @@ async def call(key: str, session: ClientSession | None = None) -> PngResponse:
         session: request client session
 
     Raises:
-        TagInfoError
+        TaginfoError
     """
     params = api_params(_Params, key=key)
     return await api_get_png(

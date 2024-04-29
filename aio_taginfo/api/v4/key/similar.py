@@ -80,7 +80,7 @@ async def call(
         session: request client session
 
     Raises:
-        TagInfoError
+        TaginfoError
     """
     params = api_params(
         _Params, key=key, query=query, sortname=sortname, sortorder=sortorder, page=page, rp=rp

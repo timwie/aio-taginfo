@@ -69,6 +69,8 @@ __docformat__ = "google"
 
 # we also use __all__ in all modules for pdoc; this lets us control the order
 __all__ = (
+    "__version__",
+    "TaginfoError",
     "api",  # pyright: ignore[reportUnsupportedDunderAll]
     "error",  # pyright: ignore[reportUnsupportedDunderAll]
     "key_distribution_nodes",
@@ -77,7 +79,6 @@ __all__ = (
     "key_similar",
     "site_config_geodistribution",
     "tags_popular",
-    "TagInfoError",
 )
 
 from aio_taginfo.api.v4.key.distribution.nodes import call as key_distribution_nodes
@@ -86,4 +87,4 @@ from aio_taginfo.api.v4.key.prevalent_values import call as key_prevalent_values
 from aio_taginfo.api.v4.key.similar import call as key_similar
 from aio_taginfo.api.v4.site.config.geodistribution import call as site_config_geodistribution
 from aio_taginfo.api.v4.tags.popular import call as tags_popular
-from aio_taginfo.error import TagInfoError
+from aio_taginfo.error import TaginfoError

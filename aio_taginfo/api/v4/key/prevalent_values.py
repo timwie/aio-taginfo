@@ -39,7 +39,7 @@ async def call(
         session: request client session
 
     Raises:
-        TagInfoError
+        TaginfoError
     """
     params = api_params(_Params, key=key, min_fraction=min_fraction, filter=filter)
     return await api_get_json(

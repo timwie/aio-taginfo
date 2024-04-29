@@ -41,7 +41,7 @@ async def call(
         session: request client session
 
     Raises:
-        TagInfoError
+        TaginfoError
     """
     return await api_get_json(
         path="key/overview",

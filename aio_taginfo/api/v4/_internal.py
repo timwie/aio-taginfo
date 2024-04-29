@@ -7,7 +7,7 @@ from typing import Any, TypeVar
 
 from aio_taginfo import __version__
 from aio_taginfo.api.v4 import PngResponse
-from aio_taginfo.error import TagInfoCallError, TagInfoValidationError, TagInfoValueError
+from aio_taginfo.error import TaginfoCallError, TaginfoValidationError, TaginfoValueError
 
 import aiohttp
 import pydantic
@@ -30,7 +30,7 @@ def api_params(datacls: type[T], **kwargs) -> dict:
         **kwargs: values for all fields of that dataclass
 
     Raises:
-        TagInfoValueError
+        TaginfoValueError
 
     Returns:
         ``kwargs`` with some changes, like mapping enum instances to their underlying values,
@@ -39,7 +39,7 @@ def api_params(datacls: type[T], **kwargs) -> dict:
     try:
         return _params_to_dict(datacls(**kwargs))
     except pydantic.ValidationError as err:
-        raise TagInfoValueError(cause=err) from err
+        raise TaginfoValueError(cause=err) from err
 
 
 def _params_to_dict(obj: Any) -> dict:
@@ -74,7 +74,7 @@ async def api_get_json(
         params: parameters in the request query string
 
     Raises:
-        TagInfoError
+        TaginfoError
 
     Returns:
         an instance of ``cls``
@@ -108,7 +108,7 @@ async def api_get_png(
         params: parameters in the request query string
 
     Raises:
-        TagInfoError
+        TaginfoError
     """
     response: ClientResponse
 
@@ -153,9 +153,9 @@ async def _get(
         ) as response:
             yield response
     except aiohttp.ClientError as err:
-        raise TagInfoCallError(cause=err) from err
+        raise TaginfoCallError(cause=err) from err
     except pydantic.ValidationError as err:
-        raise TagInfoValidationError(cause=err) from err
+        raise TaginfoValidationError(cause=err) from err
     finally:
         if ephemeral_session:
             await session.close()
