@@ -1,16 +1,61 @@
 """
 Typed async client for the taginfo API.
 
-The ``aio_taginfo.api`` module structure is derived from the endpoint path segments.
-All the calls are re-exported here at the top level for convenience.
+## Modules
+The `api` package structure is derived from the endpoint path segments:
 
-**Jump to:**
+* ``aio_taginfo.error``
+* ``aio_taginfo.api.v4``
+* ``aio_taginfo.api.v4.key``
 * ``aio_taginfo.api.v4.key.distribution.nodes``
+* ``aio_taginfo.api.v4.key.distribution.ways``
+* ``aio_taginfo.api.v4.key.chronology``
+* ``aio_taginfo.api.v4.key.combinations``
 * ``aio_taginfo.api.v4.key.overview``
 * ``aio_taginfo.api.v4.key.prevalent_values``
+* ``aio_taginfo.api.v4.key.projects``
 * ``aio_taginfo.api.v4.key.similar``
+* ``aio_taginfo.api.v4.key.stats``
+* ``aio_taginfo.api.v4.key.values``
+* ``aio_taginfo.api.v4.key.wiki_pages``
+* ``aio_taginfo.api.v4.keys.all``
+* ``aio_taginfo.api.v4.keys.similar``
+* ``aio_taginfo.api.v4.keys.wiki_pages``
+* ``aio_taginfo.api.v4.keys.without_wiki_page``
+* ``aio_taginfo.api.v4.languages``
+* ``aio_taginfo.api.v4.project.icon``
+* ``aio_taginfo.api.v4.project.tags``
+* ``aio_taginfo.api.v4.projects.all``
+* ``aio_taginfo.api.v4.projects.keys``
+* ``aio_taginfo.api.v4.projects.tags``
+* ``aio_taginfo.api.v4.relation.projects``
+* ``aio_taginfo.api.v4.relation.roles``
+* ``aio_taginfo.api.v4.relation.stats``
+* ``aio_taginfo.api.v4.relation.wiki_pages``
+* ``aio_taginfo.api.v4.relations.all``
+* ``aio_taginfo.api.v4.search.by_key_and_value``
+* ``aio_taginfo.api.v4.search.by_keyword``
+* ``aio_taginfo.api.v4.search.by_role``
+* ``aio_taginfo.api.v4.search.by_value``
 * ``aio_taginfo.api.v4.site.config.geodistribution``
+* ``aio_taginfo.api.v4.site.info``
+* ``aio_taginfo.api.v4.site.sources``
+* ``aio_taginfo.api.v4.tag.chronology``
+* ``aio_taginfo.api.v4.tag.distribution.nodes``
+* ``aio_taginfo.api.v4.tag.distribution.ways``
+* ``aio_taginfo.api.v4.tag.overview``
+* ``aio_taginfo.api.v4.tag.projects``
+* ``aio_taginfo.api.v4.tag.stats``
+* ``aio_taginfo.api.v4.tag.wiki_pages``
+* ``aio_taginfo.api.v4.tags.list``
 * ``aio_taginfo.api.v4.tags.popular``
+* ``aio_taginfo.api.v4.unicode.characters``
+* ``aio_taginfo.api.v4.wiki.languages``
+* ``aio_taginfo.api.v4.wikidata.all``
+* ``aio_taginfo.api.v4.wikidata.errors``
+
+## Call functions
+All the calls are re-exported here at the top level for convenience:
 """
 
 import importlib.metadata

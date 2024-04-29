@@ -10,7 +10,19 @@ from pydantic.dataclasses import dataclass
 
 __all__ = (
     "key",  # pyright: ignore[reportUnsupportedDunderAll]
+    "keys",  # pyright: ignore[reportUnsupportedDunderAll]
+    "languages",  # pyright: ignore[reportUnsupportedDunderAll]
+    "project",  # pyright: ignore[reportUnsupportedDunderAll]
+    "projects",  # pyright: ignore[reportUnsupportedDunderAll]
+    "relation",  # pyright: ignore[reportUnsupportedDunderAll]
+    "relations",  # pyright: ignore[reportUnsupportedDunderAll]
+    "search",  # pyright: ignore[reportUnsupportedDunderAll]
     "site",  # pyright: ignore[reportUnsupportedDunderAll]
+    "tag",  # pyright: ignore[reportUnsupportedDunderAll]
+    "tags",  # pyright: ignore[reportUnsupportedDunderAll]
+    "unicode",  # pyright: ignore[reportUnsupportedDunderAll]
+    "wiki",  # pyright: ignore[reportUnsupportedDunderAll]
+    "wikidata",  # pyright: ignore[reportUnsupportedDunderAll]
     "Response",
     "PngResponse",
     "SortOrder",
