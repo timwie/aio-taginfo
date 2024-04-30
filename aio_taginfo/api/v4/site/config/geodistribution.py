@@ -26,7 +26,7 @@ async def call(session: ClientSession | None = None) -> "SiteConfigGeodistributi
     )
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, frozen=True)
 class SiteConfigGeodistribution:
     """
     Information about the background map for distribution charts.
@@ -40,12 +40,12 @@ class SiteConfigGeodistribution:
         image_attribution: map attribution for comparison background
     """
 
-    width: int = Field(gt=0, repr=True, frozen=True)
-    height: int = Field(gt=0, repr=True, frozen=True)
-    scale_image: float = Field(gt=0.0, allow_inf_nan=False, repr=True, frozen=True)
-    scale_compare_image: float = Field(gt=0.0, allow_inf_nan=False, repr=True, frozen=True)
-    background_image: str = Field(repr=True, frozen=True)
-    image_attribution: str = Field(repr=True, frozen=True)
+    width: int = Field(gt=0, repr=True)
+    height: int = Field(gt=0, repr=True)
+    scale_image: float = Field(gt=0.0, allow_inf_nan=False, repr=True)
+    scale_compare_image: float = Field(gt=0.0, allow_inf_nan=False, repr=True)
+    background_image: str = Field(repr=True)
+    image_attribution: str = Field(repr=True)
 
 
 __docformat__ = "google"

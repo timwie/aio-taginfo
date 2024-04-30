@@ -3,7 +3,7 @@
 from enum import Enum
 
 from aio_taginfo.api.v4 import Response, SortOrder
-from aio_taginfo.api.v4._internal import NonEmptyString, api_get_json, api_params
+from aio_taginfo.api.v4._internal import StringParam, api_get_json, api_params
 
 from aiohttp import ClientSession
 from pydantic import Field
@@ -17,7 +17,7 @@ __all__ = (
 )
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, frozen=True)
 class SimilarKey:
     """
     Result of a key that is similar to a given key.
@@ -28,9 +28,9 @@ class SimilarKey:
         similarity: integer measuring the similarity of the two keys (smaller is more similar)
     """
 
-    other_key: str = Field(min_length=1, repr=True, frozen=True)
-    count_all: int = Field(ge=0, repr=True, frozen=True)
-    similarity: int = Field(ge=0, repr=True, frozen=True)
+    other_key: str = Field(min_length=1, repr=True)
+    count_all: int = Field(ge=0, repr=True)
+    similarity: int = Field(ge=0, repr=True)
 
 
 class SimilarKeySorting(str, Enum):
@@ -41,14 +41,14 @@ class SimilarKeySorting(str, Enum):
     SIMILARITY = "similarity"
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, frozen=True)
 class _Params:
-    key: NonEmptyString = Field(repr=True, frozen=True)
-    query: NonEmptyString | None = Field(repr=True, frozen=True)
-    sortname: SimilarKeySorting = Field(repr=True, frozen=True)
-    sortorder: SortOrder = Field(repr=True, frozen=True)
-    page: int = Field(gt=0, repr=True, frozen=True)
-    rp: int = Field(ge=0, repr=True, frozen=True)
+    key: StringParam = Field(repr=True)
+    query: StringParam | None = Field(repr=True)
+    sortname: SimilarKeySorting = Field(repr=True)
+    sortorder: SortOrder = Field(repr=True)
+    page: int = Field(gt=0, repr=True)
+    rp: int = Field(ge=0, repr=True)
 
 
 async def call(

@@ -34,7 +34,7 @@ __all__ = (
 T = TypeVar("T")
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, frozen=True)
 class Response(Generic[T]):
     """
     JSON data response.
@@ -48,12 +48,12 @@ class Response(Generic[T]):
         rp: Results per page
     """
 
-    data: T = Field(repr=True, frozen=True)
-    data_until: datetime = Field(repr=False, frozen=True)
-    url: HttpUrl = Field(repr=False, frozen=True)
-    total: int = Field(ge=0, repr=True, frozen=True)
-    page: int | None = Field(default=None, gt=0, repr=True, frozen=True)
-    rp: int | None = Field(default=None, gt=0, repr=True, frozen=True)
+    data: T = Field(repr=True)
+    data_until: datetime = Field(repr=False)
+    url: HttpUrl = Field(repr=False)
+    total: int = Field(ge=0, repr=True)
+    page: int | None = Field(default=None, gt=0, repr=True)
+    rp: int | None = Field(default=None, gt=0, repr=True)
 
 
 @dataclass(kw_only=True, repr=False)
@@ -65,7 +65,7 @@ class PngResponse:
         data: PNG data
     """
 
-    data: bytes = Field(repr=False, frozen=True)
+    data: bytes = Field(repr=False)
 
     @model_validator(mode="after")  # pyright: ignore[reportArgumentType]
     def post_root(self) -> "PngResponse":

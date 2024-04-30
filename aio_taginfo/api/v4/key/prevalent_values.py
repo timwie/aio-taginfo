@@ -1,7 +1,7 @@
 """`/api/v4/key/prevalent_values` endpoint."""
 
 from aio_taginfo.api.v4 import ObjectType, Response
-from aio_taginfo.api.v4._internal import NonEmptyString, api_get_json, api_params
+from aio_taginfo.api.v4._internal import StringParam, api_get_json, api_params
 from aio_taginfo.api.v4.key import PrevalentValue
 
 from aiohttp import ClientSession
@@ -9,11 +9,11 @@ from pydantic import Field
 from pydantic.dataclasses import dataclass
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, frozen=True)
 class _Params:
-    key: NonEmptyString = Field(repr=True, frozen=True)
-    min_fraction: float = Field(ge=0.01, le=1.0, allow_inf_nan=False, repr=True, frozen=True)
-    filter: ObjectType = Field(repr=True, frozen=True)
+    key: StringParam = Field(repr=True)
+    min_fraction: float = Field(ge=0.01, le=1.0, allow_inf_nan=False, repr=True)
+    filter: ObjectType = Field(repr=True)
 
 
 async def call(

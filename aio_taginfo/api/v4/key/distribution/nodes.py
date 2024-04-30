@@ -1,16 +1,16 @@
 """`/api/v4/key/distribution/nodes` endpoint."""
 
 from aio_taginfo.api.v4 import PngResponse
-from aio_taginfo.api.v4._internal import NonEmptyString, api_get_png, api_params
+from aio_taginfo.api.v4._internal import StringParam, api_get_png, api_params
 
 from aiohttp import ClientSession
 from pydantic import Field
 from pydantic.dataclasses import dataclass
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, frozen=True)
 class _Params:
-    key: NonEmptyString = Field(repr=True, frozen=True)
+    key: StringParam = Field(repr=True)
 
 
 async def call(key: str, session: ClientSession | None = None) -> PngResponse:

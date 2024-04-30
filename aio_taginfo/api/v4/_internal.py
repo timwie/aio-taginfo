@@ -20,7 +20,7 @@ _DEFAULT_USER_AGENT = f"aio-taginfo/{__version__} (https://github.com/timwie/aio
 
 T = TypeVar("T", bound=Any)
 
-NonEmptyString = Annotated[str, StringConstraints(min_length=1, strip_whitespace=True)]
+StringParam = Annotated[str, StringConstraints(min_length=1, strip_whitespace=True)]
 
 
 def api_params(datacls: type[T], **kwargs) -> dict:

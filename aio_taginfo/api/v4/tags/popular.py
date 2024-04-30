@@ -16,10 +16,10 @@ __all__ = (
     "PopularTagSorting",
 )
 
-from aio_taginfo.api.v4._internal import NonEmptyString, api_get_json, api_params
+from aio_taginfo.api.v4._internal import StringParam, api_get_json, api_params
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, frozen=True)
 class PopularTag:
     """
     A tag and its usage statistics.
@@ -39,18 +39,18 @@ class PopularTag:
         projects: Number of projects using this tag
     """
 
-    key: str = Field(min_length=1, repr=True, frozen=True)
-    value: str = Field(min_length=1, repr=True, frozen=True)
-    in_wiki: bool = Field(repr=True, frozen=True)
-    count_all: int = Field(ge=0, repr=True, frozen=True)
-    count_all_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=False, frozen=True)
-    count_nodes: int = Field(ge=0, repr=True, frozen=True)
-    count_nodes_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=False, frozen=True)
-    count_ways: int = Field(ge=0, repr=True, frozen=True)
-    count_ways_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=False, frozen=True)
-    count_relations: int = Field(ge=0, repr=True, frozen=True)
-    count_relations_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=False, frozen=True)
-    projects: int = Field(default=0, ge=0, repr=False, frozen=True)
+    key: str = Field(min_length=1, repr=True)
+    value: str = Field(min_length=1, repr=True)
+    in_wiki: bool = Field(repr=True)
+    count_all: int = Field(ge=0, repr=True)
+    count_all_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=False)
+    count_nodes: int = Field(ge=0, repr=True)
+    count_nodes_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=False)
+    count_ways: int = Field(ge=0, repr=True)
+    count_ways_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=False)
+    count_relations: int = Field(ge=0, repr=True)
+    count_relations_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=False)
+    projects: int = Field(default=0, ge=0, repr=False)
 
     # expected "in_wiki: bool = Field(strict=False, …)" to also work,
     # but it does not override strict mode
@@ -73,13 +73,13 @@ class PopularTagSorting(str, Enum):
     COUNT_RELATIONS = "count_relations"
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, frozen=True)
 class _Params:
-    query: NonEmptyString | None = Field(repr=True, frozen=True)
-    sortname: PopularTagSorting = Field(repr=True, frozen=True)
-    sortorder: SortOrder = Field(repr=True, frozen=True)
-    page: int = Field(gt=0, repr=True, frozen=True)
-    rp: int = Field(ge=0, repr=True, frozen=True)
+    query: StringParam | None = Field(repr=True)
+    sortname: PopularTagSorting = Field(repr=True)
+    sortorder: SortOrder = Field(repr=True)
+    page: int = Field(gt=0, repr=True)
+    rp: int = Field(ge=0, repr=True)
 
 
 async def call(

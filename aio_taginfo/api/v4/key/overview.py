@@ -1,7 +1,7 @@
 """`/api/v4/key/overview` endpoint."""
 
 from aio_taginfo.api.v4 import ObjectType, PrintingDirection, Response
-from aio_taginfo.api.v4._internal import NonEmptyString, api_get_json, api_params
+from aio_taginfo.api.v4._internal import StringParam, api_get_json, api_params
 from aio_taginfo.api.v4.key import PrevalentValue
 
 from aiohttp import ClientSession
@@ -18,9 +18,9 @@ __all__ = (
 )
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, frozen=True)
 class _Params:
-    key: NonEmptyString = Field(repr=True, frozen=True)
+    key: StringParam = Field(repr=True)
 
 
 async def call(
@@ -47,7 +47,7 @@ async def call(
     )
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, frozen=True)
 class KeyObjectCount:
     """
     Usage statistic of a given key for a given type of object.
@@ -59,13 +59,13 @@ class KeyObjectCount:
         values: Number of different values for this key
     """
 
-    type: ObjectType = Field(repr=True, frozen=True)
-    count: int = Field(ge=0, repr=True, frozen=True)
-    count_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=True, frozen=True)
-    values: int = Field(ge=0, repr=True, frozen=True)
+    type: ObjectType = Field(repr=True)
+    count: int = Field(ge=0, repr=True)
+    count_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=True)
+    values: int = Field(ge=0, repr=True)
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, frozen=True)
 class KeyDescription:
     """
     Description of a given key in some language.
@@ -75,11 +75,11 @@ class KeyDescription:
         dir: Printing direction for this language
     """
 
-    text: str = Field(min_length=1, repr=True, frozen=True)
-    dir: PrintingDirection = Field(repr=False, frozen=True)
+    text: str = Field(min_length=1, repr=True)
+    dir: PrintingDirection = Field(repr=False)
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, frozen=True)
 class KeyWikiPage:
     """
     Language code for which a wiki page about a given key are available.
@@ -91,13 +91,13 @@ class KeyWikiPage:
         dir: Printing direction for native name
     """
 
-    lang: str = Field(min_length=2, repr=True, frozen=True)
-    english: str = Field(min_length=1, repr=True, frozen=True)
-    native: str = Field(min_length=1, repr=True, frozen=True)
-    dir: PrintingDirection = Field(repr=False, frozen=True)
+    lang: str = Field(min_length=2, repr=True)
+    english: str = Field(min_length=1, repr=True)
+    native: str = Field(min_length=1, repr=True)
+    dir: PrintingDirection = Field(repr=False)
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, frozen=True)
 class KeyOverview:
     """
     Various data for a given key.
@@ -113,14 +113,14 @@ class KeyOverview:
         projects: Number of projects mentioning this key
     """
 
-    key: str = Field(min_length=1, repr=True, frozen=True)
-    prevalent_values: list[PrevalentValue] = Field(repr=False, frozen=True)
-    counts: list[KeyObjectCount] = Field(repr=False, frozen=True)
-    description: dict[str, KeyDescription] = Field(repr=False, frozen=True)
-    wiki_pages: list[KeyWikiPage] = Field(repr=False, frozen=True)
-    has_map: bool = Field(repr=False, frozen=True)
-    users: int = Field(default=0, ge=0, repr=True, frozen=True)
-    projects: int = Field(default=0, ge=0, repr=False, frozen=True)
+    key: str = Field(min_length=1, repr=True)
+    prevalent_values: list[PrevalentValue] = Field(repr=False)
+    counts: list[KeyObjectCount] = Field(repr=False)
+    description: dict[str, KeyDescription] = Field(repr=False)
+    wiki_pages: list[KeyWikiPage] = Field(repr=False)
+    has_map: bool = Field(repr=False)
+    users: int = Field(default=0, ge=0, repr=True)
+    projects: int = Field(default=0, ge=0, repr=False)
 
 
 __docformat__ = "google"
