@@ -123,7 +123,7 @@ This library is in early development and most endpoints are still missing.
 
 |   | Endpoint                             | Schema                         |
 |--:|--------------------------------------|--------------------------------|
-|   | `/api/4/key/chronology`              | `Response[list[T]](page=None)` |
+| ✅ | `/api/4/key/chronology`              | `Response[list[T]](page=None)` |
 |   | `/api/4/key/combinations`            | `Response[list[T]]`            |
 | ✅ | `/api/4/key/distribution/nodes`      | `PngResponse`                  |
 |   | `/api/4/key/distribution/ways`       | `PngResponse`                  |

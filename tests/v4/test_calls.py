@@ -1,6 +1,8 @@
+import datetime
 from pathlib import Path
 
 from aio_taginfo import (
+    key_chronology,
     key_distribution_nodes,
     key_overview,
     key_prevalent_values,
@@ -240,3 +242,22 @@ async def test_tags_popular():
 
     with pytest.raises(TaginfoValueError):
         await tags_popular(rp=-1)
+
+
+@pytest.mark.asyncio
+async def test_key_chronology():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "key_chronology_highway.json"
+    response_str = data_file.read_text()
+
+    base_url = "https://taginfo.openstreetmap.org/api/4/key/chronology"
+
+    with aioresponses() as m:
+        m.get(
+            url=f"{base_url}?key=highway",
+            body=response_str,
+            status=200,
+            content_type="application/json",
+        )
+        response = await key_chronology(key="highway")
+        assert response.data[0].date == datetime.date(2007, 10, 7)

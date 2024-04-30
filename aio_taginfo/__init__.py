@@ -73,6 +73,7 @@ __all__ = (
     "TaginfoError",
     "api",  # pyright: ignore[reportUnsupportedDunderAll]
     "error",  # pyright: ignore[reportUnsupportedDunderAll]
+    "key_chronology",
     "key_distribution_nodes",
     "key_overview",
     "key_prevalent_values",
@@ -81,6 +82,7 @@ __all__ = (
     "tags_popular",
 )
 
+from aio_taginfo.api.v4.key.chronology import call as key_chronology
 from aio_taginfo.api.v4.key.distribution.nodes import call as key_distribution_nodes
 from aio_taginfo.api.v4.key.overview import call as key_overview
 from aio_taginfo.api.v4.key.prevalent_values import call as key_prevalent_values

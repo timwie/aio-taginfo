@@ -1,9 +1,10 @@
 import asyncio
+from dataclasses import replace
 from pprint import pformat
 from typing import Any
 
 from aio_taginfo import *
-from aio_taginfo.api.v4 import ObjectType, SortOrder
+from aio_taginfo.api.v4 import ObjectType, Response, SortOrder
 from aio_taginfo.api.v4.key.similar import SimilarKeySorting
 from aio_taginfo.api.v4.tags.popular import PopularTagSorting
 
@@ -12,6 +13,11 @@ from loguru import logger
 
 
 def _log_response(resp: Any) -> None:
+    MAX_ITEMS_LOGGED = 10  # keep the log reasonably short
+
+    if isinstance(resp, Response) and isinstance(resp.data, list):
+        resp = replace(resp, data=resp.data[:MAX_ITEMS_LOGGED])
+
     for line in pformat(resp).splitlines():
         logger.info(line)
 
@@ -20,6 +26,10 @@ async def _call_all_endpoints() -> None:
     headers = {"User-Agent": "Automated integration test (https://github.com/timwie/aio-taginfo)"}
 
     async with aiohttp.ClientSession(headers=headers) as session:
+        logger.info("key_chronology")  # TODO: logging should be integrated into the library
+        resp = await key_chronology(key="highway", session=session)
+        _log_response(resp)
+
         logger.info("key_distribution_nodes")  # TODO: logging should be integrated into the library
         resp = await key_distribution_nodes(key="amenity", session=session)
         _log_response(resp)
