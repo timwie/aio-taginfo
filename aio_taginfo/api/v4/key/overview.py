@@ -1,13 +1,11 @@
 """`/api/v4/key/overview` endpoint."""
 
-from typing import Annotated
-
 from aio_taginfo.api.v4 import ObjectType, PrintingDirection, Response
-from aio_taginfo.api.v4._internal import api_get_json, api_params
+from aio_taginfo.api.v4._internal import NonEmptyString, api_get_json, api_params
 from aio_taginfo.api.v4.key import PrevalentValue
 
 from aiohttp import ClientSession
-from pydantic import Field, StringConstraints
+from pydantic import Field
 from pydantic.dataclasses import dataclass
 
 
@@ -22,9 +20,7 @@ __all__ = (
 
 @dataclass(kw_only=True)
 class _Params:
-    key: Annotated[str, StringConstraints(min_length=1, strip_whitespace=True)] = Field(
-        repr=True, frozen=True
-    )
+    key: NonEmptyString = Field(repr=True, frozen=True)
 
 
 async def call(

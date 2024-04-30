@@ -1,20 +1,16 @@
 """`/api/v4/key/distribution/nodes` endpoint."""
 
-from typing import Annotated
-
 from aio_taginfo.api.v4 import PngResponse
-from aio_taginfo.api.v4._internal import api_get_png, api_params
+from aio_taginfo.api.v4._internal import NonEmptyString, api_get_png, api_params
 
 from aiohttp import ClientSession
-from pydantic import Field, StringConstraints
+from pydantic import Field
 from pydantic.dataclasses import dataclass
 
 
 @dataclass(kw_only=True)
 class _Params:
-    key: Annotated[str, StringConstraints(min_length=1, strip_whitespace=True, strict=True)] = (
-        Field(repr=True, frozen=True)
-    )
+    key: NonEmptyString = Field(repr=True, frozen=True)
 
 
 async def call(key: str, session: ClientSession | None = None) -> PngResponse:

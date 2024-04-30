@@ -1,12 +1,12 @@
 """`/api/v4/tags/popular` endpoint."""
 
 from enum import Enum
-from typing import Annotated, Any
+from typing import Any
 
 from aio_taginfo.api.v4 import Response, SortOrder
 
 from aiohttp import ClientSession
-from pydantic import Field, StringConstraints, field_validator
+from pydantic import Field, field_validator
 from pydantic.dataclasses import dataclass
 
 
@@ -16,7 +16,7 @@ __all__ = (
     "PopularTagSorting",
 )
 
-from aio_taginfo.api.v4._internal import api_get_json, api_params
+from aio_taginfo.api.v4._internal import NonEmptyString, api_get_json, api_params
 
 
 @dataclass(kw_only=True)
@@ -45,15 +45,11 @@ class PopularTag:
     count_all: int = Field(ge=0, repr=True, frozen=True)
     count_all_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=False, frozen=True)
     count_nodes: int = Field(ge=0, repr=True, frozen=True)
-    count_nodes_fraction: float = Field(
-        ge=0.0, le=1.0, allow_inf_nan=False, repr=False, frozen=True
-    )
+    count_nodes_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=False, frozen=True)
     count_ways: int = Field(ge=0, repr=True, frozen=True)
     count_ways_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=False, frozen=True)
     count_relations: int = Field(ge=0, repr=True, frozen=True)
-    count_relations_fraction: float = Field(
-        ge=0.0, le=1.0, allow_inf_nan=False, repr=False, frozen=True
-    )
+    count_relations_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=False, frozen=True)
     projects: int = Field(default=0, ge=0, repr=False, frozen=True)
 
     # expected "in_wiki: bool = Field(strict=False, …)" to also work,
@@ -79,9 +75,7 @@ class PopularTagSorting(str, Enum):
 
 @dataclass(kw_only=True)
 class _Params:
-    query: Annotated[str, StringConstraints(min_length=1, strip_whitespace=True)] | None = Field(
-        repr=True, frozen=True
-    )
+    query: NonEmptyString | None = Field(repr=True, frozen=True)
     sortname: PopularTagSorting = Field(repr=True, frozen=True)
     sortorder: SortOrder = Field(repr=True, frozen=True)
     page: int = Field(gt=0, repr=True, frozen=True)
