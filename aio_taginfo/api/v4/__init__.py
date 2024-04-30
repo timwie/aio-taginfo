@@ -56,7 +56,7 @@ class Response(Generic[T]):
     rp: int | None = Field(default=None, gt=0, repr=True, frozen=True)
 
 
-@dataclass(kw_only=True)
+@dataclass(kw_only=True, repr=False)
 class PngResponse:
     """
     PNG image response.
@@ -74,6 +74,9 @@ class PngResponse:
             msg = "did not find PNG magic bytes"
             raise AssertionError(msg)
         return self
+
+    def __repr__(self) -> str:
+        return f"{self.__class__.__name__}(len(data)={len(self.data)})"
 
 
 _PNG_MAGIC = bytes([0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A])
