@@ -37,7 +37,9 @@ def api_params(datacls: type[T], **kwargs) -> dict:
         and removing ``None`` values
     """
     try:
-        return _params_to_dict(datacls(**kwargs))
+        # TODO: log "validating params…"
+        validated = datacls(**kwargs)
+        return _params_to_dict(validated)
     except pydantic.ValidationError as err:
         raise TaginfoValueError(cause=err) from err
 
@@ -81,8 +83,6 @@ async def api_get_json(
     """
     type_adapter = TypeAdapter(cls)
 
-    response: ClientResponse
-
     async with _get(
         path=path,
         session=session,
@@ -91,7 +91,9 @@ async def api_get_json(
         headers=None,
     ) as response:
         payload = await response.read()
+        # TODO: log "validating response…"
         return type_adapter.validate_json(payload, strict=True)
+        # TODO: log "validated."
 
 
 async def api_get_png(
@@ -110,8 +112,6 @@ async def api_get_png(
     Raises:
         TaginfoError
     """
-    response: ClientResponse
-
     async with _get(
         path=path,
         params=params,
@@ -120,16 +120,18 @@ async def api_get_png(
         headers=None,
     ) as response:
         payload = await response.read()
+        # TODO: log "validating response…"
         return PngResponse(data=payload)
+        # TODO: log "validated."
 
 
 @asynccontextmanager
 async def _get(
     path: str,
     content_type: str,
-    session: ClientSession | None = None,
-    params: dict | None = None,
-    headers: dict | None = None,
+    session: ClientSession | None,
+    params: dict | None,
+    headers: dict | None,
 ) -> AsyncIterator[ClientResponse]:
     url = urllib.parse.urljoin(_URL_BASE, path)
     assert url.startswith(_URL_BASE), "given 'path' cannot start with a '/'"
@@ -143,6 +145,10 @@ async def _get(
         headers["User-Agent"] = _DEFAULT_USER_AGENT
 
     headers["Accept"] = content_type
+
+    # TODO: log "path"
+    # TODO: log "params"
+    # TODO: log "url"
 
     try:
         async with session.get(
