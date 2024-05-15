@@ -16,6 +16,7 @@ jobs:
   test:
     name: Test package
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     strategy:
       fail-fast: false
       matrix:
@@ -46,6 +47,7 @@ jobs:
   publish-package:
     name: Publish new release on PyPI
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     needs: test  # do not publish if tests fail
     # only run on new tag "v*" on main branch
     if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/v')
@@ -68,6 +70,7 @@ jobs:
   publish-docs:
     name: Deploy documentation to Pages
     runs-on: ubuntu-latest
+    timeout-minutes: 5
     needs: publish-package  # do not publish docs if package is not published
     environment:
       name: github-pages
