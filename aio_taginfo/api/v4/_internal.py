@@ -23,7 +23,7 @@ T = TypeVar("T", bound=Any)
 StringParam = Annotated[str, StringConstraints(min_length=1, strip_whitespace=True)]
 
 
-def api_params(datacls: type[T], **kwargs) -> dict:
+def api_params(datacls: type[T], **kwargs: Any) -> dict:  # noqa: ANN401
     """
     Use a dataclass to validate parameters, and return them as a dict.
 
@@ -46,7 +46,7 @@ def api_params(datacls: type[T], **kwargs) -> dict:
         raise TaginfoValueError(cause=err) from err
 
 
-def _params_to_dict(obj: Any) -> dict:
+def _params_to_dict(obj: Any) -> dict:  # noqa: ANN401
     assert is_dataclass(type(obj))
 
     ok = (str, int, float, bool)

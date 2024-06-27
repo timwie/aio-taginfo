@@ -76,6 +76,7 @@ class PngResponse:
         return self
 
     def __repr__(self) -> str:
+        """String representation that includes the size of the image."""
         return f"{self.__class__.__name__}(len(data)={len(self.data)})"
 
 

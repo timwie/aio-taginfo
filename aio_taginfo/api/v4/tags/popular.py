@@ -55,7 +55,7 @@ class PopularTag:
     # expected "in_wiki: bool = Field(strict=False, …)" to also work,
     # but it does not override strict mode
     @field_validator("in_wiki", mode="before")
-    def _convert_in_wiki(cls, input_value: Any) -> bool:  # noqa: N805
+    def _convert_in_wiki(cls, input_value: Any) -> bool:  # noqa: ANN401, N805
         if input_value == 0:
             return False
         if input_value == 1:

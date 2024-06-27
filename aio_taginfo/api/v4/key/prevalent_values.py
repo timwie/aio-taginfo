@@ -19,7 +19,7 @@ class _Params:
 async def call(
     key: str,
     min_fraction: float = 0.01,
-    filter: ObjectType = ObjectType.ALL,
+    filter: ObjectType = ObjectType.ALL,  # noqa: A002
     session: ClientSession | None = None,
 ) -> Response[list[PrevalentValue]]:
     """
