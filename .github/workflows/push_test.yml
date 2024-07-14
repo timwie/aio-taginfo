@@ -138,7 +138,7 @@ jobs:
 
       - name: Lint tests with Ruff
         if: always()  # keep going even if previous step failed
-        run: poetry run ruff check test/
+        run: poetry run ruff check tests/
 
       - name: Check types with mypy
         if: always()  # keep going even if previous step failed
