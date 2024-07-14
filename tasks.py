@@ -37,7 +37,7 @@ def install(c: Context):
 @task
 def lint(c: Context):
     """Run linter and type checker"""
-    c.run("ruff check aio_taginfo/", echo=True, warn=True, pty=True)
+    c.run("ruff check aio_taginfo/ tests/", echo=True, warn=True, pty=True)
     c.run("mypy aio_taginfo/", echo=True, warn=True, pty=True)
     c.run("pyright aio_taginfo/", echo=True, warn=True, pty=True)
 

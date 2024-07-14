@@ -3,7 +3,15 @@ from dataclasses import replace
 from pprint import pformat
 from typing import Any
 
-from aio_taginfo import *
+from aio_taginfo import (
+    key_chronology,
+    key_distribution_nodes,
+    key_overview,
+    key_prevalent_values,
+    key_similar,
+    site_config_geodistribution,
+    tags_popular,
+)
 from aio_taginfo.api.v4 import ObjectType, Response, SortOrder
 from aio_taginfo.api.v4.key.similar import SimilarKeySorting
 from aio_taginfo.api.v4.tags.popular import PopularTagSorting
@@ -12,11 +20,12 @@ import aiohttp
 from loguru import logger
 
 
-def _log_response(resp: Any) -> None:
-    MAX_ITEMS_LOGGED = 10  # keep the log reasonably short
+_MAX_ITEMS_LOGGED = 10  # keep the log reasonably short
 
+
+def _log_response(resp: Any) -> None:
     if isinstance(resp, Response) and isinstance(resp.data, list):
-        resp = replace(resp, data=resp.data[:MAX_ITEMS_LOGGED])
+        resp = replace(resp, data=resp.data[:_MAX_ITEMS_LOGGED])
 
     for line in pformat(resp).splitlines():
         logger.info(line)

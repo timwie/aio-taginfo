@@ -16,16 +16,15 @@ from aio_taginfo.api.v4.tags.popular import PopularTagSorting
 from aio_taginfo.error import TaginfoCallError, TaginfoValidationError, TaginfoValueError
 
 import pytest
-from aiohttp import ClientSession
 from aioresponses import aioresponses
 
 
-@pytest.mark.asyncio
+@pytest.mark.asyncio()
 async def test_key_distribution_nodes():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "key_distribtion_nodes_amenity.png"
 
-    with open(data_file, mode="rb") as f:
+    with data_file.open(mode="rb") as f:
         image_bytes = f.read()
 
     url = "https://taginfo.openstreetmap.org/api/4/key/distribution/nodes?key=amenity"
@@ -38,8 +37,11 @@ async def test_key_distribution_nodes():
             content_type="image/png",
         )
         response = await key_distribution_nodes(key="amenity")
-        assert response.data == image_bytes
 
+    assert response.data == image_bytes
+    _, _ = str(response), repr(response)
+
+    with aioresponses() as m:
         m.get(
             url=url,
             body=image_bytes,
@@ -59,7 +61,7 @@ async def test_key_distribution_nodes():
             await key_distribution_nodes(key="amenity")
 
 
-@pytest.mark.asyncio
+@pytest.mark.asyncio()
 async def test_key_overview():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "key_overview_amenity.json"
@@ -67,37 +69,39 @@ async def test_key_overview():
 
     url = "https://taginfo.openstreetmap.org/api/4/key/overview?key=amenity"
 
-    async with ClientSession() as session:
-        with aioresponses() as m:
-            m.get(
-                url=url,
-                body=response_str,
-                status=200,
-                content_type="application/json",
-            )
-            response = await key_overview(key="amenity", session=session)
-            assert response.data.key == "amenity"
+    with aioresponses() as m:
+        m.get(
+            url=url,
+            body=response_str,
+            status=200,
+            content_type="application/json",
+        )
+        response = await key_overview(key="amenity")
 
-            m.get(
-                url=url,
-                body=response_str,
-                status=400,
-                content_type="application/json",
-            )
-            with pytest.raises(TaginfoCallError):
-                await key_overview(key="amenity", session=session)
+    assert response.data.key == "amenity"
+    _, _ = str(response), repr(response)
 
-            m.get(
-                url=url,
-                payload={},
-                status=200,
-                content_type="application/json",
-            )
-            with pytest.raises(TaginfoValidationError):
-                await key_overview(key="amenity", session=session)
+    with aioresponses() as m:
+        m.get(
+            url=url,
+            body=response_str,
+            status=400,
+            content_type="application/json",
+        )
+        with pytest.raises(TaginfoCallError):
+            await key_overview(key="amenity")
+
+        m.get(
+            url=url,
+            payload={},
+            status=200,
+            content_type="application/json",
+        )
+        with pytest.raises(TaginfoValidationError):
+            await key_overview(key="amenity")
 
 
-@pytest.mark.asyncio
+@pytest.mark.asyncio()
 async def test_site_config_geodistribution():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "site_config_geodistribution.json"
@@ -105,19 +109,20 @@ async def test_site_config_geodistribution():
 
     url = "https://taginfo.openstreetmap.org/api/4/site/config/geodistribution"
 
-    async with ClientSession() as session:
-        with aioresponses() as m:
-            m.get(
-                url=url,
-                body=response_str,
-                status=200,
-                content_type="application/json",
-            )
-            response = await site_config_geodistribution(session=session)
-            assert response.width == 360
+    with aioresponses() as m:
+        m.get(
+            url=url,
+            body=response_str,
+            status=200,
+            content_type="application/json",
+        )
+        response = await site_config_geodistribution()
+
+    assert response.width == 360
+    _, _ = str(response), repr(response)
 
 
-@pytest.mark.asyncio
+@pytest.mark.asyncio()
 async def test_key_prevalent_values():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "key_prevalent_values_highway.json"
@@ -133,19 +138,21 @@ async def test_key_prevalent_values():
             content_type="application/json",
         )
         response = await key_prevalent_values(key="highway")
-        assert response.data[0].count == 65032833
 
-        with pytest.raises(TaginfoValueError):
-            await key_prevalent_values(key="highway", min_fraction=0.001)
+    assert response.data[0].count == 65032833
+    _, _ = str(response), repr(response)
 
-        with pytest.raises(TaginfoValueError):
-            await key_prevalent_values(key="    ")
+    with pytest.raises(TaginfoValueError):
+        await key_prevalent_values(key="highway", min_fraction=0.001)
 
-        with pytest.raises(TaginfoValueError):
-            await key_prevalent_values(key="highway", filter="yes")
+    with pytest.raises(TaginfoValueError):
+        await key_prevalent_values(key="    ")
+
+    with pytest.raises(TaginfoValueError):
+        await key_prevalent_values(key="highway", filter="yes")
 
 
-@pytest.mark.asyncio
+@pytest.mark.asyncio()
 async def test_key_similar():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "key_similar_highway.json"
@@ -161,8 +168,11 @@ async def test_key_similar():
             content_type="application/json",
         )
         response = await key_similar(key="highway")
-        assert response.data[0].other_key == "FIXME:highway"
 
+    assert response.data[0].other_key == "FIXME:highway"
+    _, _ = str(response), repr(response)
+
+    with aioresponses() as m:
         m.get(
             url=f"{base_url}?key=highway&page=2&query=fixme&rp=3&sortname=similarity&sortorder=desc",
             body=response_str,
@@ -177,7 +187,9 @@ async def test_key_similar():
             page=2,
             rp=3,
         )
-        assert response.data[0].other_key == "FIXME:highway"
+
+    assert response.data[0].other_key == "FIXME:highway"
+    _, _ = str(response), repr(response)
 
     with pytest.raises(TaginfoValueError):
         await key_similar(key="highway", query="   ")
@@ -195,7 +207,7 @@ async def test_key_similar():
         await key_similar(key="highway", rp=-1)
 
 
-@pytest.mark.asyncio
+@pytest.mark.asyncio()
 async def test_tags_popular():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "tags_popular.json"
@@ -211,8 +223,11 @@ async def test_tags_popular():
             content_type="application/json",
         )
         response = await tags_popular()
-        assert response.data[0].key == "building"
 
+    assert response.data[0].key == "building"
+    _, _ = str(response), repr(response)
+
+    with aioresponses() as m:
         m.get(
             url=f"{base_url}?page=2&query=fixme&rp=3&sortname=tag&sortorder=asc",
             body=response_str,
@@ -226,7 +241,9 @@ async def test_tags_popular():
             page=2,
             rp=3,
         )
-        assert response.data[0].key == "building"
+
+    assert response.data[0].key == "building"
+    _, _ = str(response), repr(response)
 
     with pytest.raises(TaginfoValueError):
         await tags_popular(query="   ")
@@ -244,7 +261,7 @@ async def test_tags_popular():
         await tags_popular(rp=-1)
 
 
-@pytest.mark.asyncio
+@pytest.mark.asyncio()
 async def test_key_chronology():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "key_chronology_highway.json"
@@ -260,4 +277,6 @@ async def test_key_chronology():
             content_type="application/json",
         )
         response = await key_chronology(key="highway")
-        assert response.data[0].date == datetime.date(2007, 10, 7)
+
+    assert response.data[0].date == datetime.date(2007, 10, 7)
+    _, _ = str(response), repr(response)

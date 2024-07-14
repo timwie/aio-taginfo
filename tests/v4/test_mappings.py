@@ -85,6 +85,23 @@ def test_tags_popular():
     response = type_adapter.validate_json(response_str, strict=True)
     assert response.data[0].key == "building"
 
+    invalid_in_wiki = {
+        "key": "building",
+        "value": "yes",
+        "in_wiki": "neither 0 nor 1",
+        "count_all": 483603796,
+        "count_all_fraction": 0.0476,
+        "count_nodes": 298594,
+        "count_nodes_fraction": 0.0013,
+        "count_ways": 482665535,
+        "count_ways_fraction": 0.4731,
+        "count_relations": 639667,
+        "count_relations_fraction": 0.0528,
+        "projects": 13,
+    }
+    with pytest.raises(ValidationError):
+        _tag = PopularTag(**invalid_in_wiki)
+
 
 def test_key_chronology():
     test_dir = Path(__file__).resolve().parent
