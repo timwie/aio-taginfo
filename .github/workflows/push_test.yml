@@ -128,14 +128,22 @@ jobs:
       - name: Install dependencies & library
         run: poetry install --all-extras --no-interaction
 
-      - name: Check formatting with black
+      - name: Check formatting with Ruff
+        if: always()  # keep going even if previous step failed
         run: poetry run ruff format aio_taginfo/ --check
 
       - name: Lint with Ruff
+        if: always()  # keep going even if previous step failed
         run: poetry run ruff check aio_taginfo/
 
+      - name: Lint tests with Ruff
+        if: always()  # keep going even if previous step failed
+        run: poetry run ruff check test/
+
       - name: Check types with mypy
+        if: always()  # keep going even if previous step failed
         run: poetry run mypy aio_taginfo/
 
       - name: Check types with pyright
+        if: always()  # keep going even if previous step failed
         run: poetry run pyright aio_taginfo/
