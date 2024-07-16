@@ -1,1 +1,1 @@
-"""`/api/v4/keys/` endpoints."""
+"""`/api/4/keys/` endpoints."""

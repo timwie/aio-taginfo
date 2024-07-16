@@ -3,6 +3,7 @@ from pathlib import Path
 
 from aio_taginfo.api.v4.key import PrevalentValue
 from aio_taginfo.api.v4.key.chronology import KeyChronology
+from aio_taginfo.api.v4.key.combinations import KeyCombination
 from aio_taginfo.api.v4.key.overview import KeyOverview, Response
 from aio_taginfo.api.v4.key.similar import SimilarKey
 from aio_taginfo.api.v4.site.config.geodistribution import SiteConfigGeodistribution
@@ -110,3 +111,12 @@ def test_key_chronology():
     type_adapter = TypeAdapter(Response[list[KeyChronology]])
     response = type_adapter.validate_json(response_str, strict=True)
     assert response.data[0].date == datetime.date(2007, 10, 7)
+
+
+def test_key_combinations():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "key_combinations_highway.json"
+    response_str = data_file.read_text()
+    type_adapter = TypeAdapter(Response[list[KeyCombination]])
+    response = type_adapter.validate_json(response_str, strict=True)
+    assert response.data[0].together_count == 58128837

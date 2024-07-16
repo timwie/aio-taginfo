@@ -1,4 +1,4 @@
-"""`/api/v4/key/prevalent_values` endpoint."""
+"""`/api/4/key/prevalent_values` endpoint."""
 
 from aio_taginfo.api.v4 import ObjectType, Response
 from aio_taginfo.api.v4._internal import StringParam, api_get_json, api_params

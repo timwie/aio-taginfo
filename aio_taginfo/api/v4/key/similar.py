@@ -1,4 +1,4 @@
-"""`/api/v4/key/similar` endpoint."""
+"""`/api/4/key/similar` endpoint."""
 
 from enum import Enum
 

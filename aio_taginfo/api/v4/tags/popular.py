@@ -1,4 +1,4 @@
-"""`/api/v4/tags/popular` endpoint."""
+"""`/api/4/tags/popular` endpoint."""
 
 from enum import Enum
 from typing import Any

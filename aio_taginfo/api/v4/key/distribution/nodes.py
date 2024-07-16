@@ -1,4 +1,4 @@
-"""`/api/v4/key/distribution/nodes` endpoint."""
+"""`/api/4/key/distribution/nodes` endpoint."""
 
 from aio_taginfo.api.v4 import PngResponse
 from aio_taginfo.api.v4._internal import StringParam, api_get_png, api_params

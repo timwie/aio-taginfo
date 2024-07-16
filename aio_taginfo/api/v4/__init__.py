@@ -1,4 +1,4 @@
-"""`/api/v4/` endpoints."""
+"""`/api/4/` endpoints."""
 
 from datetime import datetime
 from enum import Enum

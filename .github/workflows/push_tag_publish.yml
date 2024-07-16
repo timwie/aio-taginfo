@@ -36,7 +36,7 @@ jobs:
           cache-dependency-path: poetry.lock
 
       - name: Install dependencies & library
-        run: poetry install --all-extras --no-interaction
+        run: poetry install --no-interaction
 
       - name: Test with pytest
         run: poetry run pytest -vv
@@ -90,7 +90,7 @@ jobs:
           cache-dependency-path: poetry.lock
 
       - name: Install dependencies & library
-        run: poetry install --all-extras --no-interaction
+        run: poetry install --no-interaction
 
       - name: Generate docs with pdoc
         run: poetry run pdoc -o ./doc aio_taginfo/

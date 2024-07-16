@@ -1,4 +1,4 @@
-"""`/api/v4/key/` endpoints."""
+"""`/api/4/key/` endpoints."""
 
 from pydantic import Field
 from pydantic.dataclasses import dataclass

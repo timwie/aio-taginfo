@@ -3,6 +3,7 @@ from pathlib import Path
 
 from aio_taginfo import (
     key_chronology,
+    key_combinations,
     key_distribution_nodes,
     key_overview,
     key_prevalent_values,
@@ -10,7 +11,8 @@ from aio_taginfo import (
     site_config_geodistribution,
     tags_popular,
 )
-from aio_taginfo.api.v4 import SortOrder
+from aio_taginfo.api.v4 import ObjectType, SortOrder
+from aio_taginfo.api.v4.key.combinations import KeyCombinationSorting
 from aio_taginfo.api.v4.key.similar import SimilarKeySorting
 from aio_taginfo.api.v4.tags.popular import PopularTagSorting
 from aio_taginfo.error import TaginfoCallError, TaginfoValidationError, TaginfoValueError
@@ -280,3 +282,41 @@ async def test_key_chronology():
 
     assert response.data[0].date == datetime.date(2007, 10, 7)
     _, _ = str(response), repr(response)
+
+
+@pytest.mark.asyncio()
+async def test_key_combinations():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "key_combinations_highway.json"
+    response_str = data_file.read_text()
+
+    base_url = "https://taginfo.openstreetmap.org/api/4/key/combinations"
+
+    with aioresponses() as m:
+        m.get(
+            url=f"{base_url}?filter=all&key=highway&page=1&rp=0&sortname=together_count&sortorder=desc",
+            body=response_str,
+            status=200,
+            content_type="application/json",
+        )
+        response = await key_combinations(key="highway")
+
+    assert response.data[0].together_count == 58128837
+    _, _ = str(response), repr(response)
+
+    with aioresponses() as m:
+        m.get(
+            url=f"{base_url}?filter=ways&key=highway&page=2&query=fixme&rp=10&sortname=from_fraction&sortorder=asc",
+            body=response_str,
+            status=200,
+            content_type="application/json",
+        )
+        _response = await key_combinations(
+            key="highway",
+            query="fixme",
+            sortname=KeyCombinationSorting.FROM_FRACTION,
+            sortorder=SortOrder.ASC,
+            filter=ObjectType.WAYS,
+            page=2,
+            rp=10,
+        )

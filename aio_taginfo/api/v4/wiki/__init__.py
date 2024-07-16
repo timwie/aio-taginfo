@@ -1,1 +1,1 @@
-"""`/api/v4/wiki/` endpoints."""
+"""`/api/4/wiki/` endpoints."""

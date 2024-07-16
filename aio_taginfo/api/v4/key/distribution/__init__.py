@@ -1,1 +1,1 @@
-"""`/api/v4/key/distribution/` endpoints."""
+"""`/api/4/key/distribution/` endpoints."""

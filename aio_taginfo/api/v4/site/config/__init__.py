@@ -1,1 +1,1 @@
-"""`/api/v4/site/config/` endpoints."""
+"""`/api/4/site/config/` endpoints."""

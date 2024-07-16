@@ -26,7 +26,7 @@ jobs:
           cache-dependency-path: poetry.lock
 
       - name: Install dependencies & library
-        run: poetry install --all-extras --no-interaction
+        run: poetry install --no-interaction
 
       - name: Run test
         run: poetry run python -m tests.v4.integration

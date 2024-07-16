@@ -1,1 +1,1 @@
-"""`/api/v4/tags/` endpoints."""
+"""`/api/4/tags/` endpoints."""

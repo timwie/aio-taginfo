@@ -1,4 +1,4 @@
-"""`/api/v4/site/geodistribution` endpoint."""
+"""`/api/4/site/geodistribution` endpoint."""
 
 from aio_taginfo.api.v4._internal import api_get_json
 

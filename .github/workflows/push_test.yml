@@ -35,7 +35,7 @@ jobs:
           cache-dependency-path: poetry.lock
 
       - name: Install dependencies & library
-        run: poetry install --all-extras --no-interaction
+        run: poetry install --no-interaction
 
       - name: Test with pytest
         run: poetry run pytest -vv
@@ -94,7 +94,7 @@ jobs:
           cache-dependency-path: poetry.lock
 
       - name: Install dependencies & library
-        run: poetry install --all-extras --no-interaction
+        run: poetry install --no-interaction
 
       - name: Test with pytest
         run: poetry run pytest -vv --cov=aio_taginfo/ --cov-report=xml
@@ -126,7 +126,7 @@ jobs:
         run: poetry check --lock --no-interaction
 
       - name: Install dependencies & library
-        run: poetry install --all-extras --no-interaction
+        run: poetry install --no-interaction
 
       - name: Check formatting with Ruff
         if: always()  # keep going even if previous step failed

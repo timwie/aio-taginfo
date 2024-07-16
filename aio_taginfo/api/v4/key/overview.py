@@ -1,4 +1,4 @@
-"""`/api/v4/key/overview` endpoint."""
+"""`/api/4/key/overview` endpoint."""
 
 from aio_taginfo.api.v4 import ObjectType, PrintingDirection, Response
 from aio_taginfo.api.v4._internal import StringParam, api_get_json, api_params

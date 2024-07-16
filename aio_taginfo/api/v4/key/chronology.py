@@ -1,4 +1,4 @@
-"""`/api/v4/key/chronology` endpoint."""
+"""`/api/4/key/chronology` endpoint."""
 
 import datetime
 
@@ -55,3 +55,6 @@ async def call(
         session=session,
         params=api_params(_Params, key=key),
     )
+
+
+__docformat__ = "google"

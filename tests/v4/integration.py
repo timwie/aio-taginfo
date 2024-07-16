@@ -5,6 +5,7 @@ from typing import Any
 
 from aio_taginfo import (
     key_chronology,
+    key_combinations,
     key_distribution_nodes,
     key_overview,
     key_prevalent_values,
@@ -37,6 +38,10 @@ async def _call_all_endpoints() -> None:
     async with aiohttp.ClientSession(headers=headers) as session:
         logger.info("key_chronology")  # TODO: logging should be integrated into the library
         resp = await key_chronology(key="highway", session=session)
+        _log_response(resp)
+
+        logger.info("key_combinations")  # TODO: logging should be integrated into the library
+        resp = await key_combinations(key="highway", session=session)
         _log_response(resp)
 
         logger.info("key_distribution_nodes")  # TODO: logging should be integrated into the library
