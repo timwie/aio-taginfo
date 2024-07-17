@@ -1,6 +1,7 @@
 import datetime
 from pathlib import Path
 
+from aio_taginfo.api.v4 import PngResponse
 from aio_taginfo.api.v4.key import PrevalentValue
 from aio_taginfo.api.v4.key.chronology import KeyChronology
 from aio_taginfo.api.v4.key.combinations import KeyCombination
@@ -120,3 +121,14 @@ def test_key_combinations():
     type_adapter = TypeAdapter(Response[list[KeyCombination]])
     response = type_adapter.validate_json(response_str, strict=True)
     assert response.data[0].together_count == 58128837
+
+
+def test_png_response():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "key_distribtion_nodes_amenity.png"
+    response_bytes = data_file.read_bytes()
+
+    _ = PngResponse(data=response_bytes)
+
+    with pytest.raises(ValidationError):
+        _ = PngResponse(data=b"nonsense")

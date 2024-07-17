@@ -76,6 +76,7 @@ __all__ = (
     "key_chronology",
     "key_combinations",
     "key_distribution_nodes",
+    "key_distribution_ways",
     "key_overview",
     "key_prevalent_values",
     "key_similar",
@@ -86,6 +87,7 @@ __all__ = (
 from aio_taginfo.api.v4.key.chronology import call as key_chronology
 from aio_taginfo.api.v4.key.combinations import call as key_combinations
 from aio_taginfo.api.v4.key.distribution.nodes import call as key_distribution_nodes
+from aio_taginfo.api.v4.key.distribution.ways import call as key_distribution_ways
 from aio_taginfo.api.v4.key.overview import call as key_overview
 from aio_taginfo.api.v4.key.prevalent_values import call as key_prevalent_values
 from aio_taginfo.api.v4.key.similar import call as key_similar

@@ -7,6 +7,7 @@ from aio_taginfo import (
     key_chronology,
     key_combinations,
     key_distribution_nodes,
+    key_distribution_ways,
     key_overview,
     key_prevalent_values,
     key_similar,
@@ -46,6 +47,10 @@ async def _call_all_endpoints() -> None:
 
         logger.info("key_distribution_nodes")  # TODO: logging should be integrated into the library
         resp = await key_distribution_nodes(key="amenity", session=session)
+        _log_response(resp)
+
+        logger.info("key_distribution_ways")  # TODO: logging should be integrated into the library
+        resp = await key_distribution_ways(key="highway", session=session)
         _log_response(resp)
 
         logger.info("key_overview")  # TODO: logging should be integrated into the library

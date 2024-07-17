@@ -5,6 +5,7 @@ from aio_taginfo import (
     key_chronology,
     key_combinations,
     key_distribution_nodes,
+    key_distribution_ways,
     key_overview,
     key_prevalent_values,
     key_similar,
@@ -61,6 +62,48 @@ async def test_key_distribution_nodes():
         )
         with pytest.raises(TaginfoValidationError):
             await key_distribution_nodes(key="amenity")
+
+
+@pytest.mark.asyncio()
+async def test_key_distribution_ways():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "key_distribution_ways_highway.png"
+
+    with data_file.open(mode="rb") as f:
+        image_bytes = f.read()
+
+    url = "https://taginfo.openstreetmap.org/api/4/key/distribution/ways?key=highway"
+
+    with aioresponses() as m:
+        m.get(
+            url=url,
+            body=image_bytes,
+            status=200,
+            content_type="image/png",
+        )
+        response = await key_distribution_ways(key="highway")
+
+    assert response.data == image_bytes
+    _, _ = str(response), repr(response)
+
+    with aioresponses() as m:
+        m.get(
+            url=url,
+            body=image_bytes,
+            status=400,
+            content_type="application/json",
+        )
+        with pytest.raises(TaginfoCallError):
+            await key_distribution_ways(key="highway")
+
+        m.get(
+            url=url,
+            body=b"nonsense",
+            status=200,
+            content_type="image/png",
+        )
+        with pytest.raises(TaginfoValidationError):
+            await key_distribution_ways(key="highway")
 
 
 @pytest.mark.asyncio()

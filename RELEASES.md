@@ -6,6 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * **Breaking**: Rename `TagInfo*Error` classes to `Taginfo*Error`
 * Implement `/api/4/key/chronology` endpoint
 * Implement `/api/4/key/combinations` endpoint
+* Implement `/api/4/key/distribution/ways` endpoint
 
 ## [0.3.0] – 2024-04-27
 * Implement `/api/4/tags/popular` endpoint
