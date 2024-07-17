@@ -7,6 +7,7 @@ from aio_taginfo.api.v4.key.chronology import KeyChronology
 from aio_taginfo.api.v4.key.combinations import KeyCombination
 from aio_taginfo.api.v4.key.overview import KeyOverview, Response
 from aio_taginfo.api.v4.key.similar import SimilarKey
+from aio_taginfo.api.v4.key.stats import KeyStats
 from aio_taginfo.api.v4.site.config.geodistribution import SiteConfigGeodistribution
 from aio_taginfo.api.v4.tags.popular import PopularTag
 
@@ -132,3 +133,12 @@ def test_png_response():
 
     with pytest.raises(ValidationError):
         _ = PngResponse(data=b"nonsense")
+
+
+def test_key_stats():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "key_stats_amenity.json"
+    response_str = data_file.read_text()
+    type_adapter = TypeAdapter(Response[list[KeyStats]])
+    response = type_adapter.validate_json(response_str, strict=True)
+    assert response.data[0].count == 26451233

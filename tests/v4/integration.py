@@ -11,6 +11,7 @@ from aio_taginfo import (
     key_overview,
     key_prevalent_values,
     key_similar,
+    key_stats,
     site_config_geodistribution,
     tags_popular,
 )
@@ -72,6 +73,10 @@ async def _call_all_endpoints() -> None:
             rp=10,
             page=2,
         )
+        _log_response(resp)
+
+        logger.info("key_stats")  # TODO: logging should be integrated into the library
+        resp = await key_stats(key="amenity", session=session)
         _log_response(resp)
 
         logger.info(

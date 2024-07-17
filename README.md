@@ -131,7 +131,7 @@ This library is in early development and most endpoints are still missing.
 | ✅ | `/api/4/key/prevalent_values`        | `Response[list[T]](page=None)` |
 |   | `/api/4/key/projects`                | `Response[list[T]]`            |
 | ✅ | `/api/4/key/similar`                 | `Response[list[T]]`            |
-|   | `/api/4/key/stats`                   | `Response[list[T]](page=None)` |
+| ✅ | `/api/4/key/stats`                   | `Response[list[T]](page=None)` |
 |   | `/api/4/key/values`                  | `Response[list[T]]`            |
 |   | `/api/4/key/wiki_pages`              | `Response[list[T]](page=None)` |
 |   | `/api/4/keys/all`                    | `Response[list[T]]`            |

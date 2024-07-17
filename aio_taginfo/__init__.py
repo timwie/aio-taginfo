@@ -80,6 +80,7 @@ __all__ = (
     "key_overview",
     "key_prevalent_values",
     "key_similar",
+    "key_stats",
     "site_config_geodistribution",
     "tags_popular",
 )
@@ -91,6 +92,7 @@ from aio_taginfo.api.v4.key.distribution.ways import call as key_distribution_wa
 from aio_taginfo.api.v4.key.overview import call as key_overview
 from aio_taginfo.api.v4.key.prevalent_values import call as key_prevalent_values
 from aio_taginfo.api.v4.key.similar import call as key_similar
+from aio_taginfo.api.v4.key.stats import call as key_stats
 from aio_taginfo.api.v4.site.config.geodistribution import call as site_config_geodistribution
 from aio_taginfo.api.v4.tags.popular import call as tags_popular
 from aio_taginfo.error import TaginfoError

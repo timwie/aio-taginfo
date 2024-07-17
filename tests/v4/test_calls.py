@@ -9,6 +9,7 @@ from aio_taginfo import (
     key_overview,
     key_prevalent_values,
     key_similar,
+    key_stats,
     site_config_geodistribution,
     tags_popular,
 )
@@ -363,3 +364,24 @@ async def test_key_combinations():
             page=2,
             rp=10,
         )
+
+
+@pytest.mark.asyncio()
+async def test_key_stats():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "key_stats_amenity.json"
+    response_str = data_file.read_text()
+
+    url = "https://taginfo.openstreetmap.org/api/4/key/stats?key=amenity"
+
+    with aioresponses() as m:
+        m.get(
+            url=url,
+            body=response_str,
+            status=200,
+            content_type="application/json",
+        )
+        response = await key_stats(key="amenity")
+
+    assert response.data[0].count == 26451233
+    _, _ = str(response), repr(response)
