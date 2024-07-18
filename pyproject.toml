@@ -95,6 +95,9 @@ sections="STDLIB,FIRSTPARTY,THIRDPARTY,LOCALFOLDER"
 # https://mypy.readthedocs.io/en/stable/running_mypy.html#missing-library-stubs-or-py-typed-marker
 ignore_missing_imports = true
 
+[tool.coverage.run]
+branch = true
+
 [tool.coverage.report]
 skip_empty = true
 

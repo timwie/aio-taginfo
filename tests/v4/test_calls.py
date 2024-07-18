@@ -1,6 +1,8 @@
 import datetime
 from pathlib import Path
 
+import aiohttp
+
 from aio_taginfo import (
     key_chronology,
     key_combinations,
@@ -169,6 +171,30 @@ async def test_site_config_geodistribution():
             content_type="application/json",
         )
         response = await site_config_geodistribution()
+
+    assert response.width == 360
+    _, _ = str(response), repr(response)
+
+
+@pytest.mark.asyncio()
+async def test_call_with_given_session():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "site_config_geodistribution.json"
+    response_str = data_file.read_text()
+
+    url = "https://taginfo.openstreetmap.org/api/4/site/config/geodistribution"
+
+    headers = {"User-Agent": "unit test"}
+
+    async with aiohttp.ClientSession(headers=headers) as session:
+        with aioresponses() as m:
+            m.get(
+                url=url,
+                body=response_str,
+                status=200,
+                content_type="application/json",
+            )
+            response = await site_config_geodistribution(session=session)
 
     assert response.width == 360
     _, _ = str(response), repr(response)
