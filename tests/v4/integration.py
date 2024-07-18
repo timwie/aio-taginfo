@@ -10,9 +10,12 @@ from aio_taginfo import (
     key_distribution_ways,
     key_overview,
     key_prevalent_values,
+    key_projects,
     key_similar,
     key_stats,
+    relation_projects,
     site_config_geodistribution,
+    tag_projects,
     tags_popular,
 )
 from aio_taginfo.api.v4 import ObjectType, Response, SortOrder
@@ -64,6 +67,10 @@ async def _call_all_endpoints() -> None:
         )
         _log_response(resp)
 
+        logger.info("key_projects")  # TODO: logging should be integrated into the library
+        resp = await key_projects(key="highway", session=session)
+        _log_response(resp)
+
         logger.info("key_similar")  # TODO: logging should be integrated into the library
         resp = await key_similar(
             key="highway",
@@ -79,10 +86,18 @@ async def _call_all_endpoints() -> None:
         resp = await key_stats(key="amenity", session=session)
         _log_response(resp)
 
+        logger.info("relation_projects")  # TODO: logging should be integrated into the library
+        resp = await relation_projects(rtype="route", session=session)
+        _log_response(resp)
+
         logger.info(
             "site_config_geodistribution"
         )  # TODO: logging should be integrated into the library
         resp = await site_config_geodistribution(session=session)
+        _log_response(resp)
+
+        logger.info("tag_projects")  # TODO: logging should be integrated into the library
+        resp = await tag_projects(key="highway", value="residential", session=session)
         _log_response(resp)
 
         logger.info("tags_popular")  # TODO: logging should be integrated into the library

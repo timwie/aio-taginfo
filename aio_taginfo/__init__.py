@@ -79,9 +79,12 @@ __all__ = (
     "key_distribution_ways",
     "key_overview",
     "key_prevalent_values",
+    "key_projects",
     "key_similar",
     "key_stats",
+    "relation_projects",
     "site_config_geodistribution",
+    "tag_projects",
     "tags_popular",
 )
 
@@ -91,8 +94,11 @@ from aio_taginfo.api.v4.key.distribution.nodes import call as key_distribution_n
 from aio_taginfo.api.v4.key.distribution.ways import call as key_distribution_ways
 from aio_taginfo.api.v4.key.overview import call as key_overview
 from aio_taginfo.api.v4.key.prevalent_values import call as key_prevalent_values
+from aio_taginfo.api.v4.key.projects import call as key_projects
 from aio_taginfo.api.v4.key.similar import call as key_similar
 from aio_taginfo.api.v4.key.stats import call as key_stats
+from aio_taginfo.api.v4.relation.projects import call as relation_projects
 from aio_taginfo.api.v4.site.config.geodistribution import call as site_config_geodistribution
+from aio_taginfo.api.v4.tag.projects import call as tag_projects
 from aio_taginfo.api.v4.tags.popular import call as tags_popular
 from aio_taginfo.error import TaginfoError

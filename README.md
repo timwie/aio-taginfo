@@ -129,7 +129,7 @@ This library is in early development and most endpoints are still missing.
 | ✅ | `/api/4/key/distribution/ways`       | `PngResponse`                  |
 | ✅ | `/api/4/key/overview`                | `Response[T]`                  |
 | ✅ | `/api/4/key/prevalent_values`        | `Response[list[T]](page=None)` |
-|   | `/api/4/key/projects`                | `Response[list[T]]`            |
+| ✅ | `/api/4/key/projects`                | `Response[list[T]]`            |
 | ✅ | `/api/4/key/similar`                 | `Response[list[T]]`            |
 | ✅ | `/api/4/key/stats`                   | `Response[list[T]](page=None)` |
 |   | `/api/4/key/values`                  | `Response[list[T]]`            |
@@ -143,7 +143,7 @@ This library is in early development and most endpoints are still missing.
 |   | `/api/4/projects/all`                | `Response[list[T]]`            |
 |   | `/api/4/projects/keys`               | `Response[list[T]]`            |
 |   | `/api/4/projects/tags`               | `Response[list[T]]`            |
-|   | `/api/4/relation/projects`           | `Response[list[T]]`            |
+| ✅ | `/api/4/relation/projects`           | `Response[list[T]]`            |
 |   | `/api/4/relation/roles`              | `Response[list[T]]`            |
 |   | `/api/4/relation/stats`              | `Response[list[T]](page=None)` |
 |   | `/api/4/relation/wiki_pages`         | `Response[list[T]](page=None)` |
@@ -160,7 +160,7 @@ This library is in early development and most endpoints are still missing.
 |   | `/api/4/tag/distribution/nodes`      | `PngResponse`                  |
 |   | `/api/4/tag/distribution/ways`       | `PngResponse`                  |
 |   | `/api/4/tag/overview`                | `Response[T]`                  |
-|   | `/api/4/tag/projects`                | `Response[list[T]]`            |
+| ✅ | `/api/4/tag/projects`                | `Response[list[T]]`            |
 |   | `/api/4/tag/stats`                   | `Response[list[T]](page=None)` |
 |   | `/api/4/tag/wiki_pages`              | `Response[list[T]](page=None)` |
 |   | `/api/4/tags/list`                   | `Response[list[T]](page=None)` |

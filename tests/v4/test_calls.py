@@ -8,14 +8,20 @@ from aio_taginfo import (
     key_distribution_ways,
     key_overview,
     key_prevalent_values,
+    key_projects,
     key_similar,
     key_stats,
+    relation_projects,
     site_config_geodistribution,
+    tag_projects,
     tags_popular,
 )
 from aio_taginfo.api.v4 import ObjectType, SortOrder
 from aio_taginfo.api.v4.key.combinations import KeyCombinationSorting
+from aio_taginfo.api.v4.key.projects import KeyProjectSorting
 from aio_taginfo.api.v4.key.similar import SimilarKeySorting
+from aio_taginfo.api.v4.relation.projects import RelationProjectSorting
+from aio_taginfo.api.v4.tag.projects import TagProjectSorting
 from aio_taginfo.api.v4.tags.popular import PopularTagSorting
 from aio_taginfo.error import TaginfoCallError, TaginfoValidationError, TaginfoValueError
 
@@ -385,3 +391,116 @@ async def test_key_stats():
 
     assert response.data[0].count == 26451233
     _, _ = str(response), repr(response)
+
+
+@pytest.mark.asyncio()
+async def test_key_projects():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "key_projects_highway.json"
+    response_str = data_file.read_text()
+
+    base_url = "https://taginfo.openstreetmap.org/api/4/key/projects"
+
+    with aioresponses() as m:
+        m.get(
+            url=f"{base_url}?filter=all&key=highway&page=1&rp=0&sortname=project_name&sortorder=asc",
+            body=response_str,
+            status=200,
+            content_type="application/json",
+        )
+        response = await key_projects(key="highway")
+
+    assert response.data[0].project_id == "bikecitizens"
+    _, _ = str(response), repr(response)
+
+    with aioresponses() as m:
+        m.get(
+            url=f"{base_url}?filter=relations&key=highway&page=2&query=fixme&rp=10&sortname=tag&sortorder=desc",
+            body=response_str,
+            status=200,
+            content_type="application/json",
+        )
+        _response = await key_projects(
+            key="highway",
+            query="fixme",
+            sortname=KeyProjectSorting.TAG,
+            sortorder=SortOrder.DESC,
+            filter=ObjectType.RELATIONS,
+            page=2,
+            rp=10,
+        )
+
+
+@pytest.mark.asyncio()
+async def test_relation_projects():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "relation_projects_route.json"
+    response_str = data_file.read_text()
+
+    base_url = "https://taginfo.openstreetmap.org/api/4/relation/projects"
+
+    with aioresponses() as m:
+        m.get(
+            url=f"{base_url}?rtype=route&page=1&rp=0&sortname=project_name&sortorder=asc",
+            body=response_str,
+            status=200,
+            content_type="application/json",
+        )
+        response = await relation_projects(rtype="route")
+
+    assert response.data[0].project_id == "bikecitizens"
+    _, _ = str(response), repr(response)
+
+    with aioresponses() as m:
+        m.get(
+            url=f"{base_url}?rtype=route&page=2&rp=10&sortname=project_name&sortorder=desc",
+            body=response_str,
+            status=200,
+            content_type="application/json",
+        )
+        _response = await relation_projects(
+            rtype="route",
+            sortname=RelationProjectSorting.PROJECT_NAME,
+            sortorder=SortOrder.DESC,
+            page=2,
+            rp=10,
+        )
+
+
+@pytest.mark.asyncio()
+async def test_tag_projects():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "tag_projects_highway_residential.json"
+    response_str = data_file.read_text()
+
+    base_url = "https://taginfo.openstreetmap.org/api/4/tag/projects"
+
+    with aioresponses() as m:
+        m.get(
+            url=f"{base_url}?filter=all&key=highway&page=1&rp=0&sortname=project_name&sortorder=asc&value=residential",
+            body=response_str,
+            status=200,
+            content_type="application/json",
+        )
+        response = await tag_projects(key="highway", value="residential")
+
+    assert response.data[1].project_id == "bus_lanes"
+    _, _ = str(response), repr(response)
+
+    with aioresponses() as m:
+        m.get(
+            url=f"{base_url}?filter=nodes&key=highway&page=2&query=fixme&rp=10&sortname=tag&sortorder=desc&value=residential",
+            body=response_str,
+            status=200,
+            content_type="application/json",
+        )
+        _response = await tag_projects(
+            key="highway",
+            value="residential",
+            query="fixme",
+            sortname=TagProjectSorting.TAG,
+            sortorder=SortOrder.DESC,
+            filter=ObjectType.NODES,
+            page=2,
+            rp=10,
+        )

@@ -35,6 +35,12 @@ def install(c: Context):
 
 
 @task
+def integration(c: Context):
+    """Run integration tests"""
+    c.run("python -m tests.v4.integration", echo=True, pty=True)
+
+
+@task
 def lint(c: Context):
     """Run linter and type checker"""
     c.run("ruff check aio_taginfo/ tests/", echo=True, warn=True, pty=True)

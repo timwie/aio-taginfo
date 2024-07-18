@@ -6,9 +6,12 @@ from aio_taginfo.api.v4.key import PrevalentValue
 from aio_taginfo.api.v4.key.chronology import KeyChronology
 from aio_taginfo.api.v4.key.combinations import KeyCombination
 from aio_taginfo.api.v4.key.overview import KeyOverview, Response
+from aio_taginfo.api.v4.key.projects import KeyProject
 from aio_taginfo.api.v4.key.similar import SimilarKey
 from aio_taginfo.api.v4.key.stats import KeyStats
+from aio_taginfo.api.v4.relation.projects import RelationProject
 from aio_taginfo.api.v4.site.config.geodistribution import SiteConfigGeodistribution
+from aio_taginfo.api.v4.tag.projects import TagProject
 from aio_taginfo.api.v4.tags.popular import PopularTag
 
 import pytest
@@ -142,3 +145,30 @@ def test_key_stats():
     type_adapter = TypeAdapter(Response[list[KeyStats]])
     response = type_adapter.validate_json(response_str, strict=True)
     assert response.data[0].count == 26451233
+
+
+def test_key_projects():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "key_projects_highway.json"
+    response_str = data_file.read_text()
+    type_adapter = TypeAdapter(Response[list[KeyProject]])
+    response = type_adapter.validate_json(response_str, strict=True)
+    assert response.data[0].project_id == "bikecitizens"
+
+
+def test_relation_projects():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "relation_projects_route.json"
+    response_str = data_file.read_text()
+    type_adapter = TypeAdapter(Response[list[RelationProject]])
+    response = type_adapter.validate_json(response_str, strict=True)
+    assert response.data[1].project_id == "busy_hours"
+
+
+def test_tag_projects():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "tag_projects_highway_residential.json"
+    response_str = data_file.read_text()
+    type_adapter = TypeAdapter(Response[list[TagProject]])
+    response = type_adapter.validate_json(response_str, strict=True)
+    assert response.data[1].project_id == "bus_lanes"

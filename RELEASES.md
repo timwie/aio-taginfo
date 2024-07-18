@@ -7,7 +7,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 * Implement `/api/4/key/chronology` endpoint
 * Implement `/api/4/key/combinations` endpoint
 * Implement `/api/4/key/distribution/ways` endpoint
+* Implement `/api/4/key/projects` endpoint
 * Implement `/api/4/key/stats` endpoint
+* Implement `/api/4/relation/projects` endpoint
+* Implement `/api/4/tag/projects` endpoint
 
 ## [0.3.0] – 2024-04-27
 * Implement `/api/4/tags/popular` endpoint
