@@ -3,7 +3,13 @@
 from enum import Enum
 
 from aio_taginfo.api.v4 import ObjectType, Response, SortOrder
-from aio_taginfo.api.v4._internal import StringParam, api_get_json, api_params
+from aio_taginfo.api.v4._internal import (
+    NonEmptyString,
+    OptionalHttpUrl,
+    OptionalNonEmptyString,
+    api_get_json,
+    api_params,
+)
 
 from aiohttp import ClientSession
 from pydantic import Field
@@ -18,7 +24,7 @@ __all__ = (
 
 
 @dataclass(kw_only=True, frozen=True)
-class KeyProject:  # TODO: rename
+class KeyProject:
     """
     TODO: https://wiki.openstreetmap.org/wiki/Taginfo/Projects.
 
@@ -39,16 +45,16 @@ class KeyProject:  # TODO: rename
 
     project_id: str = Field(min_length=1, repr=True)
     project_name: str = Field(min_length=1, repr=True)
-    project_icon_url: str | None = Field(repr=False)  # TODO: use HttpUrl, map empty string to None
+    project_icon_url: OptionalHttpUrl = Field(repr=False)
     key: str = Field(min_length=1, repr=True)
-    value: str | None = Field(repr=True)  # TODO: map empty string to None?
+    value: OptionalNonEmptyString = Field(repr=True)
     on_node: bool = Field(repr=False)
     on_way: bool = Field(repr=False)
     on_relation: bool = Field(repr=False)
     on_area: bool = Field(repr=False)
-    description: str | None = Field(repr=False)  # TODO: map empty string to None?
-    doc_url: str | None = Field(repr=False)  # TODO: use HttpUrl, map empty string to None
-    icon_url: str | None = Field(repr=False)  # TODO: use HttpUrl, map empty string to None
+    description: OptionalNonEmptyString = Field(repr=False)
+    doc_url: OptionalHttpUrl = Field(repr=False)
+    icon_url: OptionalHttpUrl = Field(repr=False)
 
 
 class KeyProjectSorting(str, Enum):
@@ -60,8 +66,8 @@ class KeyProjectSorting(str, Enum):
 
 @dataclass(kw_only=True, frozen=True)
 class _Params:
-    key: StringParam = Field(repr=True)
-    query: StringParam | None = Field(repr=True)
+    key: NonEmptyString = Field(repr=True)
+    query: NonEmptyString | None = Field(repr=True)
     sortname: KeyProjectSorting = Field(repr=True)
     sortorder: SortOrder = Field(repr=True)
     filter: ObjectType = Field(repr=True)

@@ -2,11 +2,10 @@
 Typed async client for the taginfo API.
 
 ## Modules
-The `api` package structure is derived from the endpoint path segments:
+The `api` package structure is in large parts derived from the endpoint path segments:
 
 * ``aio_taginfo.error``
 * ``aio_taginfo.api.v4``
-* ``aio_taginfo.api.v4.key``
 * ``aio_taginfo.api.v4.key.distribution.nodes``
 * ``aio_taginfo.api.v4.key.distribution.ways``
 * ``aio_taginfo.api.v4.key.chronology``

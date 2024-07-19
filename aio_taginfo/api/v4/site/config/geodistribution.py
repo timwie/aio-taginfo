@@ -7,6 +7,12 @@ from pydantic import Field
 from pydantic.dataclasses import dataclass
 
 
+__all__ = (
+    "call",
+    "SiteConfigGeodistribution",
+)
+
+
 async def call(session: ClientSession | None = None) -> "SiteConfigGeodistribution":
     """
     Get information about the background map for distribution charts.

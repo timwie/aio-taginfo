@@ -1,8 +1,6 @@
 import datetime
 from pathlib import Path
 
-import aiohttp
-
 from aio_taginfo import (
     key_chronology,
     key_combinations,
@@ -27,6 +25,7 @@ from aio_taginfo.api.v4.tag.projects import TagProjectSorting
 from aio_taginfo.api.v4.tags.popular import PopularTagSorting
 from aio_taginfo.error import TaginfoCallError, TaginfoValidationError, TaginfoValueError
 
+import aiohttp
 import pytest
 from aioresponses import aioresponses
 

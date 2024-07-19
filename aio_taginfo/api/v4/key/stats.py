@@ -1,16 +1,17 @@
 """`/api/4/key/stats` endpoint."""
 
 from aio_taginfo.api.v4 import ObjectType, Response
-from aio_taginfo.api.v4._internal import StringParam, api_get_json, api_params
+from aio_taginfo.api.v4._internal import NonEmptyString, api_get_json, api_params
 
 from aiohttp import ClientSession
 from pydantic import Field
 from pydantic.dataclasses import dataclass
 
 
-@dataclass(kw_only=True, frozen=True)
-class _Params:
-    key: StringParam = Field(repr=True)
+__all__ = (
+    "KeyStats",
+    "call",
+)
 
 
 @dataclass(kw_only=True, frozen=True)
@@ -29,6 +30,11 @@ class KeyStats:
     count: int = Field(ge=0, repr=True)
     count_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=True)
     values: int = Field(ge=0, repr=True)
+
+
+@dataclass(kw_only=True, frozen=True)
+class _Params:
+    key: NonEmptyString = Field(repr=True)
 
 
 async def call(

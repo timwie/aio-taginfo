@@ -3,16 +3,22 @@
 import datetime
 
 from aio_taginfo.api.v4 import Response
-from aio_taginfo.api.v4._internal import StringParam, api_get_json, api_params
+from aio_taginfo.api.v4._internal import NonEmptyString, api_get_json, api_params
 
 from aiohttp import ClientSession
 from pydantic import Field
 from pydantic.dataclasses import dataclass
 
 
+__all__ = (
+    "call",
+    "KeyChronology",
+)
+
+
 @dataclass(kw_only=True, frozen=True)
 class _Params:
-    key: StringParam = Field(repr=True)
+    key: NonEmptyString = Field(repr=True)
 
 
 @dataclass(kw_only=True, frozen=True)

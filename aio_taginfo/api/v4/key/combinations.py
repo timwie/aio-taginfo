@@ -3,11 +3,18 @@
 from enum import Enum
 
 from aio_taginfo.api.v4 import ObjectType, Response, SortOrder
-from aio_taginfo.api.v4._internal import StringParam, api_get_json, api_params
+from aio_taginfo.api.v4._internal import NonEmptyString, api_get_json, api_params
 
 from aiohttp import ClientSession
 from pydantic import Field
 from pydantic.dataclasses import dataclass
+
+
+__all__ = (
+    "call",
+    "KeyCombination",
+    "KeyCombinationSorting",
+)
 
 
 @dataclass(kw_only=True, frozen=True)
@@ -38,8 +45,8 @@ class KeyCombinationSorting(str, Enum):
 
 @dataclass(kw_only=True, frozen=True)
 class _Params:
-    key: StringParam = Field(repr=True)
-    query: StringParam | None = Field(repr=True)
+    key: NonEmptyString = Field(repr=True)
+    query: NonEmptyString | None = Field(repr=True)
     sortname: KeyCombinationSorting = Field(repr=True)
     sortorder: SortOrder = Field(repr=True)
     filter: ObjectType = Field(repr=True)

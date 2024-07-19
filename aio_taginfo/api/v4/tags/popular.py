@@ -16,7 +16,7 @@ __all__ = (
     "PopularTagSorting",
 )
 
-from aio_taginfo.api.v4._internal import StringParam, api_get_json, api_params
+from aio_taginfo.api.v4._internal import NonEmptyString, api_get_json, api_params
 
 
 @dataclass(kw_only=True, frozen=True)
@@ -75,7 +75,7 @@ class PopularTagSorting(str, Enum):
 
 @dataclass(kw_only=True, frozen=True)
 class _Params:
-    query: StringParam | None = Field(repr=True)
+    query: NonEmptyString | None = Field(repr=True)
     sortname: PopularTagSorting = Field(repr=True)
     sortorder: SortOrder = Field(repr=True)
     page: int = Field(gt=0, repr=True)

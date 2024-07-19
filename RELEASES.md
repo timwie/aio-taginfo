@@ -4,13 +4,15 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 * **Breaking**: Rename `TagInfo*Error` classes to `Taginfo*Error`
-* Implement `/api/4/key/chronology` endpoint
-* Implement `/api/4/key/combinations` endpoint
-* Implement `/api/4/key/distribution/ways` endpoint
-* Implement `/api/4/key/projects` endpoint
-* Implement `/api/4/key/stats` endpoint
-* Implement `/api/4/relation/projects` endpoint
-* Implement `/api/4/tag/projects` endpoint
+* **Breaking**: Move the `PrevalentValue` class from `api.v4.key` to `api.v4.key.prevalent_values`
+* More endpoints are implemented:
+  * `/api/4/key/chronology`
+  * `/api/4/key/combinations`
+  * `/api/4/key/distribution/ways`
+  * `/api/4/key/projects`
+  * `/api/4/key/stats`
+  * `/api/4/relation/projects`
+  * `/api/4/tag/projects`
 
 ## [0.3.0] – 2024-04-27
 * Implement `/api/4/tags/popular` endpoint

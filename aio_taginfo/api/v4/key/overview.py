@@ -1,8 +1,7 @@
 """`/api/4/key/overview` endpoint."""
 
 from aio_taginfo.api.v4 import ObjectType, PrintingDirection, Response
-from aio_taginfo.api.v4._internal import StringParam, api_get_json, api_params
-from aio_taginfo.api.v4.key import PrevalentValue
+from aio_taginfo.api.v4._internal import NonEmptyString, api_get_json, api_params
 
 from aiohttp import ClientSession
 from pydantic import Field
@@ -17,10 +16,12 @@ __all__ = (
     "KeyWikiPage",
 )
 
+from aio_taginfo.api.v4.key.prevalent_values import PrevalentValue
+
 
 @dataclass(kw_only=True, frozen=True)
 class _Params:
-    key: StringParam = Field(repr=True)
+    key: NonEmptyString = Field(repr=True)
 
 
 async def call(

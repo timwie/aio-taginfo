@@ -2,10 +2,10 @@ import datetime
 from pathlib import Path
 
 from aio_taginfo.api.v4 import PngResponse
-from aio_taginfo.api.v4.key import PrevalentValue
 from aio_taginfo.api.v4.key.chronology import KeyChronology
 from aio_taginfo.api.v4.key.combinations import KeyCombination
 from aio_taginfo.api.v4.key.overview import KeyOverview, Response
+from aio_taginfo.api.v4.key.prevalent_values import PrevalentValue
 from aio_taginfo.api.v4.key.projects import KeyProject
 from aio_taginfo.api.v4.key.similar import SimilarKey
 from aio_taginfo.api.v4.key.stats import KeyStats
@@ -16,6 +16,7 @@ from aio_taginfo.api.v4.tags.popular import PopularTag
 
 import pytest
 from pydantic import TypeAdapter, ValidationError
+from pydantic_core import Url
 
 
 def test_existing_key_overview():
@@ -172,3 +173,5 @@ def test_tag_projects():
     type_adapter = TypeAdapter(Response[list[TagProject]])
     response = type_adapter.validate_json(response_str, strict=True)
     assert response.data[1].project_id == "bus_lanes"
+    for project in response.data:
+        assert isinstance(project.project_icon_url, Url | None)

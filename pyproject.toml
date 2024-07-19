@@ -50,7 +50,7 @@ codecov = "^2.1.13"
 invoke = "^2.2.0"
 isort = "^5.13.2"
 loguru = "^0.7.2"
-mypy = "^1.10.1"
+mypy = "^1.11.0"
 pdoc = "^14.5.1"
 pytest = "^8.2.2"
 pytest-asyncio = "^0.23.5"
@@ -72,7 +72,7 @@ ignore = [
 ]
 
 [tool.ruff.lint.per-file-ignores]
-"tests/*" = ["ANN", "ASYNC230", "C901", "D", "E501", "F401", "F811", "PLR0915"]
+"tests/*" = ["ANN", "ASYNC230", "C408", "C901", "D", "E501", "F401", "F811", "PLR0915"]
 
 [tool.ruff.lint.pydocstyle]
 convention = "google"

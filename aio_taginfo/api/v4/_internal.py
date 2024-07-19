@@ -3,7 +3,7 @@ from collections.abc import AsyncIterator
 from contextlib import asynccontextmanager
 from dataclasses import asdict, is_dataclass
 from enum import Enum
-from typing import Annotated, Any, TypeVar
+from typing import Annotated, Any, TypeAlias, TypeVar
 
 from aio_taginfo import __version__
 from aio_taginfo.api.v4 import PngResponse
@@ -12,7 +12,16 @@ from aio_taginfo.error import TaginfoCallError, TaginfoValidationError, TaginfoV
 import aiohttp
 import pydantic
 from aiohttp import ClientResponse, ClientSession
-from pydantic import StringConstraints, TypeAdapter
+from pydantic import BeforeValidator, HttpUrl, StringConstraints, TypeAdapter
+
+
+__all__ = (
+    "NonEmptyString",
+    "OptionalNonEmptyString",
+    "api_params",
+    "api_get_json",
+    "api_get_png",
+)
 
 
 _URL_BASE = "https://taginfo.openstreetmap.org/api/4/"
@@ -20,7 +29,26 @@ _DEFAULT_USER_AGENT = f"aio-taginfo/{__version__} (https://github.com/timwie/aio
 
 T = TypeVar("T", bound=Any)
 
-StringParam = Annotated[str, StringConstraints(min_length=1, strip_whitespace=True)]
+NonEmptyString = Annotated[str, StringConstraints(min_length=1, strip_whitespace=True)]
+
+
+def _empty_str_to_none(v: str | None) -> str | None:
+    if isinstance(v, str):
+        return None if v.strip() == "" else v.strip()
+    return v
+
+
+# TODO: move somewhere public?
+OptionalNonEmptyString: TypeAlias = Annotated[
+    str | None,
+    BeforeValidator(_empty_str_to_none),
+]
+
+# TODO: move somewhere public?
+OptionalHttpUrl: TypeAlias = Annotated[
+    HttpUrl | None,
+    BeforeValidator(_empty_str_to_none),
+]
 
 
 def api_params(datacls: type[T], **kwargs: Any) -> dict:  # noqa: ANN401
