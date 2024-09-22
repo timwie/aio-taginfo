@@ -30,7 +30,7 @@ import pytest
 from aioresponses import aioresponses
 
 
-@pytest.mark.asyncio()
+@pytest.mark.asyncio
 async def test_key_distribution_nodes():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "key_distribtion_nodes_amenity.png"
@@ -72,7 +72,7 @@ async def test_key_distribution_nodes():
             await key_distribution_nodes(key="amenity")
 
 
-@pytest.mark.asyncio()
+@pytest.mark.asyncio
 async def test_key_distribution_ways():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "key_distribution_ways_highway.png"
@@ -114,7 +114,7 @@ async def test_key_distribution_ways():
             await key_distribution_ways(key="highway")
 
 
-@pytest.mark.asyncio()
+@pytest.mark.asyncio
 async def test_key_overview():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "key_overview_amenity.json"
@@ -154,7 +154,7 @@ async def test_key_overview():
             await key_overview(key="amenity")
 
 
-@pytest.mark.asyncio()
+@pytest.mark.asyncio
 async def test_site_config_geodistribution():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "site_config_geodistribution.json"
@@ -175,7 +175,7 @@ async def test_site_config_geodistribution():
     _, _ = str(response), repr(response)
 
 
-@pytest.mark.asyncio()
+@pytest.mark.asyncio
 async def test_call_with_given_session():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "site_config_geodistribution.json"
@@ -199,7 +199,7 @@ async def test_call_with_given_session():
     _, _ = str(response), repr(response)
 
 
-@pytest.mark.asyncio()
+@pytest.mark.asyncio
 async def test_key_prevalent_values():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "key_prevalent_values_highway.json"
@@ -229,7 +229,7 @@ async def test_key_prevalent_values():
         await key_prevalent_values(key="highway", filter="yes")
 
 
-@pytest.mark.asyncio()
+@pytest.mark.asyncio
 async def test_key_similar():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "key_similar_highway.json"
@@ -284,7 +284,7 @@ async def test_key_similar():
         await key_similar(key="highway", rp=-1)
 
 
-@pytest.mark.asyncio()
+@pytest.mark.asyncio
 async def test_tags_popular():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "tags_popular.json"
@@ -338,7 +338,7 @@ async def test_tags_popular():
         await tags_popular(rp=-1)
 
 
-@pytest.mark.asyncio()
+@pytest.mark.asyncio
 async def test_key_chronology():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "key_chronology_highway.json"
@@ -359,7 +359,7 @@ async def test_key_chronology():
     _, _ = str(response), repr(response)
 
 
-@pytest.mark.asyncio()
+@pytest.mark.asyncio
 async def test_key_combinations():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "key_combinations_highway.json"
@@ -397,7 +397,7 @@ async def test_key_combinations():
         )
 
 
-@pytest.mark.asyncio()
+@pytest.mark.asyncio
 async def test_key_stats():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "key_stats_amenity.json"
@@ -418,7 +418,7 @@ async def test_key_stats():
     _, _ = str(response), repr(response)
 
 
-@pytest.mark.asyncio()
+@pytest.mark.asyncio
 async def test_key_projects():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "key_projects_highway.json"
@@ -456,7 +456,7 @@ async def test_key_projects():
         )
 
 
-@pytest.mark.asyncio()
+@pytest.mark.asyncio
 async def test_relation_projects():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "relation_projects_route.json"
@@ -492,7 +492,7 @@ async def test_relation_projects():
         )
 
 
-@pytest.mark.asyncio()
+@pytest.mark.asyncio
 async def test_tag_projects():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "tag_projects_highway_residential.json"

@@ -72,7 +72,6 @@ async def _call_all_endpoints() -> None:
 
     async with aiohttp.ClientSession(headers=headers) as session:
         for func, kwargs in _CALLS:
-            # logger.info("key_chronology")  # TODO: logging should be integrated into the library
             resp = await func(session=session, **kwargs)
             _log_response(resp)
 
