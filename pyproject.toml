@@ -57,7 +57,7 @@ pytest-asyncio = "^0.24.0"
 pytest-cov = "^5.0.0"
 pytest-randomly = "^3.15.0"
 ruff = "^0.6.0"
-pyright = "^1.1.381"
+pyright = "^1.1.383"
 
 [tool.ruff]
 # https://docs.astral.sh/ruff/settings/
