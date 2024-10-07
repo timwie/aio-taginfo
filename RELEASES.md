@@ -2,6 +2,10 @@
 All notable changes to this project will be documented in this file.
 This project adheres to [Semantic Versioning](http://semver.org/).
 
+## Unreleased
+* **Breaking**: Drop Python 3.10 support
+* Add Python 3.13 support
+
 ## [0.4.0] - 2024-07-21
 * **Breaking**: Rename `TagInfo*Error` classes to `Taginfo*Error`
 * **Breaking**: Move the `PrevalentValue` class from `api.v4.key` to `api.v4.key.prevalent_values`
