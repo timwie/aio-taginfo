@@ -4,6 +4,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 * **Breaking**: Drop Python 3.10 support
+* **Breaking**: Bump `pydantic` requirement to `^2.8` (from `^2.4`)
 * Add Python 3.13 support
 
 ## [0.4.0] - 2024-07-21
