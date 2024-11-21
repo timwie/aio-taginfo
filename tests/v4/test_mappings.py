@@ -15,8 +15,7 @@ from aio_taginfo.api.v4.tag.projects import TagProject
 from aio_taginfo.api.v4.tags.popular import PopularTag
 
 import pytest
-from pydantic import TypeAdapter, ValidationError
-from pydantic_core import Url
+from pydantic import HttpUrl, TypeAdapter, ValidationError
 
 
 def test_existing_key_overview():
@@ -174,4 +173,4 @@ def test_tag_projects():
     response = type_adapter.validate_json(response_str, strict=True)
     assert response.data[1].project_id == "bus_lanes"
     for project in response.data:
-        assert isinstance(project.project_icon_url, Url | None)
+        assert isinstance(project.project_icon_url, HttpUrl | None)
