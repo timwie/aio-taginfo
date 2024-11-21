@@ -173,4 +173,9 @@ def test_tag_projects():
     response = type_adapter.validate_json(response_str, strict=True)
     assert response.data[1].project_id == "bus_lanes"
     for project in response.data:
-        assert isinstance(project.project_icon_url, HttpUrl | None)
+        from pydantic.version import version_short
+        if version_short() in {"2.8", "2.9"}:
+            from pydantic_core import Url
+            assert isinstance(project.project_icon_url, Url | None)
+        else:
+            assert isinstance(project.project_icon_url, HttpUrl | None)
