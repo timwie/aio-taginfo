@@ -6,7 +6,7 @@ on:
   push:
     paths:
       - 'aio_taginfo/**'
-      - 'test/**'
+      - 'tests/**'
       - 'poetry.lock'
       - 'pyproject.toml'
       - 'tasks.py'
