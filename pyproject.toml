@@ -8,7 +8,6 @@ readme = "README.md"
 repository = "https://github.com/timwie/aio-taginfo"
 documentation = "https://www.timwie.dev/aio-taginfo/"
 packages = [{ include = "aio_taginfo" }]
-include = ["RELEASES.md"]
 keywords = [
     "geospatial",
     "gis",
