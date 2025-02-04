@@ -30,7 +30,7 @@ def fmt(c: Context):
 @task
 def install(c: Context):
     """Install all dependencies"""
-    c.run("poetry lock --no-update", echo=True, pty=True)
+    c.run("poetry lock", echo=True, pty=True)
     c.run("poetry install", echo=True, pty=True)
 
 
@@ -69,5 +69,5 @@ def tree(c: Context):
 @task
 def update(c: Context):
     """Update dependencies"""
-    c.run("poetry up --latest --only=dev", echo=True, pty=True)
+    c.run("poetry update", echo=True, pty=True)
     c.run("poetry show --outdated --why --with=dev", echo=True, pty=True)
