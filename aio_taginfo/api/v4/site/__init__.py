@@ -1,1 +1,1 @@
-"""`/api/4/site/` endpoints."""
+"""`/api/4/site/` endpoints."""  # noqa: A005
