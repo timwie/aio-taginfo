@@ -29,7 +29,9 @@ class KeyCombination:
         from_fraction: Fraction of objects with other key that also have this key.
     """
 
-    other_key: str = Field(min_length=1, repr=True)
+    # TODO: "other_key" can be empty?
+    #   https://github.com/timwie/aio-taginfo/actions/runs/13634586048/job/38110075990
+    other_key: str = Field(repr=True)
     together_count: int = Field(ge=0, repr=True)
     to_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=True)
     from_fraction: float = Field(ge=0.0, le=1.0, allow_inf_nan=False, repr=True)

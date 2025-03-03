@@ -127,6 +127,15 @@ def test_key_combinations():
     assert response.data[0].together_count == 58128837
 
 
+def test_key_combinations2():
+    test_dir = Path(__file__).resolve().parent
+    data_file = test_dir / "responses" / "key_combinations_highway2.json"
+    response_str = data_file.read_text()
+    type_adapter = TypeAdapter(Response[list[KeyCombination]])
+    response = type_adapter.validate_json(response_str, strict=True)
+    assert response.data[-1].from_fraction == 0.125
+
+
 def test_png_response():
     test_dir = Path(__file__).resolve().parent
     data_file = test_dir / "responses" / "key_distribtion_nodes_amenity.png"
